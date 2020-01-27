@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.32.0">
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/doc.js"></script>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+
+  <meta id="repository-name" content="github.com/oprypin/crystal-chipmunk">
+  <title>CP::Shape - github.com/oprypin/crystal-chipmunk</title>
+  <script type="text/javascript">
+    CrystalDoc.base_path = "../";
+  </script>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="repository-links">
+      <a style="font-size: 130%" href="https://github.com/oprypin/crystal-chipmunk">crystal-chipmunk</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="github.com/oprypin/crystal-chipmunk/CP" data-name="cp">
+      <a href="../CP.html">CP</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/Arbiter" data-name="cp::arbiter">
+      <a href="../CP/Arbiter.html">Arbiter</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/BB" data-name="cp::bb">
+      <a href="../CP/BB.html">BB</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/oprypin/crystal-chipmunk/CP/Body" data-name="cp::body">
+      <a href="../CP/Body.html">Body</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/Body/Type" data-name="cp::body::type">
+      <a href="../CP/Body/Type.html">Type</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/oprypin/crystal-chipmunk/CP/CollisionHandler" data-name="cp::collisionhandler">
+      <a href="../CP/CollisionHandler.html">CollisionHandler</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/CollisionHandler/CollisionType" data-name="cp::collisionhandler::collisiontype">
+      <a href="../CP/CollisionHandler/CollisionType.html">CollisionType</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/oprypin/crystal-chipmunk/CP/Constraint" data-name="cp::constraint">
+      <a href="../CP/Constraint.html">Constraint</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/Constraint/DampedRotarySpring" data-name="cp::constraint::dampedrotaryspring">
+      <a href="../CP/Constraint/DampedRotarySpring.html">DampedRotarySpring</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/Constraint/DampedSpring" data-name="cp::constraint::dampedspring">
+      <a href="../CP/Constraint/DampedSpring.html">DampedSpring</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/Constraint/GearJoint" data-name="cp::constraint::gearjoint">
+      <a href="../CP/Constraint/GearJoint.html">GearJoint</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/Constraint/GrooveJoint" data-name="cp::constraint::groovejoint">
+      <a href="../CP/Constraint/GrooveJoint.html">GrooveJoint</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/Constraint/PinJoint" data-name="cp::constraint::pinjoint">
+      <a href="../CP/Constraint/PinJoint.html">PinJoint</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/Constraint/PivotJoint" data-name="cp::constraint::pivotjoint">
+      <a href="../CP/Constraint/PivotJoint.html">PivotJoint</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/Constraint/RatchetJoint" data-name="cp::constraint::ratchetjoint">
+      <a href="../CP/Constraint/RatchetJoint.html">RatchetJoint</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/Constraint/RotaryLimitJoint" data-name="cp::constraint::rotarylimitjoint">
+      <a href="../CP/Constraint/RotaryLimitJoint.html">RotaryLimitJoint</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/Constraint/SimpleMotor" data-name="cp::constraint::simplemotor">
+      <a href="../CP/Constraint/SimpleMotor.html">SimpleMotor</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/Constraint/SlideJoint" data-name="cp::constraint::slidejoint">
+      <a href="../CP/Constraint/SlideJoint.html">SlideJoint</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/oprypin/crystal-chipmunk/CP/ContactPointSet" data-name="cp::contactpointset">
+      <a href="../CP/ContactPointSet.html">ContactPointSet</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/ContactPointSet/ContactPoint" data-name="cp::contactpointset::contactpoint">
+      <a href="../CP/ContactPointSet/ContactPoint.html">ContactPoint</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/Mat2x2" data-name="cp::mat2x2">
+      <a href="../CP/Mat2x2.html">Mat2x2</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/PointQueryInfo" data-name="cp::pointqueryinfo">
+      <a href="../CP/PointQueryInfo.html">PointQueryInfo</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/SegmentQueryInfo" data-name="cp::segmentqueryinfo">
+      <a href="../CP/SegmentQueryInfo.html">SegmentQueryInfo</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/oprypin/crystal-chipmunk/CP/Shape" data-name="cp::shape">
+      <a href="../CP/Shape.html">Shape</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/Shape/Box" data-name="cp::shape::box">
+      <a href="../CP/Shape/Box.html">Box</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/Shape/Circle" data-name="cp::shape::circle">
+      <a href="../CP/Shape/Circle.html">Circle</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/Shape/Poly" data-name="cp::shape::poly">
+      <a href="../CP/Shape/Poly.html">Poly</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/Shape/Segment" data-name="cp::shape::segment">
+      <a href="../CP/Shape/Segment.html">Segment</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/oprypin/crystal-chipmunk/CP/ShapeFilter" data-name="cp::shapefilter">
+      <a href="../CP/ShapeFilter.html">ShapeFilter</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/ShapeFilter/Bitmask" data-name="cp::shapefilter::bitmask">
+      <a href="../CP/ShapeFilter/Bitmask.html">Bitmask</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/ShapeFilter/Group" data-name="cp::shapefilter::group">
+      <a href="../CP/ShapeFilter/Group.html">Group</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/oprypin/crystal-chipmunk/CP/Space" data-name="cp::space">
+      <a href="../CP/Space.html">Space</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="github.com/oprypin/crystal-chipmunk/CP/Space/DebugDraw" data-name="cp::space::debugdraw">
+      <a href="../CP/Space/DebugDraw.html">DebugDraw</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/Space/DebugDraw/Color" data-name="cp::space::debugdraw::color">
+      <a href="../CP/Space/DebugDraw/Color.html">Color</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/Space/DebugDraw/Flags" data-name="cp::space::debugdraw::flags">
+      <a href="../CP/Space/DebugDraw/Flags.html">Flags</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/Space/Timestamp" data-name="cp::space::timestamp">
+      <a href="../CP/Space/Timestamp.html">Timestamp</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/Transform" data-name="cp::transform">
+      <a href="../CP/Transform.html">Transform</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/oprypin/crystal-chipmunk/CP/Vect" data-name="cp::vect">
+      <a href="../CP/Vect.html">Vect</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">abstract class</span> CP::Shape
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../CP/Shape.html">CP::Shape</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>
+    <a id="overview" class="anchor" href="#overview">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Overview
+  </h2>
+
+  <p>Defines the shape of a rigid body.</p>
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="direct-known-subclasses" class="anchor" href="#direct-known-subclasses">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Direct Known Subclasses
+  </h2>
+  <ul class="other-types-list">
+    
+      <li class="other-type"><a href="../CP/Shape/Circle.html">CP::Shape::Circle</a></li>
+    
+      <li class="other-type"><a href="../CP/Shape/Poly.html">CP::Shape::Poly</a></li>
+    
+      <li class="other-type"><a href="../CP/Shape/Segment.html">CP::Shape::Segment</a></li>
+    
+  </ul>
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L24" target="_blank">
+        chipmunk/shape.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#area:Float64-instance-method" class="signature"><strong>#area</strong> : Float64</a>
+        
+          <div class="summary"><p>Get the calculated area of this shape.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#bb:BB-instance-method" class="signature"><strong>#bb</strong> : BB</a>
+        
+          <div class="summary"><p>Get the bounding box that contains the shape given its current position and angle.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#body:Body?-instance-method" class="signature"><strong>#body</strong> : Body?</a>
+        
+          <div class="summary"><p>The <code><a href="../CP/Body.html">Body</a></code> this shape is added to.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#body=(body:Body?)-instance-method" class="signature"><strong>#body=</strong>(body : Body?)</a>
+        
+          <div class="summary"><p>Set the <code><a href="../CP/Body.html">Body</a></code> this shape is added to.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#cache_bb:BB-instance-method" class="signature"><strong>#cache_bb</strong> : BB</a>
+        
+          <div class="summary"><p>Update, cache and return the bounding box of a shape based on the body it's attached to.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#center_of_gravity:Vect-instance-method" class="signature"><strong>#center_of_gravity</strong> : Vect</a>
+        
+          <div class="summary"><p>Get the centroid of this shape.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#collide(b:Shape):ContactPointSet-instance-method" class="signature"><strong>#collide</strong>(b : Shape) : ContactPointSet</a>
+        
+          <div class="summary"><p>Return contact information about two shapes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#collision_type:CollisionType-instance-method" class="signature"><strong>#collision_type</strong> : CollisionType</a>
+        
+          <div class="summary"><p>User defined collision type for the shape.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#collision_type=(collision_type:Int)-instance-method" class="signature"><strong>#collision_type=</strong>(collision_type : Int)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#density:Float64-instance-method" class="signature"><strong>#density</strong> : Float64</a>
+        
+          <div class="summary"><p>Get the density of the shape if you are having Chipmunk calculate mass properties for you.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#density=(density:Number)-instance-method" class="signature"><strong>#density=</strong>(density : Number)</a>
+        
+          <div class="summary"><p>Set the density of this shape to have Chipmunk calculate mass properties for you.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#elasticity:Float64-instance-method" class="signature"><strong>#elasticity</strong> : Float64</a>
+        
+          <div class="summary"><p>The elasticity of this shape.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#elasticity=(elasticity:Number)-instance-method" class="signature"><strong>#elasticity=</strong>(elasticity : Number)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#filter:ShapeFilter-instance-method" class="signature"><strong>#filter</strong> : ShapeFilter</a>
+        
+          <div class="summary"><p>The collision filtering parameters of this shape.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#filter=(filter:ShapeFilter)-instance-method" class="signature"><strong>#filter=</strong>(filter : ShapeFilter)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#friction:Float64-instance-method" class="signature"><strong>#friction</strong> : Float64</a>
+        
+          <div class="summary"><p>The friction of this shape.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#friction=(friction:Number)-instance-method" class="signature"><strong>#friction=</strong>(friction : Number)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#mass:Float64-instance-method" class="signature"><strong>#mass</strong> : Float64</a>
+        
+          <div class="summary"><p>Get the mass of the shape if you are having Chipmunk calculate mass properties for you.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#mass=(mass:Number)-instance-method" class="signature"><strong>#mass=</strong>(mass : Number)</a>
+        
+          <div class="summary"><p>Set the mass of this shape to have Chipmunk calculate mass properties for you.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#moment:Float64-instance-method" class="signature"><strong>#moment</strong> : Float64</a>
+        
+          <div class="summary"><p>Get the calculated moment of inertia for this shape.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#point_query(p:Vect):PointQueryInfo-instance-method" class="signature"><strong>#point_query</strong>(p : Vect) : PointQueryInfo</a>
+        
+          <div class="summary"><p>Perform a nearest point query.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#segment_query(a:Vect,b:Vect,radius:Number=0):SegmentQueryInfo?-instance-method" class="signature"><strong>#segment_query</strong>(a : Vect, b : Vect, radius : Number = <span class="n">0</span>) : SegmentQueryInfo?</a>
+        
+          <div class="summary"><p>Perform a segment query against a shape: check if the line segment from start to end intersects the shape.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#sensor=(sensor:Bool)-instance-method" class="signature"><strong>#sensor=</strong>(sensor : Bool)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#sensor?:Bool-instance-method" class="signature"><strong>#sensor?</strong> : Bool</a>
+        
+          <div class="summary"><p>Is the shape set to be a sensor or not?</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#space:Space?-instance-method" class="signature"><strong>#space</strong> : Space?</a>
+        
+          <div class="summary"><p>The <code><a href="../CP/Space.html">Space</a></code> this shape is added to.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#surface_velocity:Vect-instance-method" class="signature"><strong>#surface_velocity</strong> : Vect</a>
+        
+          <div class="summary"><p>The surface velocity of this shape.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#surface_velocity=(surface_velocity:Vect)-instance-method" class="signature"><strong>#surface_velocity=</strong>(surface_velocity : Vect)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#update(transform:Transform):BB-instance-method" class="signature"><strong>#update</strong>(transform : Transform) : BB</a>
+        
+          <div class="summary"><p>Update, cache and return the bounding box of a shape with an explicit transformation.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+
+
+
+
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="area:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>area</strong> : Float64
+
+        <a class="method-permalink" href="#area:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Get the calculated area of this shape.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L112" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="bb:BB-instance-method">
+      <div class="signature">
+        
+        def <strong>bb</strong> : <a href="../CP/BB.html">BB</a>
+
+        <a class="method-permalink" href="#bb:BB-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Get the bounding box that contains the shape given its current position and angle.</p>
+
+<p>Only guaranteed to be valid after <code><a href="../CP/Shape.html#cache_bb:BB-instance-method">#cache_bb</a></code> or <code><a href="../CP/Space.html#step(dt:Number)-instance-method">Space#step</a></code> is called.
+Moving a body that a shape is connected to does not update its bounding box.
+For shapes used for queries that aren't attached to bodies, you can also use <code><a href="../CP/Shape.html#update(transform:Transform):BB-instance-method">#update</a></code>.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L126" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="body:Body?-instance-method">
+      <div class="signature">
+        
+        def <strong>body</strong> : <a href="../CP/Body.html">Body</a>?
+
+        <a class="method-permalink" href="#body:Body?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>The <code><a href="../CP/Body.html">Body</a></code> this shape is added to.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L78" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="body=(body:Body?)-instance-method">
+      <div class="signature">
+        
+        def <strong>body=</strong>(body : <a href="../CP/Body.html">Body</a>?)
+
+        <a class="method-permalink" href="#body=(body:Body?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Set the <code><a href="../CP/Body.html">Body</a></code> this shape is added to.</p>
+
+<p>Can only be used if the shape is not currently added to a space.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L84" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="cache_bb:BB-instance-method">
+      <div class="signature">
+        
+        def <strong>cache_bb</strong> : <a href="../CP/BB.html">BB</a>
+
+        <a class="method-permalink" href="#cache_bb:BB-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Update, cache and return the bounding box of a shape based on the body it's attached to.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L43" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="center_of_gravity:Vect-instance-method">
+      <div class="signature">
+        
+        def <strong>center_of_gravity</strong> : <a href="../CP/Vect.html">Vect</a>
+
+        <a class="method-permalink" href="#center_of_gravity:Vect-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Get the centroid of this shape.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L117" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="collide(b:Shape):ContactPointSet-instance-method">
+      <div class="signature">
+        
+        def <strong>collide</strong>(b : <a href="../CP/Shape.html">Shape</a>) : <a href="../CP/ContactPointSet.html">ContactPointSet</a>
+
+        <a class="method-permalink" href="#collide(b:Shape):ContactPointSet-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Return contact information about two shapes.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L68" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="collision_type:CollisionType-instance-method">
+      <div class="signature">
+        
+        def <strong>collision_type</strong> : CollisionType
+
+        <a class="method-permalink" href="#collision_type:CollisionType-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>User defined collision type for the shape.</p>
+
+<p>See <code><a href="../CP/Space.html#add_collision_handler(a:Int,b:Int,handler:CollisionHandler):CollisionHandler-instance-method">Space#add_collision_handler</a></code> for more information.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L177" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="collision_type=(collision_type:Int)-instance-method">
+      <div class="signature">
+        
+        def <strong>collision_type=</strong>(collision_type : Int)
+
+        <a class="method-permalink" href="#collision_type=(collision_type:Int)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L180" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="density:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>density</strong> : Float64
+
+        <a class="method-permalink" href="#density:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Get the density of the shape if you are having Chipmunk calculate mass properties for you.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L98" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="density=(density:Number)-instance-method">
+      <div class="signature">
+        
+        def <strong>density=</strong>(density : Number)
+
+        <a class="method-permalink" href="#density=(density:Number)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Set the density of this shape to have Chipmunk calculate mass properties for you.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L102" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="elasticity:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>elasticity</strong> : Float64
+
+        <a class="method-permalink" href="#elasticity:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>The elasticity of this shape.</p>
+
+<p>A value of 0.0 gives no bounce, while a value of 1.0 will give a
+'perfect' bounce. However due to inaccuracies in the simulation
+using 1.0 or greater is not recommended.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L145" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="elasticity=(elasticity:Number)-instance-method">
+      <div class="signature">
+        
+        def <strong>elasticity=</strong>(elasticity : Number)
+
+        <a class="method-permalink" href="#elasticity=(elasticity:Number)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L148" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="filter:ShapeFilter-instance-method">
+      <div class="signature">
+        
+        def <strong>filter</strong> : <a href="../CP/ShapeFilter.html">ShapeFilter</a>
+
+        <a class="method-permalink" href="#filter:ShapeFilter-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>The collision filtering parameters of this shape.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L185" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="filter=(filter:ShapeFilter)-instance-method">
+      <div class="signature">
+        
+        def <strong>filter=</strong>(filter : <a href="../CP/ShapeFilter.html">ShapeFilter</a>)
+
+        <a class="method-permalink" href="#filter=(filter:ShapeFilter)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L188" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="friction:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>friction</strong> : Float64
+
+        <a class="method-permalink" href="#friction:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>The friction of this shape.</p>
+
+<p>Chipmunk uses the Coulomb friction model, a value of 0.0 is
+frictionless. A value over 1.0 is also perfectly fine.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L156" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="friction=(friction:Number)-instance-method">
+      <div class="signature">
+        
+        def <strong>friction=</strong>(friction : Number)
+
+        <a class="method-permalink" href="#friction=(friction:Number)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L159" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="mass:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>mass</strong> : Float64
+
+        <a class="method-permalink" href="#mass:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Get the mass of the shape if you are having Chipmunk calculate mass properties for you.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L89" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="mass=(mass:Number)-instance-method">
+      <div class="signature">
+        
+        def <strong>mass=</strong>(mass : Number)
+
+        <a class="method-permalink" href="#mass=(mass:Number)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Set the mass of this shape to have Chipmunk calculate mass properties for you.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L93" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="moment:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>moment</strong> : Float64
+
+        <a class="method-permalink" href="#moment:Float64-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Get the calculated moment of inertia for this shape.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L107" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="point_query(p:Vect):PointQueryInfo-instance-method">
+      <div class="signature">
+        
+        def <strong>point_query</strong>(p : <a href="../CP/Vect.html">Vect</a>) : <a href="../CP/PointQueryInfo.html">PointQueryInfo</a>
+
+        <a class="method-permalink" href="#point_query(p:Vect):PointQueryInfo-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Perform a nearest point query. It finds the closest point on the surface of shape to a specific point.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L55" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="segment_query(a:Vect,b:Vect,radius:Number=0):SegmentQueryInfo?-instance-method">
+      <div class="signature">
+        
+        def <strong>segment_query</strong>(a : <a href="../CP/Vect.html">Vect</a>, b : <a href="../CP/Vect.html">Vect</a>, radius : Number = <span class="n">0</span>) : <a href="../CP/SegmentQueryInfo.html">SegmentQueryInfo</a>?
+
+        <a class="method-permalink" href="#segment_query(a:Vect,b:Vect,radius:Number=0):SegmentQueryInfo?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Perform a segment query against a shape: check if the line segment from start to end intersects the shape.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L61" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="sensor=(sensor:Bool)-instance-method">
+      <div class="signature">
+        
+        def <strong>sensor=</strong>(sensor : Bool)
+
+        <a class="method-permalink" href="#sensor=(sensor:Bool)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L136" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="sensor?:Bool-instance-method">
+      <div class="signature">
+        
+        def <strong>sensor?</strong> : Bool
+
+        <a class="method-permalink" href="#sensor?:Bool-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Is the shape set to be a sensor or not?</p>
+
+<p>Sensors only call collision callbacks, and never generate real collisions.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L133" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="space:Space?-instance-method">
+      <div class="signature">
+        
+        def <strong>space</strong> : <a href="../CP/Space.html">Space</a>?
+
+        <a class="method-permalink" href="#space:Space?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>The <code><a href="../CP/Space.html">Space</a></code> this shape is added to.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L73" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="surface_velocity:Vect-instance-method">
+      <div class="signature">
+        
+        def <strong>surface_velocity</strong> : <a href="../CP/Vect.html">Vect</a>
+
+        <a class="method-permalink" href="#surface_velocity:Vect-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>The surface velocity of this shape.</p>
+
+<p>Useful for creating conveyor belts or players that move around. This
+value is only used when calculating friction, not resolving the collision.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L167" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="surface_velocity=(surface_velocity:Vect)-instance-method">
+      <div class="signature">
+        
+        def <strong>surface_velocity=</strong>(surface_velocity : <a href="../CP/Vect.html">Vect</a>)
+
+        <a class="method-permalink" href="#surface_velocity=(surface_velocity:Vect)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L170" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="update(transform:Transform):BB-instance-method">
+      <div class="signature">
+        
+        def <strong>update</strong>(transform : <a href="../CP/Transform.html">Transform</a>) : <a href="../CP/BB.html">BB</a>
+
+        <a class="method-permalink" href="#update(transform:Transform):BB-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Update, cache and return the bounding box of a shape with an explicit transformation.</p>
+
+<p>Useful if you have a shape without a body and want to use it for querying.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/oprypin/crystal-chipmunk/blob/20a1970ee594fed3d2763f5c0f5dc900d5691b3c/src/chipmunk/shape.cr#L50" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
