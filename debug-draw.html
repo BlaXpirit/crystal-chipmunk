@@ -1,0 +1,2091 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://oprypin.github.io/crystal-chipmunk/debug-draw.html">
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-6.2.3">
+    
+    
+      
+        <title>Debug draw - crystal-chipmunk</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.15aa0b43.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.75751829.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#009485">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="css/mkdocstrings.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="teal" data-md-color-accent="light-blue">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#CP::Space::DebugDraw" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://oprypin.github.io/crystal-chipmunk" title="crystal-chipmunk" class="md-header-nav__button md-logo" aria-label="crystal-chipmunk">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            crystal-chipmunk
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Debug draw
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/oprypin/crystal-chipmunk/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://oprypin.github.io/crystal-chipmunk" title="crystal-chipmunk" class="md-nav__button md-logo" aria-label="crystal-chipmunk">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    crystal-chipmunk
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/oprypin/crystal-chipmunk/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="space.html" class="md-nav__link">
+      Space
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="body.html" class="md-nav__link">
+      Body
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="shapes.html" class="md-nav__link">
+      Shapes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="constraints.html" class="md-nav__link">
+      Constraints
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="collisions.html" class="md-nav__link">
+      Collisions
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="queries.html" class="md-nav__link">
+      Queries
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="vector-math.html" class="md-nav__link">
+      Vector math
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Debug draw
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="debug-draw.html" class="md-nav__link md-nav__link--active">
+      Debug draw
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw" class="md-nav__link">
+    DebugDraw
+  </a>
+  
+    <nav class="md-nav" aria-label="DebugDraw">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#direct-known-subclasses" class="md-nav__link">
+    Direct known subclasses
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constants" class="md-nav__link">
+    Constants
+  </a>
+  
+    <nav class="md-nav" aria-label="Constants">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::COLLISION_POINT_COLOR" class="md-nav__link">
+    COLLISION_POINT_COLOR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::CONSTRAINT_COLOR" class="md-nav__link">
+    CONSTRAINT_COLOR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::SHAPE_OUTLINE_COLOR" class="md-nav__link">
+    SHAPE_OUTLINE_COLOR
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class-methods" class="md-nav__link">
+    Class methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Class methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw.color_for_hash(hash,intensity)" class="md-nav__link">
+    .color_for_hash
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw.new(flags)" class="md-nav__link">
+    .new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw#color_for_shape(shape)" class="md-nav__link">
+    #color_for_shape
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw#draw(space)" class="md-nav__link">
+    #draw
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw#draw_circle(pos,angle,radius,outline_color,fill_color)" class="md-nav__link">
+    #draw_circle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw#draw_dot(size,pos,color)" class="md-nav__link">
+    #draw_dot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw#draw_fat_segment(a,b,radius,outline_color,fill_color)" class="md-nav__link">
+    #draw_fat_segment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw#draw_polygon(verts,radius,outline_color,fill_color)" class="md-nav__link">
+    #draw_polygon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw#draw_segment(a,b,color)" class="md-nav__link">
+    #draw_segment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw#flags()" class="md-nav__link">
+    #flags
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw#flags=(flags)" class="md-nav__link">
+    #flags=
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Color" class="md-nav__link">
+    Color
+  </a>
+  
+    <nav class="md-nav" aria-label="Color">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-methods_1" class="md-nav__link">
+    Class methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Class methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Color.gray(l,a)" class="md-nav__link">
+    .gray
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Color.new(r,g,b,a)" class="md-nav__link">
+    .new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Color#a()" class="md-nav__link">
+    #a
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Color#a=(a)" class="md-nav__link">
+    #a=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Color#b()" class="md-nav__link">
+    #b
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Color#b=(b)" class="md-nav__link">
+    #b=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Color#g()" class="md-nav__link">
+    #g
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Color#g=(g)" class="md-nav__link">
+    #g=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Color#r()" class="md-nav__link">
+    #r
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Color#r=(r)" class="md-nav__link">
+    #r=
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Flags" class="md-nav__link">
+    Flags
+  </a>
+  
+    <nav class="md-nav" aria-label="Flags">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#members" class="md-nav__link">
+    Members
+  </a>
+  
+    <nav class="md-nav" aria-label="Members">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Flags::DRAW_SHAPES" class="md-nav__link">
+    DRAW_SHAPES
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Flags::DRAW_CONSTRAINTS" class="md-nav__link">
+    DRAW_CONSTRAINTS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Flags::DRAW_COLLISION_POINTS" class="md-nav__link">
+    DRAW_COLLISION_POINTS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_2" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Flags#draw_collision_points?()" class="md-nav__link">
+    #draw_collision_points?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Flags#draw_constraints?()" class="md-nav__link">
+    #draw_constraints?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Flags#draw_shapes?()" class="md-nav__link">
+    #draw_shapes?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Flags#none?()" class="md-nav__link">
+    #none?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#SFMLDebugDraw" class="md-nav__link">
+    SFMLDebugDraw
+  </a>
+  
+    <nav class="md-nav" aria-label="SFMLDebugDraw">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-methods_2" class="md-nav__link">
+    Class methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Class methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#SFMLDebugDraw.new(target,states)" class="md-nav__link">
+    .new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_3" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#SFMLDebugDraw#draw_circle(pos,angle,radius,outline_color,fill_color)" class="md-nav__link">
+    #draw_circle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#SFMLDebugDraw#draw_dot(size,pos,color)" class="md-nav__link">
+    #draw_dot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#SFMLDebugDraw#draw_fat_segment(a,b,radius,outline_color,fill_color)" class="md-nav__link">
+    #draw_fat_segment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#SFMLDebugDraw#draw_polygon(verts,radius,outline_color,fill_color)" class="md-nav__link">
+    #draw_polygon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#SFMLDebugDraw#draw_segment(a,b,color)" class="md-nav__link">
+    #draw_segment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#SFMLDebugDraw#states()" class="md-nav__link">
+    #states
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#SFMLDebugDraw#states=(states)" class="md-nav__link">
+    #states=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#SFMLDebugDraw#update()" class="md-nav__link">
+    #update
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#SFMLDebugDraw::RoundedPolygon" class="md-nav__link">
+    RoundedPolygon
+  </a>
+  
+    <nav class="md-nav" aria-label="RoundedPolygon">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-methods_3" class="md-nav__link">
+    Class methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Class methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#SFMLDebugDraw::RoundedPolygon.new()" class="md-nav__link">
+    .new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_4" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#SFMLDebugDraw::RoundedPolygon#assign(points,radius)" class="md-nav__link">
+    #assign
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#SFMLDebugDraw::RoundedPolygon#get_point(index)" class="md-nav__link">
+    #get_point
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#SFMLDebugDraw::RoundedPolygon#point_count()" class="md-nav__link">
+    #point_count
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw" class="md-nav__link">
+    DebugDraw
+  </a>
+  
+    <nav class="md-nav" aria-label="DebugDraw">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#direct-known-subclasses" class="md-nav__link">
+    Direct known subclasses
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constants" class="md-nav__link">
+    Constants
+  </a>
+  
+    <nav class="md-nav" aria-label="Constants">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::COLLISION_POINT_COLOR" class="md-nav__link">
+    COLLISION_POINT_COLOR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::CONSTRAINT_COLOR" class="md-nav__link">
+    CONSTRAINT_COLOR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::SHAPE_OUTLINE_COLOR" class="md-nav__link">
+    SHAPE_OUTLINE_COLOR
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class-methods" class="md-nav__link">
+    Class methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Class methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw.color_for_hash(hash,intensity)" class="md-nav__link">
+    .color_for_hash
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw.new(flags)" class="md-nav__link">
+    .new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw#color_for_shape(shape)" class="md-nav__link">
+    #color_for_shape
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw#draw(space)" class="md-nav__link">
+    #draw
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw#draw_circle(pos,angle,radius,outline_color,fill_color)" class="md-nav__link">
+    #draw_circle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw#draw_dot(size,pos,color)" class="md-nav__link">
+    #draw_dot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw#draw_fat_segment(a,b,radius,outline_color,fill_color)" class="md-nav__link">
+    #draw_fat_segment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw#draw_polygon(verts,radius,outline_color,fill_color)" class="md-nav__link">
+    #draw_polygon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw#draw_segment(a,b,color)" class="md-nav__link">
+    #draw_segment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw#flags()" class="md-nav__link">
+    #flags
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw#flags=(flags)" class="md-nav__link">
+    #flags=
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Color" class="md-nav__link">
+    Color
+  </a>
+  
+    <nav class="md-nav" aria-label="Color">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-methods_1" class="md-nav__link">
+    Class methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Class methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Color.gray(l,a)" class="md-nav__link">
+    .gray
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Color.new(r,g,b,a)" class="md-nav__link">
+    .new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Color#a()" class="md-nav__link">
+    #a
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Color#a=(a)" class="md-nav__link">
+    #a=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Color#b()" class="md-nav__link">
+    #b
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Color#b=(b)" class="md-nav__link">
+    #b=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Color#g()" class="md-nav__link">
+    #g
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Color#g=(g)" class="md-nav__link">
+    #g=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Color#r()" class="md-nav__link">
+    #r
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Color#r=(r)" class="md-nav__link">
+    #r=
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Flags" class="md-nav__link">
+    Flags
+  </a>
+  
+    <nav class="md-nav" aria-label="Flags">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#members" class="md-nav__link">
+    Members
+  </a>
+  
+    <nav class="md-nav" aria-label="Members">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Flags::DRAW_SHAPES" class="md-nav__link">
+    DRAW_SHAPES
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Flags::DRAW_CONSTRAINTS" class="md-nav__link">
+    DRAW_CONSTRAINTS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Flags::DRAW_COLLISION_POINTS" class="md-nav__link">
+    DRAW_COLLISION_POINTS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_2" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Flags#draw_collision_points?()" class="md-nav__link">
+    #draw_collision_points?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Flags#draw_constraints?()" class="md-nav__link">
+    #draw_constraints?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Flags#draw_shapes?()" class="md-nav__link">
+    #draw_shapes?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space::DebugDraw::Flags#none?()" class="md-nav__link">
+    #none?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#SFMLDebugDraw" class="md-nav__link">
+    SFMLDebugDraw
+  </a>
+  
+    <nav class="md-nav" aria-label="SFMLDebugDraw">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-methods_2" class="md-nav__link">
+    Class methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Class methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#SFMLDebugDraw.new(target,states)" class="md-nav__link">
+    .new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_3" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#SFMLDebugDraw#draw_circle(pos,angle,radius,outline_color,fill_color)" class="md-nav__link">
+    #draw_circle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#SFMLDebugDraw#draw_dot(size,pos,color)" class="md-nav__link">
+    #draw_dot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#SFMLDebugDraw#draw_fat_segment(a,b,radius,outline_color,fill_color)" class="md-nav__link">
+    #draw_fat_segment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#SFMLDebugDraw#draw_polygon(verts,radius,outline_color,fill_color)" class="md-nav__link">
+    #draw_polygon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#SFMLDebugDraw#draw_segment(a,b,color)" class="md-nav__link">
+    #draw_segment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#SFMLDebugDraw#states()" class="md-nav__link">
+    #states
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#SFMLDebugDraw#states=(states)" class="md-nav__link">
+    #states=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#SFMLDebugDraw#update()" class="md-nav__link">
+    #update
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#SFMLDebugDraw::RoundedPolygon" class="md-nav__link">
+    RoundedPolygon
+  </a>
+  
+    <nav class="md-nav" aria-label="RoundedPolygon">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-methods_3" class="md-nav__link">
+    Class methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Class methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#SFMLDebugDraw::RoundedPolygon.new()" class="md-nav__link">
+    .new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_4" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#SFMLDebugDraw::RoundedPolygon#assign(points,radius)" class="md-nav__link">
+    #assign
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#SFMLDebugDraw::RoundedPolygon#get_point(index)" class="md-nav__link">
+    #get_point
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#SFMLDebugDraw::RoundedPolygon#point_count()" class="md-nav__link">
+    #point_count
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/oprypin/crystal-chipmunk/blob/master/docs/debug-draw.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>Debug draw</h1>
+                
+                <div class="doc doc-object doc-type class">
+<h2 class="doc doc-heading" id="CP::Space::DebugDraw">
+
+abstract class <code>CP::Space::DebugDraw</code>
+      <br />
+<small>inherits <code>Reference</code></small>
+  <a class="headerlink" href="#CP::Space::DebugDraw" title="Permanent link">#</a></h2>
+<div class="doc doc-contents first">
+<div class="doc doc-children">
+<h3 id="direct-known-subclasses">Direct known subclasses<a class="headerlink" href="#direct-known-subclasses" title="Permanent link">#</a></h3>
+<code><a href="#SFMLDebugDraw">SFMLDebugDraw</a></code>
+
+          <h3 id="constants">Constants<a class="headerlink" href="#constants" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-constant">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw::COLLISION_POINT_COLOR">
+
+    <code>COLLISION_POINT_COLOR</code>
+  <a class="headerlink" href="#CP::Space::DebugDraw::COLLISION_POINT_COLOR" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Color passed to drawing functions for collision points.</p>
+</div>
+</div>
+<div class="doc doc-object doc-constant">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw::CONSTRAINT_COLOR">
+
+    <code>CONSTRAINT_COLOR</code>
+  <a class="headerlink" href="#CP::Space::DebugDraw::CONSTRAINT_COLOR" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Color passed to drawing functions for constraints.</p>
+</div>
+</div>
+<div class="doc doc-object doc-constant">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw::SHAPE_OUTLINE_COLOR">
+
+    <code>SHAPE_OUTLINE_COLOR</code>
+  <a class="headerlink" href="#CP::Space::DebugDraw::SHAPE_OUTLINE_COLOR" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Outline color passed to the drawing function.</p>
+</div>
+</div>
+<h3 id="class-methods">Class methods<a class="headerlink" href="#class-methods" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw.color_for_hash(hash,intensity)">
+
+    <code>
+      .color_for_hash<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">hash</span> <span class="p">:</span> <span class="n">Int</span><span class="p">,</span> <span class="n">intensity</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <a href="#CP::Space::DebugDraw::Color">Color</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space::DebugDraw.color_for_hash(hash,intensity)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/debug_draw.cr#L222">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw.new(flags)">
+
+    <code>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">flags</span> <span class="o">=</span> <span class="n">Flags</span><span class="o">::</span><span class="n">All</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space::DebugDraw.new(flags)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/debug_draw.cr#L80">View source</a>]
+</div>
+<h3 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw#color_for_shape(shape)">
+
+    <code>
+      #color_for_shape<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">shape</span> <span class="p">:</span> <a href="shapes.html#CP::Shape">Shape</a><span class="p">)</span> <span class="p">:</span> <a href="#CP::Space::DebugDraw::Color">Color</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space::DebugDraw#color_for_shape(shape)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Returns a color for a given shape.</p>
+<p>This gives you an opportunity to color shapes based on how they are used in your engine.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/debug_draw.cr#L206">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw#draw(space)">
+
+    <code>
+      #draw<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">space</span> <span class="p">:</span> <a href="space.html#CP::Space">Space</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space::DebugDraw#draw(space)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Debug draw the current state of the space.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/debug_draw.cr#L86">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw#draw_circle(pos,angle,radius,outline_color,fill_color)">
+
+<small style="font-weight: normal">abstract</small>     <code>
+      #draw_circle<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">pos</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">angle</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">,</span> <span class="n">outline_color</span> <span class="p">:</span> <a href="#CP::Space::DebugDraw::Color">Color</a><span class="p">,</span> <span class="n">fill_color</span> <span class="p">:</span> <a href="#CP::Space::DebugDraw::Color">Color</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space::DebugDraw#draw_circle(pos,angle,radius,outline_color,fill_color)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Draw a filled, stroked circle.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/debug_draw.cr#L189">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw#draw_dot(size,pos,color)">
+
+<small style="font-weight: normal">abstract</small>     <code>
+      #draw_dot<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">size</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">,</span> <span class="n">pos</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">color</span> <span class="p">:</span> <a href="#CP::Space::DebugDraw::Color">Color</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space::DebugDraw#draw_dot(size,pos,color)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Draw a dot.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/debug_draw.cr#L201">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw#draw_fat_segment(a,b,radius,outline_color,fill_color)">
+
+<small style="font-weight: normal">abstract</small>     <code>
+      #draw_fat_segment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">,</span> <span class="n">outline_color</span> <span class="p">:</span> <a href="#CP::Space::DebugDraw::Color">Color</a><span class="p">,</span> <span class="n">fill_color</span> <span class="p">:</span> <a href="#CP::Space::DebugDraw::Color">Color</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space::DebugDraw#draw_fat_segment(a,b,radius,outline_color,fill_color)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Draw a thick line segment.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/debug_draw.cr#L195">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw#draw_polygon(verts,radius,outline_color,fill_color)">
+
+<small style="font-weight: normal">abstract</small>     <code>
+      #draw_polygon<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">verts</span> <span class="p">:</span> <span class="n">Slice</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">),</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">,</span> <span class="n">outline_color</span> <span class="p">:</span> <a href="#CP::Space::DebugDraw::Color">Color</a><span class="p">,</span> <span class="n">fill_color</span> <span class="p">:</span> <a href="#CP::Space::DebugDraw::Color">Color</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space::DebugDraw#draw_polygon(verts,radius,outline_color,fill_color)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Draw a convex polygon.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/debug_draw.cr#L198">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw#draw_segment(a,b,color)">
+
+<small style="font-weight: normal">abstract</small>     <code>
+      #draw_segment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">color</span> <span class="p">:</span> <a href="#CP::Space::DebugDraw::Color">Color</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space::DebugDraw#draw_segment(a,b,color)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Draw a line segment.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/debug_draw.cr#L192">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw#flags()">
+
+    <code>
+      #flags<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="#CP::Space::DebugDraw::Flags">Flags</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space::DebugDraw#flags()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/debug_draw.cr#L83">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw#flags=(flags)">
+
+    <code>
+      #flags=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">flags</span> <span class="p">:</span> <a href="#CP::Space::DebugDraw::Flags">Flags</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space::DebugDraw#flags=(flags)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/debug_draw.cr#L83">View source</a>]
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-type struct">
+<h2 class="doc doc-heading" id="CP::Space::DebugDraw::Color">
+
+struct <code>CP::Space::DebugDraw::Color</code>
+      <br />
+<small>inherits <code>Struct</code></small>
+  <a class="headerlink" href="#CP::Space::DebugDraw::Color" title="Permanent link">#</a></h2>
+<div class="doc doc-contents first">
+<p>Color type to use with the space debug drawing API.</p>
+<div class="doc doc-children">
+<h3 id="class-methods_1">Class methods<a class="headerlink" href="#class-methods_1" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw::Color.gray(l,a)">
+
+    <code>
+      .gray<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">l</span> <span class="p">:</span> <span class="n">Float</span><span class="p">,</span> <span class="n">a</span> <span class="p">:</span> <span class="n">Float</span> <span class="o">=</span> <span class="mf">1.0_f32</span><span class="p">)</span> <span class="p">:</span> <span class="k">self</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space::DebugDraw::Color.gray(l,a)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/debug_draw.cr#L75">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw::Color.new(r,g,b,a)">
+
+    <code>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">r</span> <span class="p">:</span> <span class="n">Float</span><span class="p">,</span> <span class="n">g</span> <span class="p">:</span> <span class="n">Float</span><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <span class="n">Float</span><span class="p">,</span> <span class="n">a</span> <span class="p">:</span> <span class="n">Float</span> <span class="o">=</span> <span class="mf">1.0_f32</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space::DebugDraw::Color.new(r,g,b,a)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/debug_draw.cr#L68">View source</a>]
+</div>
+<h3 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw::Color#a()">
+
+    <code>
+      #a<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float32</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space::DebugDraw::Color#a()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/debug_draw.cr#L66">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw::Color#a=(a)">
+
+    <code>
+      #a=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <span class="n">Float32</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space::DebugDraw::Color#a=(a)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/debug_draw.cr#L66">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw::Color#b()">
+
+    <code>
+      #b<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float32</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space::DebugDraw::Color#b()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/debug_draw.cr#L65">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw::Color#b=(b)">
+
+    <code>
+      #b=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">b</span> <span class="p">:</span> <span class="n">Float32</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space::DebugDraw::Color#b=(b)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/debug_draw.cr#L65">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw::Color#g()">
+
+    <code>
+      #g<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float32</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space::DebugDraw::Color#g()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/debug_draw.cr#L64">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw::Color#g=(g)">
+
+    <code>
+      #g=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">g</span> <span class="p">:</span> <span class="n">Float32</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space::DebugDraw::Color#g=(g)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/debug_draw.cr#L64">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw::Color#r()">
+
+    <code>
+      #r<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float32</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space::DebugDraw::Color#r()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/debug_draw.cr#L63">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw::Color#r=(r)">
+
+    <code>
+      #r=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">r</span> <span class="p">:</span> <span class="n">Float32</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space::DebugDraw::Color#r=(r)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/debug_draw.cr#L63">View source</a>]
+</div>
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-type enum">
+<h2 class="doc doc-heading" id="CP::Space::DebugDraw::Flags">
+
+enum <code>CP::Space::DebugDraw::Flags</code>
+  <a class="headerlink" href="#CP::Space::DebugDraw::Flags" title="Permanent link">#</a></h2>
+<div class="doc doc-contents first">
+<p>Flags that request which things to draw (collision shapes, constraints, contact points).</p>
+<div class="doc doc-children">
+<h3 id="members">Members<a class="headerlink" href="#members" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-constant">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw::Flags::DRAW_SHAPES">
+
+    <code>DRAW_SHAPES</code>
+  <a class="headerlink" href="#CP::Space::DebugDraw::Flags::DRAW_SHAPES" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+</div>
+<div class="doc doc-object doc-constant">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw::Flags::DRAW_CONSTRAINTS">
+
+    <code>DRAW_CONSTRAINTS</code>
+  <a class="headerlink" href="#CP::Space::DebugDraw::Flags::DRAW_CONSTRAINTS" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+</div>
+<div class="doc doc-object doc-constant">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw::Flags::DRAW_COLLISION_POINTS">
+
+    <code>DRAW_COLLISION_POINTS</code>
+  <a class="headerlink" href="#CP::Space::DebugDraw::Flags::DRAW_COLLISION_POINTS" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+</div>
+<h3 id="methods_2">Methods<a class="headerlink" href="#methods_2" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw::Flags#draw_collision_points?()">
+
+    <code>
+      #draw_collision_points?<span style="font-weight: normal"><code class="highlight language-crystal"></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space::DebugDraw::Flags#draw_collision_points?()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/debug_draw.cr#L56">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw::Flags#draw_constraints?()">
+
+    <code>
+      #draw_constraints?<span style="font-weight: normal"><code class="highlight language-crystal"></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space::DebugDraw::Flags#draw_constraints?()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/debug_draw.cr#L55">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw::Flags#draw_shapes?()">
+
+    <code>
+      #draw_shapes?<span style="font-weight: normal"><code class="highlight language-crystal"></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space::DebugDraw::Flags#draw_shapes?()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/debug_draw.cr#L54">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space::DebugDraw::Flags#none?()">
+
+    <code>
+      #none?<span style="font-weight: normal"><code class="highlight language-crystal"></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space::DebugDraw::Flags#none?()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/debug_draw.cr#L53">View source</a>]
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-type class">
+<h2 class="doc doc-heading" id="SFMLDebugDraw">
+
+class <code>SFMLDebugDraw</code>
+      <br />
+<small>inherits <code><a href="#CP::Space::DebugDraw">CP::Space::DebugDraw</a></code></small>
+  <a class="headerlink" href="#SFMLDebugDraw" title="Permanent link">#</a></h2>
+<div class="doc doc-contents first">
+<div class="doc doc-children">
+<h3 id="class-methods_2">Class methods<a class="headerlink" href="#class-methods_2" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 class="doc doc-heading" id="SFMLDebugDraw.new(target,states)">
+
+    <code>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">target</span> <span class="p">:</span> <span class="n">SF</span><span class="o">::</span><span class="n">RenderTarget</span><span class="p">,</span> <span class="n">states</span> <span class="p">:</span> <span class="n">SF</span><span class="o">::</span><span class="n">RenderStates</span> <span class="o">=</span> <span class="n">SF</span><span class="o">::</span><span class="n">RenderStates</span><span class="o">::</span><span class="n">Default</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#SFMLDebugDraw.new(target,states)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk_crsfml.cr#L17">View source</a>]
+</div>
+<h3 id="methods_3">Methods<a class="headerlink" href="#methods_3" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="SFMLDebugDraw#draw_circle(pos,angle,radius,outline_color,fill_color)">
+
+    <code>
+      #draw_circle<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">pos</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">CP::Vect</a><span class="p">,</span> <span class="n">angle</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">,</span> <span class="n">outline_color</span> <span class="p">:</span> <a href="#CP::Space::DebugDraw::Color">Color</a><span class="p">,</span> <span class="n">fill_color</span> <span class="p">:</span> <a href="#CP::Space::DebugDraw::Color">Color</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#SFMLDebugDraw#draw_circle(pos,angle,radius,outline_color,fill_color)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Draw a filled, stroked circle.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk_crsfml.cr#L43">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="SFMLDebugDraw#draw_dot(size,pos,color)">
+
+    <code>
+      #draw_dot<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">size</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">,</span> <span class="n">pos</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">CP::Vect</a><span class="p">,</span> <span class="n">color</span> <span class="p">:</span> <a href="#CP::Space::DebugDraw::Color">Color</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#SFMLDebugDraw#draw_dot(size,pos,color)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Draw a dot.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk_crsfml.cr#L77">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="SFMLDebugDraw#draw_fat_segment(a,b,radius,outline_color,fill_color)">
+
+    <code>
+      #draw_fat_segment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">CP::Vect</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">CP::Vect</a><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">,</span> <span class="n">outline_color</span> <span class="p">:</span> <a href="#CP::Space::DebugDraw::Color">Color</a><span class="p">,</span> <span class="n">fill_color</span> <span class="p">:</span> <a href="#CP::Space::DebugDraw::Color">Color</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#SFMLDebugDraw#draw_fat_segment(a,b,radius,outline_color,fill_color)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Draw a thick line segment.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk_crsfml.cr#L61">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="SFMLDebugDraw#draw_polygon(verts,radius,outline_color,fill_color)">
+
+    <code>
+      #draw_polygon<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">verts</span> <span class="p">:</span> <span class="n">Slice</span><span class="p">(</span><a href="vector-math.html#CP::Vect">CP::Vect</a><span class="p">),</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">,</span> <span class="n">outline_color</span> <span class="p">:</span> <a href="#CP::Space::DebugDraw::Color">Color</a><span class="p">,</span> <span class="n">fill_color</span> <span class="p">:</span> <a href="#CP::Space::DebugDraw::Color">Color</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#SFMLDebugDraw#draw_polygon(verts,radius,outline_color,fill_color)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Draw a convex polygon.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk_crsfml.cr#L69">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="SFMLDebugDraw#draw_segment(a,b,color)">
+
+    <code>
+      #draw_segment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">CP::Vect</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">CP::Vect</a><span class="p">,</span> <span class="n">color</span> <span class="p">:</span> <a href="#CP::Space::DebugDraw::Color">Color</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#SFMLDebugDraw#draw_segment(a,b,color)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Draw a line segment.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk_crsfml.cr#L54">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="SFMLDebugDraw#states()">
+
+    <code>
+      #states<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">SF</span><span class="o">::</span><span class="n">RenderStates</span></code></span>
+    </code>
+  <a class="headerlink" href="#SFMLDebugDraw#states()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk_crsfml.cr#L31">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="SFMLDebugDraw#states=(states)">
+
+    <code>
+      #states=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">states</span> <span class="p">:</span> <span class="n">SF</span><span class="o">::</span><span class="n">RenderStates</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#SFMLDebugDraw#states=(states)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk_crsfml.cr#L32">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="SFMLDebugDraw#update()">
+
+    <code>
+      #update<span style="font-weight: normal"><code class="highlight language-crystal"></code></span>
+    </code>
+  <a class="headerlink" href="#SFMLDebugDraw#update()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk_crsfml.cr#L36">View source</a>]
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-type class">
+<h2 class="doc doc-heading" id="SFMLDebugDraw::RoundedPolygon">
+
+class <code>SFMLDebugDraw::RoundedPolygon</code>
+      <br />
+<small>inherits <code>SF::Shape</code></small>
+  <a class="headerlink" href="#SFMLDebugDraw::RoundedPolygon" title="Permanent link">#</a></h2>
+<div class="doc doc-contents first">
+<div class="doc doc-children">
+<h3 id="class-methods_3">Class methods<a class="headerlink" href="#class-methods_3" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 class="doc doc-heading" id="SFMLDebugDraw::RoundedPolygon.new()">
+
+    <code>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"></code></span>
+    </code>
+  <a class="headerlink" href="#SFMLDebugDraw::RoundedPolygon.new()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk_crsfml.cr#L88">View source</a>]
+</div>
+<h3 id="methods_4">Methods<a class="headerlink" href="#methods_4" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="SFMLDebugDraw::RoundedPolygon#assign(points,radius)">
+
+    <code>
+      #assign<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">points</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#SFMLDebugDraw::RoundedPolygon#assign(points,radius)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk_crsfml.cr#L94">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="SFMLDebugDraw::RoundedPolygon#get_point(index)">
+
+    <code>
+      #get_point<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">index</span> <span class="p">:</span> <span class="n">Int</span><span class="p">)</span> <span class="p">:</span> <span class="n">SF</span><span class="o">::</span><span class="n">Vector2f</span></code></span>
+    </code>
+  <a class="headerlink" href="#SFMLDebugDraw::RoundedPolygon#get_point(index)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Get a point of the shape</p>
+<p>The returned point is in local coordinates, that is,
+the shape's transforms (position, rotation, scale) are
+not taken into account.
+The result is undefined if <em>index</em> is out of the valid range.</p>
+<ul>
+<li><em>index</em> - Index of the point to get, in range <code>0 ... point_count</code></li>
+</ul>
+<p><em>Returns:</em> index-th point of the shape</p>
+<p><em>See also:</em> <a href="#SFMLDebugDraw::RoundedPolygon#point_count()"><code>point_count</code></a></p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk_crsfml.cr#L124">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="SFMLDebugDraw::RoundedPolygon#point_count()">
+
+    <code>
+      #point_count<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Int32</span></code></span>
+    </code>
+  <a class="headerlink" href="#SFMLDebugDraw::RoundedPolygon#point_count()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Get the total number of points of the shape</p>
+<p><em>Returns:</em> Number of points of the shape</p>
+<p><em>See also:</em> <code>point</code></p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk_crsfml.cr#L121">View source</a>]
+</div>
+</div>
+</div>
+</div>
+</div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="vector-math.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Vector math
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/vendor.93c04032.min.js"></script>
+      <script src="assets/javascripts/bundle.83e5331e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: ".",
+          features: [],
+          search: Object.assign({
+            worker: "assets/javascripts/worker/search.8c7e0a7e.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1901 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://oprypin.github.io/crystal-chipmunk/space.html">
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-6.2.3">
+    
+    
+      
+        <title>Space - crystal-chipmunk</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.15aa0b43.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.75751829.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#009485">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="css/mkdocstrings.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="teal" data-md-color-accent="light-blue">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#CP::Space" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://oprypin.github.io/crystal-chipmunk" title="crystal-chipmunk" class="md-header-nav__button md-logo" aria-label="crystal-chipmunk">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            crystal-chipmunk
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Space
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/oprypin/crystal-chipmunk/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://oprypin.github.io/crystal-chipmunk" title="crystal-chipmunk" class="md-nav__button md-logo" aria-label="crystal-chipmunk">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    crystal-chipmunk
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/oprypin/crystal-chipmunk/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Space
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="space.html" class="md-nav__link md-nav__link--active">
+      Space
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#CP::Space" class="md-nav__link">
+    Space
+  </a>
+  
+    <nav class="md-nav" aria-label="Space">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-methods" class="md-nav__link">
+    Class methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Class methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space.new(*,threaded)" class="md-nav__link">
+    .new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#add(body)" class="md-nav__link">
+    #add
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#add_collision_handler(a,b,handler)" class="md-nav__link">
+    #add_collision_handler
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#bb_query(bb,filter)" class="md-nav__link">
+    #bb_query
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#collision_bias()" class="md-nav__link">
+    #collision_bias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#collision_bias=(collision_bias)" class="md-nav__link">
+    #collision_bias=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#collision_persistence()" class="md-nav__link">
+    #collision_persistence
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#collision_persistence=(collision_persistence)" class="md-nav__link">
+    #collision_persistence=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#collision_slop()" class="md-nav__link">
+    #collision_slop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#collision_slop=(collision_slop)" class="md-nav__link">
+    #collision_slop=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#contains?(constraint)" class="md-nav__link">
+    #contains?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#current_time_step()" class="md-nav__link">
+    #current_time_step
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#damping()" class="md-nav__link">
+    #damping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#damping=(damping)" class="md-nav__link">
+    #damping=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#each_body(&)" class="md-nav__link">
+    #each_body
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#each_constraint(&)" class="md-nav__link">
+    #each_constraint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#each_shape(&)" class="md-nav__link">
+    #each_shape
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#gravity()" class="md-nav__link">
+    #gravity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#gravity=(gravity)" class="md-nav__link">
+    #gravity=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#idle_speed_threshold()" class="md-nav__link">
+    #idle_speed_threshold
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#idle_speed_threshold=(idle_speed_threshold)" class="md-nav__link">
+    #idle_speed_threshold=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#iterations()" class="md-nav__link">
+    #iterations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#iterations=(iterations)" class="md-nav__link">
+    #iterations=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#locked?()" class="md-nav__link">
+    #locked?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#point_query(point,max_distance,filter)" class="md-nav__link">
+    #point_query
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#point_query_nearest(point,max_distance,filter)" class="md-nav__link">
+    #point_query_nearest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#reindex(shape)" class="md-nav__link">
+    #reindex
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#reindex_shapes_for(body)" class="md-nav__link">
+    #reindex_shapes_for
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#reindex_static()" class="md-nav__link">
+    #reindex_static
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#remove(*items)" class="md-nav__link">
+    #remove
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#segment_query(start,end,radius,filter,&)" class="md-nav__link">
+    #segment_query
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#segment_query_first(start,end,radius,filter)" class="md-nav__link">
+    #segment_query_first
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#shape_query(shape,&)" class="md-nav__link">
+    #shape_query
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#sleep_time_threshold()" class="md-nav__link">
+    #sleep_time_threshold
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#sleep_time_threshold=(sleep_time_threshold)" class="md-nav__link">
+    #sleep_time_threshold=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#static_body()" class="md-nav__link">
+    #static_body
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#step(dt)" class="md-nav__link">
+    #step
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#threads()" class="md-nav__link">
+    #threads
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#threads=(nthreads)" class="md-nav__link">
+    #threads=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#use_spatial_hash(dim,count)" class="md-nav__link">
+    #use_spatial_hash
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::Space::Timestamp" class="md-nav__link">
+    Timestamp
+  </a>
+  
+    <nav class="md-nav" aria-label="Timestamp">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alias-definition" class="md-nav__link">
+    Alias definition
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="body.html" class="md-nav__link">
+      Body
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="shapes.html" class="md-nav__link">
+      Shapes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="constraints.html" class="md-nav__link">
+      Constraints
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="collisions.html" class="md-nav__link">
+      Collisions
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="queries.html" class="md-nav__link">
+      Queries
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="vector-math.html" class="md-nav__link">
+      Vector math
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="debug-draw.html" class="md-nav__link">
+      Debug draw
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#CP::Space" class="md-nav__link">
+    Space
+  </a>
+  
+    <nav class="md-nav" aria-label="Space">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-methods" class="md-nav__link">
+    Class methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Class methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space.new(*,threaded)" class="md-nav__link">
+    .new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#add(body)" class="md-nav__link">
+    #add
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#add_collision_handler(a,b,handler)" class="md-nav__link">
+    #add_collision_handler
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#bb_query(bb,filter)" class="md-nav__link">
+    #bb_query
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#collision_bias()" class="md-nav__link">
+    #collision_bias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#collision_bias=(collision_bias)" class="md-nav__link">
+    #collision_bias=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#collision_persistence()" class="md-nav__link">
+    #collision_persistence
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#collision_persistence=(collision_persistence)" class="md-nav__link">
+    #collision_persistence=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#collision_slop()" class="md-nav__link">
+    #collision_slop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#collision_slop=(collision_slop)" class="md-nav__link">
+    #collision_slop=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#contains?(constraint)" class="md-nav__link">
+    #contains?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#current_time_step()" class="md-nav__link">
+    #current_time_step
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#damping()" class="md-nav__link">
+    #damping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#damping=(damping)" class="md-nav__link">
+    #damping=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#each_body(&)" class="md-nav__link">
+    #each_body
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#each_constraint(&)" class="md-nav__link">
+    #each_constraint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#each_shape(&)" class="md-nav__link">
+    #each_shape
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#gravity()" class="md-nav__link">
+    #gravity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#gravity=(gravity)" class="md-nav__link">
+    #gravity=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#idle_speed_threshold()" class="md-nav__link">
+    #idle_speed_threshold
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#idle_speed_threshold=(idle_speed_threshold)" class="md-nav__link">
+    #idle_speed_threshold=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#iterations()" class="md-nav__link">
+    #iterations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#iterations=(iterations)" class="md-nav__link">
+    #iterations=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#locked?()" class="md-nav__link">
+    #locked?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#point_query(point,max_distance,filter)" class="md-nav__link">
+    #point_query
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#point_query_nearest(point,max_distance,filter)" class="md-nav__link">
+    #point_query_nearest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#reindex(shape)" class="md-nav__link">
+    #reindex
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#reindex_shapes_for(body)" class="md-nav__link">
+    #reindex_shapes_for
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#reindex_static()" class="md-nav__link">
+    #reindex_static
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#remove(*items)" class="md-nav__link">
+    #remove
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#segment_query(start,end,radius,filter,&)" class="md-nav__link">
+    #segment_query
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#segment_query_first(start,end,radius,filter)" class="md-nav__link">
+    #segment_query_first
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#shape_query(shape,&)" class="md-nav__link">
+    #shape_query
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#sleep_time_threshold()" class="md-nav__link">
+    #sleep_time_threshold
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#sleep_time_threshold=(sleep_time_threshold)" class="md-nav__link">
+    #sleep_time_threshold=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#static_body()" class="md-nav__link">
+    #static_body
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#step(dt)" class="md-nav__link">
+    #step
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#threads()" class="md-nav__link">
+    #threads
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#threads=(nthreads)" class="md-nav__link">
+    #threads=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#use_spatial_hash(dim,count)" class="md-nav__link">
+    #use_spatial_hash
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::Space::Timestamp" class="md-nav__link">
+    Timestamp
+  </a>
+  
+    <nav class="md-nav" aria-label="Timestamp">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alias-definition" class="md-nav__link">
+    Alias definition
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/oprypin/crystal-chipmunk/blob/master/docs/space.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>Space</h1>
+                
+                <div class="doc doc-object doc-type class">
+<h2 class="doc doc-heading" id="CP::Space">
+
+class <code>CP::Space</code>
+      <br />
+<small>inherits <code>Reference</code></small>
+  <a class="headerlink" href="#CP::Space" title="Permanent link">#</a></h2>
+<div class="doc doc-contents first">
+<p>Spaces are the basic unit of simulation. You add rigid bodies, shapes
+and joints to it and then step them all forward together through time.</p>
+<div class="doc doc-children">
+<h3 id="class-methods">Class methods<a class="headerlink" href="#class-methods" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 class="doc doc-heading" id="CP::Space.new(*,threaded)">
+
+    <code>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">threaded</span> <span class="p">:</span> <span class="n">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space.new(*,threaded)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L31">View source</a>]
+</div>
+<h3 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#add(body)">
+
+    <code>
+      #add<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">)</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#add(body)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Add a body to the simulation.</p>
+<p>If this method is called during a simulation step, the addition will be delayed until the step is finished.</p>
+<p>Returns the same <a href="body.html#CP::Body"><code>Body</code></a>, for convenience.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L212">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#add(*items)">
+
+    <code>
+      #add<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="o">*</span><span class="n">items</span> <span class="p">:</span> <a href="shapes.html#CP::Shape">Shape</a> <span class="o">|</span> <a href="body.html#CP::Body">Body</a> <span class="o">|</span> <a href="constraints.html#CP::Constraint">Constraint</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#add(*items)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Add multiple items</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L268">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#add(constraint)">
+
+    <code>
+      #add<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">constraint</span> <span class="p">:</span> <a href="constraints.html#CP::Constraint">Constraint</a><span class="p">)</span> <span class="p">:</span> <a href="constraints.html#CP::Constraint">Constraint</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#add(constraint)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Add a constraint to the simulation.</p>
+<p>If this method is called during a simulation step, the addition will be delayed until the step is finished.</p>
+<p>Returns the same <a href="constraints.html#CP::Constraint"><code>Constraint</code></a>, for convenience.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L212">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#add(shape)">
+
+    <code>
+      #add<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">shape</span> <span class="p">:</span> <a href="shapes.html#CP::Shape">Shape</a><span class="p">)</span> <span class="p">:</span> <a href="shapes.html#CP::Shape">Shape</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#add(shape)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Add a shape to the simulation.</p>
+<p>If the collision shape is attached to a static body, it will be added as a static shape.</p>
+<p>If this method is called during a simulation step, the addition will be delayed until the step is finished.</p>
+<p>Returns the same <a href="shapes.html#CP::Shape"><code>Shape</code></a>, for convenience.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L212">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#add_collision_handler(a,b,handler)">
+
+    <code>
+      #add_collision_handler<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <span class="n">Int</span><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <span class="n">Int</span><span class="p">,</span> <span class="n">handler</span> <span class="p">:</span> <a href="collisions.html#CP::CollisionHandler">CollisionHandler</a><span class="p">)</span> <span class="p">:</span> <a href="collisions.html#CP::CollisionHandler">CollisionHandler</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#add_collision_handler(a,b,handler)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Whenever shapes with collision types <em>a</em> and <em>b</em> collide,
+this handler will be used to process the collision events.</p>
+<p>If wildcard handlers are used with either of the collision types,
+it's the responibility of the custom handler to invoke the wildcard handlers.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L191">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#add_collision_handler(type,handler)">
+
+    <code>
+      #add_collision_handler<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="k">type</span> <span class="p">:</span> <span class="n">Int</span><span class="p">,</span> <span class="n">handler</span> <span class="p">:</span> <a href="collisions.html#CP::CollisionHandler">CollisionHandler</a><span class="p">)</span> <span class="p">:</span> <a href="collisions.html#CP::CollisionHandler">CollisionHandler</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#add_collision_handler(type,handler)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Set a wildcard collision handler for the specified type.</p>
+<p>This handler will be used any time an object with this type collides
+with another object, regardless of its type.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L200">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#add_collision_handler(handler)">
+
+    <code>
+      #add_collision_handler<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">handler</span> <span class="p">:</span> <a href="collisions.html#CP::CollisionHandler">CollisionHandler</a><span class="p">)</span> <span class="p">:</span> <a href="collisions.html#CP::CollisionHandler">CollisionHandler</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#add_collision_handler(handler)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Set a collision handler that is called for all collisions that are not
+handled by a more specific collision handler.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L207">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#bb_query(bb,filter)">
+
+    <code>
+      #bb_query<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">bb</span> <span class="p">:</span> <a href="vector-math.html#CP::BB">BB</a><span class="p">,</span> <span class="n">filter</span> <span class="p">:</span> <a href="shapes.html#CP::ShapeFilter">ShapeFilter</a> <span class="o">=</span> <span class="n">ShapeFilter</span><span class="o">::</span><span class="no">ALL</span><span class="p">)</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><a href="shapes.html#CP::Shape">Shape</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#bb_query(bb,filter)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Perform a fast rectangle query on the space, yielding each shape found.</p>
+<p>Only the shapes' bounding boxes are checked for overlap, not their full shape.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L327">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#bb_query(bb,filter,&amp;)">
+
+    <code>
+      #bb_query<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">bb</span> <span class="p">:</span> <a href="vector-math.html#CP::BB">BB</a><span class="p">,</span> <span class="n">filter</span> <span class="p">:</span> <a href="shapes.html#CP::ShapeFilter">ShapeFilter</a> <span class="o">=</span> <span class="n">ShapeFilter</span><span class="o">::</span><span class="no">ALL</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">block</span> <span class="p">:</span> <a href="shapes.html#CP::Shape">Shape</a> <span class="o">-&gt;</span> <span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#bb_query(bb,filter,&amp;)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Perform a fast rectangle query on the space, yielding each shape found.</p>
+<p>Only the shapes' bounding boxes are checked for overlap, not their full shape.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L328">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#collision_bias()">
+
+    <code>
+      #collision_bias<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#collision_bias()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Determines how fast overlapping shapes are pushed apart.</p>
+<p>Expressed as a fraction of the error remaining after each second.
+Defaults to <code>(1.0 - 0.1)**60.0</code> meaning that Chipmunk fixes 10% of overlap each frame at 60Hz.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L149">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#collision_bias=(collision_bias)">
+
+    <code>
+      #collision_bias=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">collision_bias</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#collision_bias=(collision_bias)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L152">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#collision_persistence()">
+
+    <code>
+      #collision_persistence<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="#CP::Space::Timestamp">Timestamp</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#collision_persistence()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Number of frames that contact information should persist.</p>
+<p>Defaults to 3. There is probably never a reason to change this value.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L159">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#collision_persistence=(collision_persistence)">
+
+    <code>
+      #collision_persistence=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">collision_persistence</span> <span class="p">:</span> <a href="#CP::Space::Timestamp">Timestamp</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#collision_persistence=(collision_persistence)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L162">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#collision_slop()">
+
+    <code>
+      #collision_slop<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#collision_slop()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Amount of encouraged penetration between colliding shapes.</p>
+<p>Used to reduce oscillating contacts and keep the collision cache warm.
+Defaults to 0.1. If you have poor simulation quality,
+increase this number as much as possible without allowing visible amounts of overlap.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L138">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#collision_slop=(collision_slop)">
+
+    <code>
+      #collision_slop=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">collision_slop</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#collision_slop=(collision_slop)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L141">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#contains?(constraint)">
+
+    <code>
+      #contains?<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">constraint</span> <span class="p">:</span> <a href="constraints.html#CP::Constraint">Constraint</a><span class="p">)</span> <span class="p">:</span> <span class="n">Bool</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#contains?(constraint)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Test if a constraint has been added to the space.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L212">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#contains?(shape)">
+
+    <code>
+      #contains?<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">shape</span> <span class="p">:</span> <a href="shapes.html#CP::Shape">Shape</a><span class="p">)</span> <span class="p">:</span> <span class="n">Bool</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#contains?(shape)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Test if a shape has been added to the space.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L212">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#contains?(body)">
+
+    <code>
+      #contains?<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">)</span> <span class="p">:</span> <span class="n">Bool</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#contains?(body)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Test if a body has been added to the space.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L212">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#current_time_step()">
+
+    <code>
+      #current_time_step<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#current_time_step()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Returns the current (or most recent) time step used with the given space.</p>
+<p>Useful from callbacks if your time step is not a compile-time global.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L177">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#damping()">
+
+    <code>
+      #damping<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#damping()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Damping rate expressed as the fraction of velocity bodies retain each second.</p>
+<p>A value of 0.9 would mean that each body's velocity will drop 10% per second.
+The default value is 1.0, meaning no damping is applied.</p>
+<p><em>Note:</em> This damping value is different than those of <code>DampedSpring</code> and <code>DampedRotarySpring</code>.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L105">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#damping=(damping)">
+
+    <code>
+      #damping=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">damping</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#damping=(damping)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L108">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#each_body(&amp;)">
+
+    <code>
+      #each_body<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="o">&amp;</span><span class="n">block</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a> <span class="o">-&gt;</span> <span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#each_body(&amp;)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Yield each body in the space.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L212">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#each_constraint(&amp;)">
+
+    <code>
+      #each_constraint<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="o">&amp;</span><span class="n">block</span> <span class="p">:</span> <a href="constraints.html#CP::Constraint">Constraint</a> <span class="o">-&gt;</span> <span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#each_constraint(&amp;)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Yield each constraint in the space.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L212">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#each_shape(&amp;)">
+
+    <code>
+      #each_shape<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="o">&amp;</span><span class="n">block</span> <span class="p">:</span> <a href="shapes.html#CP::Shape">Shape</a> <span class="o">-&gt;</span> <span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#each_shape(&amp;)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Yield each shape in the space.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L212">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#gravity()">
+
+    <code>
+      #gravity<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#gravity()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Gravity to pass to rigid bodies when integrating velocity.</p>
+<p>Defaults to (0,0).</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L92">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#gravity=(gravity)">
+
+    <code>
+      #gravity=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">gravity</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#gravity=(gravity)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L95">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#idle_speed_threshold()">
+
+    <code>
+      #idle_speed_threshold<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#idle_speed_threshold()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Speed threshold for a body to be considered idle.</p>
+<p>The default value of 0 means to let the space guess a good threshold based on gravity.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L115">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#idle_speed_threshold=(idle_speed_threshold)">
+
+    <code>
+      #idle_speed_threshold=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">idle_speed_threshold</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#idle_speed_threshold=(idle_speed_threshold)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L118">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#iterations()">
+
+    <code>
+      #iterations<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Int32</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#iterations()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Number of iterations to use in the impulse solver to solve contacts and other constraints.</p>
+<p>Chipmunk uses an iterative solver to figure out the forces between
+objects in the space. What this means is that it builds a big list of
+all of the collisions, joints, and other constraints between the
+bodies and makes several passes over the list considering each one
+individually. The number of passes it makes is the iteration count,
+and each iteration makes the solution more accurate. If you use too
+many iterations, the physics should look nice and solid, but may use
+up too much CPU time. If you use too few iterations, the simulation
+may seem mushy or bouncy when the objects should be solid. Setting
+the number of iterations lets you balance between CPU usage and the
+accuracy of the physics. Chipmunk's default of 10 iterations is
+sufficient for most simple games.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L82">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#iterations=(iterations)">
+
+    <code>
+      #iterations=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">iterations</span> <span class="p">:</span> <span class="n">Int</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#iterations=(iterations)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L85">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#locked?()">
+
+    <code>
+      #locked?<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Bool</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#locked?()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Returns true from inside a callback when objects cannot be added/removed.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L182">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#point_query(point,max_distance,filter)">
+
+    <code>
+      #point_query<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">point</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="n">max_distance</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">filter</span> <span class="p">:</span> <span class="n">ShapeFilter</span> <span class="o">=</span> <span class="n">ShapeFilter</span><span class="o">::</span><span class="no">ALL</span><span class="p">)</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><span class="n">PointQueryInfo</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#point_query(point,max_distance,filter)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Query the space at a point for shapes within the given distance range.</p>
+<p>The filter is applied to the query and follows the same rules as the
+collision detection. Sensor shapes are included. If a <em>max_distance</em> of
+0 is used, the point must lie inside a shape. Negative <em>max_distance</em>
+is also allowed meaning that the point must be a under a certain
+depth within a shape to be considered a match.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L288">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#point_query(point,max_distance,filter,&amp;)">
+
+    <code>
+      #point_query<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">point</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">max_distance</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">filter</span> <span class="p">:</span> <a href="shapes.html#CP::ShapeFilter">ShapeFilter</a> <span class="o">=</span> <span class="n">ShapeFilter</span><span class="o">::</span><span class="no">ALL</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">block</span> <span class="p">:</span> <a href="queries.html#CP::PointQueryInfo">PointQueryInfo</a> <span class="o">-&gt;</span> <span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#point_query(point,max_distance,filter,&amp;)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Query the space at a point for shapes within the given distance range.</p>
+<p>The filter is applied to the query and follows the same rules as the
+collision detection. Sensor shapes are included. If a <em>max_distance</em> of
+0 is used, the point must lie inside a shape. Negative <em>max_distance</em>
+is also allowed meaning that the point must be a under a certain
+depth within a shape to be considered a match.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L289">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#point_query_nearest(point,max_distance,filter)">
+
+    <code>
+      #point_query_nearest<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">point</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">max_distance</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">filter</span> <span class="p">:</span> <a href="shapes.html#CP::ShapeFilter">ShapeFilter</a> <span class="o">=</span> <span class="n">ShapeFilter</span><span class="o">::</span><span class="no">ALL</span><span class="p">)</span> <span class="p">:</span> <a href="queries.html#CP::PointQueryInfo">PointQueryInfo</a><span class="p">?</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#point_query_nearest(point,max_distance,filter)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Query the space at a point and return the nearest shape found.</p>
+<p>Returns nil if no shapes were found.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L298">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#reindex(shape)">
+
+    <code>
+      #reindex<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">shape</span> <span class="p">:</span> <a href="shapes.html#CP::Shape">Shape</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#reindex(shape)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Update the collision detection data for a specific shape in the space.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L348">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#reindex_shapes_for(body)">
+
+    <code>
+      #reindex_shapes_for<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#reindex_shapes_for(body)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Update the collision detection data for all shapes attached to a body.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L353">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#reindex_static()">
+
+    <code>
+      #reindex_static<span style="font-weight: normal"><code class="highlight language-crystal"></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#reindex_static()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Update the collision detection info for the static shapes in the space.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L343">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#remove(*items)">
+
+    <code>
+      #remove<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="o">*</span><span class="n">items</span> <span class="p">:</span> <a href="shapes.html#CP::Shape">Shape</a> <span class="o">|</span> <a href="body.html#CP::Body">Body</a> <span class="o">|</span> <a href="constraints.html#CP::Constraint">Constraint</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#remove(*items)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Remove multiple items</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L275">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#remove(constraint)">
+
+    <code>
+      #remove<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">constraint</span> <span class="p">:</span> <a href="constraints.html#CP::Constraint">Constraint</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#remove(constraint)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Remove a constraint from the simulation.</p>
+<p>If this method is called during a simulation step, the removal will be delayed until the step is finished.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L212">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#remove(shape)">
+
+    <code>
+      #remove<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">shape</span> <span class="p">:</span> <a href="shapes.html#CP::Shape">Shape</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#remove(shape)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Remove a shape from the simulation.</p>
+<p>If this method is called during a simulation step, the removal will be delayed until the step is finished.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L212">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#remove(body)">
+
+    <code>
+      #remove<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#remove(body)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Remove a body from the simulation.</p>
+<p>If this method is called during a simulation step, the removal will be delayed until the step is finished.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L212">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#segment_query(start,end,radius,filter,&amp;)">
+
+    <code>
+      #segment_query<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">start</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="k">end</span> <span class="n">end_</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">filter</span> <span class="p">:</span> <a href="shapes.html#CP::ShapeFilter">ShapeFilter</a> <span class="o">=</span> <span class="n">ShapeFilter</span><span class="o">::</span><span class="no">ALL</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">block</span> <span class="p">:</span> <a href="queries.html#CP::SegmentQueryInfo">SegmentQueryInfo</a> <span class="o">-&gt;</span> <span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#segment_query(start,end,radius,filter,&amp;)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Perform a directed line segment query (like a raycast) against the space and yield each shape intersected.</p>
+<p>The filter is applied to the query and follows the same rules as the
+collision detection. Sensor shapes are included.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L309">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#segment_query(start,end,radius,filter)">
+
+    <code>
+      #segment_query<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">start</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="k">end</span> <span class="n">end_</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">filter</span> <span class="p">:</span> <span class="n">ShapeFilter</span> <span class="o">=</span> <span class="n">ShapeFilter</span><span class="o">::</span><span class="no">ALL</span><span class="p">)</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><span class="n">SegmentQueryInfo</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#segment_query(start,end,radius,filter)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Perform a directed line segment query (like a raycast) against the space and yield each shape intersected.</p>
+<p>The filter is applied to the query and follows the same rules as the
+collision detection. Sensor shapes are included.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L308">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#segment_query_first(start,end,radius,filter)">
+
+    <code>
+      #segment_query_first<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">start</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="k">end</span> <span class="n">end_</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">filter</span> <span class="p">:</span> <a href="shapes.html#CP::ShapeFilter">ShapeFilter</a> <span class="o">=</span> <span class="n">ShapeFilter</span><span class="o">::</span><span class="no">ALL</span><span class="p">)</span> <span class="p">:</span> <a href="queries.html#CP::SegmentQueryInfo">SegmentQueryInfo</a><span class="p">?</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#segment_query_first(start,end,radius,filter)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Perform a directed line segment query (like a raycast) against the space and return the first shape hit.</p>
+<p>Returns nil if no shapes were hit.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L318">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#shape_query(shape,&amp;)">
+
+    <code>
+      #shape_query<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">shape</span> <span class="p">:</span> <a href="shapes.html#CP::Shape">Shape</a><span class="p">,</span> <span class="o">&amp;</span><span class="n">block</span> <span class="p">:</span> <a href="shapes.html#CP::Shape">Shape</a><span class="p">,</span> <a href="collisions.html#CP::ContactPointSet">ContactPointSet</a> <span class="o">-&gt;</span> <span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#shape_query(shape,&amp;)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Query a space for any shapes overlapping the given shape and yield each shape found.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L336">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#shape_query(shape)">
+
+    <code>
+      #shape_query<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">shape</span> <span class="p">:</span> <span class="n">Shape</span><span class="p">)</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><span class="n">Shape</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#shape_query(shape)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Query a space for any shapes overlapping the given shape and yield each shape found.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L335">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#sleep_time_threshold()">
+
+    <code>
+      #sleep_time_threshold<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#sleep_time_threshold()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Time a group of bodies must remain idle in order to fall asleep.</p>
+<p>Enabling sleeping also implicitly enables the the contact graph.
+The default value of INFINITY disables the sleeping algorithm.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L126">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#sleep_time_threshold=(sleep_time_threshold)">
+
+    <code>
+      #sleep_time_threshold=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">sleep_time_threshold</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#sleep_time_threshold=(sleep_time_threshold)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L129">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#static_body()">
+
+    <code>
+      #static_body<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="body.html#CP::Body">Body</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#static_body()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>The <a href="#CP::Space"><code>Space</code></a> provided static body for a given <a href="#CP::Space"><code>Space</code></a>.</p>
+<p>This is merely provided for convenience and you are not required to use it.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L170">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#step(dt)">
+
+    <code>
+      #step<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">dt</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#step(dt)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Step the space forward in time by <em>dt</em> seconds.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L363">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#threads()">
+
+    <code>
+      #threads<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Int</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#threads()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Returns number of threads for multithreaded physics solver or 0 if the space isn't hasty</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L384">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#threads=(nthreads)">
+
+    <code>
+      #threads=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">nthreads</span> <span class="p">:</span> <span class="n">Int</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#threads=(nthreads)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Set number of threads for multithreaded physics solver</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L379">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Space#use_spatial_hash(dim,count)">
+
+    <code>
+      #use_spatial_hash<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">dim</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">count</span> <span class="p">:</span> <span class="n">Int</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#use_spatial_hash(dim,count)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Switch the space to use a spatial has as its spatial index.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L358">View source</a>]
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-type alias">
+<h2 class="doc doc-heading" id="CP::Space::Timestamp">
+
+alias <code>CP::Space::Timestamp</code>
+  <a class="headerlink" href="#CP::Space::Timestamp" title="Permanent link">#</a></h2>
+<div class="doc doc-contents first">
+<div class="doc doc-children">
+<h3 id="alias-definition">Alias definition<a class="headerlink" href="#alias-definition" title="Permanent link">#</a></h3>
+<code class="highlight language-crystal"><span class="n">UInt32</span></code>
+
+
+
+      </div>
+</div>
+</div>
+</div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+        
+          <a href="body.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Body
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/vendor.93c04032.min.js"></script>
+      <script src="assets/javascripts/bundle.83e5331e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: ".",
+          features: [],
+          search: Object.assign({
+            worker: "assets/javascripts/worker/search.8c7e0a7e.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

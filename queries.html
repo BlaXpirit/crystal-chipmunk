@@ -1,0 +1,1318 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://oprypin.github.io/crystal-chipmunk/queries.html">
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-6.2.3">
+    
+    
+      
+        <title>Queries - crystal-chipmunk</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.15aa0b43.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.75751829.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#009485">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="css/mkdocstrings.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="teal" data-md-color-accent="light-blue">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cpspace" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://oprypin.github.io/crystal-chipmunk" title="crystal-chipmunk" class="md-header-nav__button md-logo" aria-label="crystal-chipmunk">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            crystal-chipmunk
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Queries
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/oprypin/crystal-chipmunk/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://oprypin.github.io/crystal-chipmunk" title="crystal-chipmunk" class="md-nav__button md-logo" aria-label="crystal-chipmunk">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    crystal-chipmunk
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/oprypin/crystal-chipmunk/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="space.html" class="md-nav__link">
+      Space
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="body.html" class="md-nav__link">
+      Body
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="shapes.html" class="md-nav__link">
+      Shapes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="constraints.html" class="md-nav__link">
+      Constraints
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="collisions.html" class="md-nav__link">
+      Collisions
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Queries
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="queries.html" class="md-nav__link md-nav__link--active">
+      Queries
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cpspace" class="md-nav__link">
+    CP::Space
+  </a>
+  
+    <nav class="md-nav" aria-label="CP::Space">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#point_query(point,max_distance,filter)" class="md-nav__link">
+    #point_query
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#segment_query(start,end,radius,filter)" class="md-nav__link">
+    #segment_query
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#shape_query(shape)" class="md-nav__link">
+    #shape_query
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cpshape" class="md-nav__link">
+    CP::Shape
+  </a>
+  
+    <nav class="md-nav" aria-label="CP::Shape">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#point_query(p)" class="md-nav__link">
+    #point_query
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#segment_query(a,b,radius)" class="md-nav__link">
+    #segment_query
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::PointQueryInfo" class="md-nav__link">
+    PointQueryInfo
+  </a>
+  
+    <nav class="md-nav" aria-label="PointQueryInfo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-methods" class="md-nav__link">
+    Class methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Class methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::PointQueryInfo.new(shape,point,distance,gradient)" class="md-nav__link">
+    .new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::PointQueryInfo#distance()" class="md-nav__link">
+    #distance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::PointQueryInfo#distance=(distance)" class="md-nav__link">
+    #distance=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::PointQueryInfo#gradient()" class="md-nav__link">
+    #gradient
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::PointQueryInfo#gradient=(gradient)" class="md-nav__link">
+    #gradient=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::PointQueryInfo#point()" class="md-nav__link">
+    #point
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::PointQueryInfo#point=(point)" class="md-nav__link">
+    #point=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::PointQueryInfo#shape()" class="md-nav__link">
+    #shape
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::PointQueryInfo#shape=(shape)" class="md-nav__link">
+    #shape=
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::SegmentQueryInfo" class="md-nav__link">
+    SegmentQueryInfo
+  </a>
+  
+    <nav class="md-nav" aria-label="SegmentQueryInfo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-methods_1" class="md-nav__link">
+    Class methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Class methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::SegmentQueryInfo.new(shape,point,normal,alpha)" class="md-nav__link">
+    .new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::SegmentQueryInfo#alpha()" class="md-nav__link">
+    #alpha
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::SegmentQueryInfo#alpha=(alpha)" class="md-nav__link">
+    #alpha=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::SegmentQueryInfo#normal()" class="md-nav__link">
+    #normal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::SegmentQueryInfo#normal=(normal)" class="md-nav__link">
+    #normal=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::SegmentQueryInfo#point()" class="md-nav__link">
+    #point
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::SegmentQueryInfo#point=(point)" class="md-nav__link">
+    #point=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::SegmentQueryInfo#shape()" class="md-nav__link">
+    #shape
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::SegmentQueryInfo#shape=(shape)" class="md-nav__link">
+    #shape=
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="vector-math.html" class="md-nav__link">
+      Vector math
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="debug-draw.html" class="md-nav__link">
+      Debug draw
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cpspace" class="md-nav__link">
+    CP::Space
+  </a>
+  
+    <nav class="md-nav" aria-label="CP::Space">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#point_query(point,max_distance,filter)" class="md-nav__link">
+    #point_query
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#segment_query(start,end,radius,filter)" class="md-nav__link">
+    #segment_query
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Space#shape_query(shape)" class="md-nav__link">
+    #shape_query
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cpshape" class="md-nav__link">
+    CP::Shape
+  </a>
+  
+    <nav class="md-nav" aria-label="CP::Shape">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#point_query(p)" class="md-nav__link">
+    #point_query
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#segment_query(a,b,radius)" class="md-nav__link">
+    #segment_query
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::PointQueryInfo" class="md-nav__link">
+    PointQueryInfo
+  </a>
+  
+    <nav class="md-nav" aria-label="PointQueryInfo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-methods" class="md-nav__link">
+    Class methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Class methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::PointQueryInfo.new(shape,point,distance,gradient)" class="md-nav__link">
+    .new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::PointQueryInfo#distance()" class="md-nav__link">
+    #distance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::PointQueryInfo#distance=(distance)" class="md-nav__link">
+    #distance=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::PointQueryInfo#gradient()" class="md-nav__link">
+    #gradient
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::PointQueryInfo#gradient=(gradient)" class="md-nav__link">
+    #gradient=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::PointQueryInfo#point()" class="md-nav__link">
+    #point
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::PointQueryInfo#point=(point)" class="md-nav__link">
+    #point=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::PointQueryInfo#shape()" class="md-nav__link">
+    #shape
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::PointQueryInfo#shape=(shape)" class="md-nav__link">
+    #shape=
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::SegmentQueryInfo" class="md-nav__link">
+    SegmentQueryInfo
+  </a>
+  
+    <nav class="md-nav" aria-label="SegmentQueryInfo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-methods_1" class="md-nav__link">
+    Class methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Class methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::SegmentQueryInfo.new(shape,point,normal,alpha)" class="md-nav__link">
+    .new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::SegmentQueryInfo#alpha()" class="md-nav__link">
+    #alpha
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::SegmentQueryInfo#alpha=(alpha)" class="md-nav__link">
+    #alpha=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::SegmentQueryInfo#normal()" class="md-nav__link">
+    #normal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::SegmentQueryInfo#normal=(normal)" class="md-nav__link">
+    #normal=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::SegmentQueryInfo#point()" class="md-nav__link">
+    #point
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::SegmentQueryInfo#point=(point)" class="md-nav__link">
+    #point=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::SegmentQueryInfo#shape()" class="md-nav__link">
+    #shape
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::SegmentQueryInfo#shape=(shape)" class="md-nav__link">
+    #shape=
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/oprypin/crystal-chipmunk/blob/master/docs/queries.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>Queries</h1>
+                
+                <h2 id="cpspace">CP::Space<a class="headerlink" href="#cpspace" title="Permanent link">#</a></h2>
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 class="doc doc-heading" id="CP::Space#point_query(point,max_distance,filter)">
+
+    <code>
+      #point_query<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">point</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">max_distance</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">filter</span> <span class="p">:</span> <a href="shapes.html#CP::ShapeFilter">ShapeFilter</a> <span class="o">=</span> <span class="n">ShapeFilter</span><span class="o">::</span><span class="no">ALL</span><span class="p">)</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><a href="#CP::PointQueryInfo">PointQueryInfo</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#point_query(point,max_distance,filter)" title="Permanent link">#</a></h3>
+<div class="doc doc-contents first">
+<p>Query the space at a point for shapes within the given distance range.</p>
+<p>The filter is applied to the query and follows the same rules as the
+collision detection. Sensor shapes are included. If a <em>max_distance</em> of
+0 is used, the point must lie inside a shape. Negative <em>max_distance</em>
+is also allowed meaning that the point must be a under a certain
+depth within a shape to be considered a match.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L288">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 class="doc doc-heading" id="CP::Space#segment_query(start,end,radius,filter)">
+
+    <code>
+      #segment_query<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">start</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="k">end</span> <span class="n">end_</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">filter</span> <span class="p">:</span> <a href="shapes.html#CP::ShapeFilter">ShapeFilter</a> <span class="o">=</span> <span class="n">ShapeFilter</span><span class="o">::</span><span class="no">ALL</span><span class="p">)</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><a href="#CP::SegmentQueryInfo">SegmentQueryInfo</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#segment_query(start,end,radius,filter)" title="Permanent link">#</a></h3>
+<div class="doc doc-contents first">
+<p>Perform a directed line segment query (like a raycast) against the space and yield each shape intersected.</p>
+<p>The filter is applied to the query and follows the same rules as the
+collision detection. Sensor shapes are included.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L308">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 class="doc doc-heading" id="CP::Space#shape_query(shape)">
+
+    <code>
+      #shape_query<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">shape</span> <span class="p">:</span> <a href="shapes.html#CP::Shape">Shape</a><span class="p">)</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><a href="shapes.html#CP::Shape">Shape</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Space#shape_query(shape)" title="Permanent link">#</a></h3>
+<div class="doc doc-contents first">
+<p>Query a space for any shapes overlapping the given shape and yield each shape found.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/space.cr#L335">View source</a>]
+</div>
+<h2 id="cpshape">CP::Shape<a class="headerlink" href="#cpshape" title="Permanent link">#</a></h2>
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 class="doc doc-heading" id="CP::Shape#point_query(p)">
+
+    <code>
+      #point_query<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="nb">p</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span> <span class="p">:</span> <a href="#CP::PointQueryInfo">PointQueryInfo</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#point_query(p)" title="Permanent link">#</a></h3>
+<div class="doc doc-contents first">
+<p>Perform a nearest point query. It finds the closest point on the surface of shape to a specific point.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L55">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h3 class="doc doc-heading" id="CP::Shape#segment_query(a,b,radius)">
+
+    <code>
+      #segment_query<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <a href="#CP::SegmentQueryInfo">SegmentQueryInfo</a><span class="p">?</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#segment_query(a,b,radius)" title="Permanent link">#</a></h3>
+<div class="doc doc-contents first">
+<p>Perform a segment query against a shape: check if the line segment from start to end intersects the shape.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L61">View source</a>]
+</div>
+<div class="doc doc-object doc-type struct">
+<h2 class="doc doc-heading" id="CP::PointQueryInfo">
+
+struct <code>CP::PointQueryInfo</code>
+      <br />
+<small>inherits <code>Struct</code></small>
+  <a class="headerlink" href="#CP::PointQueryInfo" title="Permanent link">#</a></h2>
+<div class="doc doc-contents first">
+<p>Holds the result of a point query made on a <a href="shapes.html#CP::Shape"><code>Shape</code></a> or <a href="space.html#CP::Space"><code>Space</code></a>.</p>
+<div class="doc doc-children">
+<h3 id="class-methods">Class methods<a class="headerlink" href="#class-methods" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 class="doc doc-heading" id="CP::PointQueryInfo.new(shape,point,distance,gradient)">
+
+    <code>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">shape</span> <span class="p">:</span> <a href="shapes.html#CP::Shape">Shape</a><span class="p">,</span> <span class="n">point</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">distance</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">,</span> <span class="n">gradient</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::PointQueryInfo.new(shape,point,distance,gradient)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L42">View source</a>]
+</div>
+<h3 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::PointQueryInfo#distance()">
+
+    <code>
+      #distance<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::PointQueryInfo#distance()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>The distance to the point (negative if the point is inside the shape).</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L34">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::PointQueryInfo#distance=(distance)">
+
+    <code>
+      #distance=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">distance</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::PointQueryInfo#distance=(distance)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L35">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::PointQueryInfo#gradient()">
+
+    <code>
+      #gradient<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::PointQueryInfo#gradient()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>The gradient of the signed distance function.</p>
+<p>The value should be similar to <code>point/distance</code>, but accurate even for very small values of <a href="#CP::PointQueryInfo#distance()"><code>distance</code></a>.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L39">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::PointQueryInfo#gradient=(gradient)">
+
+    <code>
+      #gradient=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">gradient</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::PointQueryInfo#gradient=(gradient)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L40">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::PointQueryInfo#point()">
+
+    <code>
+      #point<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::PointQueryInfo#point()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>The closest point on the shape's surface (in world space coordinates).</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L31">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::PointQueryInfo#point=(point)">
+
+    <code>
+      #point=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">point</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::PointQueryInfo#point=(point)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L32">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::PointQueryInfo#shape()">
+
+    <code>
+      #shape<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="shapes.html#CP::Shape">Shape</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::PointQueryInfo#shape()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>The nearest shape</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L47">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::PointQueryInfo#shape=(shape)">
+
+    <code>
+      #shape=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">shape</span> <span class="p">:</span> <a href="shapes.html#CP::Shape">Shape</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::PointQueryInfo#shape=(shape)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L50">View source</a>]
+</div>
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-type struct">
+<h2 class="doc doc-heading" id="CP::SegmentQueryInfo">
+
+struct <code>CP::SegmentQueryInfo</code>
+      <br />
+<small>inherits <code>Struct</code></small>
+  <a class="headerlink" href="#CP::SegmentQueryInfo" title="Permanent link">#</a></h2>
+<div class="doc doc-contents first">
+<p>Segment queries return more information than just a simple yes or no,
+they also return where a shape was hit and its surface normal at the hit
+point. This object holds that information.</p>
+<p>Segment queries are like ray casting, but because not all spatial indexes
+allow processing infinitely long ray queries it is limited to segments.
+In practice this is still very fast and you don't need to worry too much
+about the performance as long as you aren't using extremely long segments
+for your queries.</p>
+<div class="doc doc-children">
+<h3 id="class-methods_1">Class methods<a class="headerlink" href="#class-methods_1" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 class="doc doc-heading" id="CP::SegmentQueryInfo.new(shape,point,normal,alpha)">
+
+    <code>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">shape</span> <span class="p">:</span> <a href="shapes.html#CP::Shape">Shape</a><span class="p">,</span> <span class="n">point</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">normal</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">alpha</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::SegmentQueryInfo.new(shape,point,normal,alpha)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L80">View source</a>]
+</div>
+<h3 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::SegmentQueryInfo#alpha()">
+
+    <code>
+      #alpha<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::SegmentQueryInfo#alpha()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>The normalized distance along the query segment in the range [0, 1].</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L77">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::SegmentQueryInfo#alpha=(alpha)">
+
+    <code>
+      #alpha=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">alpha</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::SegmentQueryInfo#alpha=(alpha)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L78">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::SegmentQueryInfo#normal()">
+
+    <code>
+      #normal<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::SegmentQueryInfo#normal()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>The normal of the surface hit.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L74">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::SegmentQueryInfo#normal=(normal)">
+
+    <code>
+      #normal=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">normal</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::SegmentQueryInfo#normal=(normal)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L75">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::SegmentQueryInfo#point()">
+
+    <code>
+      #point<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::SegmentQueryInfo#point()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>The point of impact.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L71">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::SegmentQueryInfo#point=(point)">
+
+    <code>
+      #point=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">point</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::SegmentQueryInfo#point=(point)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L72">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::SegmentQueryInfo#shape()">
+
+    <code>
+      #shape<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="shapes.html#CP::Shape">Shape</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::SegmentQueryInfo#shape()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>The shape that was hit.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L85">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::SegmentQueryInfo#shape=(shape)">
+
+    <code>
+      #shape=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">shape</span> <span class="p">:</span> <a href="shapes.html#CP::Shape">Shape</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::SegmentQueryInfo#shape=(shape)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L88">View source</a>]
+</div>
+</div>
+</div>
+</div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="collisions.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Collisions
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="vector-math.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Vector math
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/vendor.93c04032.min.js"></script>
+      <script src="assets/javascripts/bundle.83e5331e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: ".",
+          features: [],
+          search: Object.assign({
+            worker: "assets/javascripts/worker/search.8c7e0a7e.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

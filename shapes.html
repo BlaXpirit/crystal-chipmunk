@@ -1,0 +1,3084 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://oprypin.github.io/crystal-chipmunk/shapes.html">
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-6.2.3">
+    
+    
+      
+        <title>Shapes - crystal-chipmunk</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.15aa0b43.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.75751829.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#009485">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="css/mkdocstrings.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="teal" data-md-color-accent="light-blue">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#CP::Shape" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://oprypin.github.io/crystal-chipmunk" title="crystal-chipmunk" class="md-header-nav__button md-logo" aria-label="crystal-chipmunk">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            crystal-chipmunk
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Shapes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/oprypin/crystal-chipmunk/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://oprypin.github.io/crystal-chipmunk" title="crystal-chipmunk" class="md-nav__button md-logo" aria-label="crystal-chipmunk">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    crystal-chipmunk
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/oprypin/crystal-chipmunk/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="space.html" class="md-nav__link">
+      Space
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="body.html" class="md-nav__link">
+      Body
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Shapes
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="shapes.html" class="md-nav__link md-nav__link--active">
+      Shapes
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#CP::Shape" class="md-nav__link">
+    Shape
+  </a>
+  
+    <nav class="md-nav" aria-label="Shape">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#direct-known-subclasses" class="md-nav__link">
+    Direct known subclasses
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#area()" class="md-nav__link">
+    #area
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#bb()" class="md-nav__link">
+    #bb
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#body()" class="md-nav__link">
+    #body
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#body=(body)" class="md-nav__link">
+    #body=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#cache_bb()" class="md-nav__link">
+    #cache_bb
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#center_of_gravity()" class="md-nav__link">
+    #center_of_gravity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#collide(b)" class="md-nav__link">
+    #collide
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#collision_type()" class="md-nav__link">
+    #collision_type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#collision_type=(collision_type)" class="md-nav__link">
+    #collision_type=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#density()" class="md-nav__link">
+    #density
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#density=(density)" class="md-nav__link">
+    #density=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#elasticity()" class="md-nav__link">
+    #elasticity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#elasticity=(elasticity)" class="md-nav__link">
+    #elasticity=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#filter()" class="md-nav__link">
+    #filter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#filter=(filter)" class="md-nav__link">
+    #filter=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#friction()" class="md-nav__link">
+    #friction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#friction=(friction)" class="md-nav__link">
+    #friction=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#mass()" class="md-nav__link">
+    #mass
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#mass=(mass)" class="md-nav__link">
+    #mass=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#moment()" class="md-nav__link">
+    #moment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#point_query(p)" class="md-nav__link">
+    #point_query
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#segment_query(a,b,radius)" class="md-nav__link">
+    #segment_query
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#sensor=(sensor)" class="md-nav__link">
+    #sensor=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#sensor?()" class="md-nav__link">
+    #sensor?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#space()" class="md-nav__link">
+    #space
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#surface_velocity()" class="md-nav__link">
+    #surface_velocity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#surface_velocity=(surface_velocity)" class="md-nav__link">
+    #surface_velocity=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#update(transform)" class="md-nav__link">
+    #update
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::Shape::Box" class="md-nav__link">
+    Box
+  </a>
+  
+    <nav class="md-nav" aria-label="Box">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-methods" class="md-nav__link">
+    Class methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Class methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Box.moment(m,width,height)" class="md-nav__link">
+    .moment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Box.new(body,width,height,radius)" class="md-nav__link">
+    .new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::Shape::Circle" class="md-nav__link">
+    Circle
+  </a>
+  
+    <nav class="md-nav" aria-label="Circle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-methods_1" class="md-nav__link">
+    Class methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Class methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Circle.area(r1,r2)" class="md-nav__link">
+    .area
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Circle.moment(m,r1,r2,offset)" class="md-nav__link">
+    .moment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Circle.new(body,radius,offset)" class="md-nav__link">
+    .new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Circle#offset()" class="md-nav__link">
+    #offset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Circle#offset=(offset)" class="md-nav__link">
+    #offset=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Circle#radius()" class="md-nav__link">
+    #radius
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Circle#radius=(radius)" class="md-nav__link">
+    #radius=
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::Shape::Poly" class="md-nav__link">
+    Poly
+  </a>
+  
+    <nav class="md-nav" aria-label="Poly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#included-modules" class="md-nav__link">
+    Included modules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#direct-known-subclasses_1" class="md-nav__link">
+    Direct known subclasses
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class-methods_2" class="md-nav__link">
+    Class methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Class methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Poly.area(verts,radius)" class="md-nav__link">
+    .area
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Poly.centroid(verts)" class="md-nav__link">
+    .centroid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Poly.convex_hull(verts,tol)" class="md-nav__link">
+    .convex_hull
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Poly.moment(m,verts,offset,radius)" class="md-nav__link">
+    .moment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Poly.new(body,verts,transform,radius)" class="md-nav__link">
+    .new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_2" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Poly#radius()" class="md-nav__link">
+    #radius
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Poly#radius=(radius)" class="md-nav__link">
+    #radius=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Poly#set_verts(verts,transform)" class="md-nav__link">
+    #set_verts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Poly#size()" class="md-nav__link">
+    #size
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Poly#unsafe_fetch(index)" class="md-nav__link">
+    #unsafe_fetch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::Shape::Segment" class="md-nav__link">
+    Segment
+  </a>
+  
+    <nav class="md-nav" aria-label="Segment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-methods_3" class="md-nav__link">
+    Class methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Class methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Segment.area(a,b,radius)" class="md-nav__link">
+    .area
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Segment.moment(m,a,b,radius)" class="md-nav__link">
+    .moment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Segment.new(body,a,b,radius)" class="md-nav__link">
+    .new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_3" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Segment#a()" class="md-nav__link">
+    #a
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Segment#b()" class="md-nav__link">
+    #b
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Segment#normal()" class="md-nav__link">
+    #normal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Segment#radius()" class="md-nav__link">
+    #radius
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Segment#radius=(radius)" class="md-nav__link">
+    #radius=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Segment#set_endpoints(a,b)" class="md-nav__link">
+    #set_endpoints
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Segment#set_neighbors(prev,next)" class="md-nav__link">
+    #set_neighbors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::ShapeFilter" class="md-nav__link">
+    ShapeFilter
+  </a>
+  
+    <nav class="md-nav" aria-label="ShapeFilter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constants" class="md-nav__link">
+    Constants
+  </a>
+  
+    <nav class="md-nav" aria-label="Constants">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::ShapeFilter::ALL" class="md-nav__link">
+    ALL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::ShapeFilter::ALL_CATEGORIES" class="md-nav__link">
+    ALL_CATEGORIES
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::ShapeFilter::NO_GROUP" class="md-nav__link">
+    NO_GROUP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::ShapeFilter::NONE" class="md-nav__link">
+    NONE
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class-methods_4" class="md-nav__link">
+    Class methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Class methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::ShapeFilter.new(group,categories,mask)" class="md-nav__link">
+    .new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_4" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::ShapeFilter#categories()" class="md-nav__link">
+    #categories
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::ShapeFilter#categories=(categories)" class="md-nav__link">
+    #categories=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::ShapeFilter#group()" class="md-nav__link">
+    #group
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::ShapeFilter#group=(group)" class="md-nav__link">
+    #group=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::ShapeFilter#mask()" class="md-nav__link">
+    #mask
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::ShapeFilter#mask=(mask)" class="md-nav__link">
+    #mask=
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::ShapeFilter::Bitmask" class="md-nav__link">
+    Bitmask
+  </a>
+  
+    <nav class="md-nav" aria-label="Bitmask">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alias-definition" class="md-nav__link">
+    Alias definition
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::ShapeFilter::Group" class="md-nav__link">
+    Group
+  </a>
+  
+    <nav class="md-nav" aria-label="Group">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alias-definition_1" class="md-nav__link">
+    Alias definition
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="constraints.html" class="md-nav__link">
+      Constraints
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="collisions.html" class="md-nav__link">
+      Collisions
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="queries.html" class="md-nav__link">
+      Queries
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="vector-math.html" class="md-nav__link">
+      Vector math
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="debug-draw.html" class="md-nav__link">
+      Debug draw
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#CP::Shape" class="md-nav__link">
+    Shape
+  </a>
+  
+    <nav class="md-nav" aria-label="Shape">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#direct-known-subclasses" class="md-nav__link">
+    Direct known subclasses
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#area()" class="md-nav__link">
+    #area
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#bb()" class="md-nav__link">
+    #bb
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#body()" class="md-nav__link">
+    #body
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#body=(body)" class="md-nav__link">
+    #body=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#cache_bb()" class="md-nav__link">
+    #cache_bb
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#center_of_gravity()" class="md-nav__link">
+    #center_of_gravity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#collide(b)" class="md-nav__link">
+    #collide
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#collision_type()" class="md-nav__link">
+    #collision_type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#collision_type=(collision_type)" class="md-nav__link">
+    #collision_type=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#density()" class="md-nav__link">
+    #density
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#density=(density)" class="md-nav__link">
+    #density=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#elasticity()" class="md-nav__link">
+    #elasticity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#elasticity=(elasticity)" class="md-nav__link">
+    #elasticity=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#filter()" class="md-nav__link">
+    #filter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#filter=(filter)" class="md-nav__link">
+    #filter=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#friction()" class="md-nav__link">
+    #friction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#friction=(friction)" class="md-nav__link">
+    #friction=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#mass()" class="md-nav__link">
+    #mass
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#mass=(mass)" class="md-nav__link">
+    #mass=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#moment()" class="md-nav__link">
+    #moment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#point_query(p)" class="md-nav__link">
+    #point_query
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#segment_query(a,b,radius)" class="md-nav__link">
+    #segment_query
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#sensor=(sensor)" class="md-nav__link">
+    #sensor=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#sensor?()" class="md-nav__link">
+    #sensor?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#space()" class="md-nav__link">
+    #space
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#surface_velocity()" class="md-nav__link">
+    #surface_velocity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#surface_velocity=(surface_velocity)" class="md-nav__link">
+    #surface_velocity=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape#update(transform)" class="md-nav__link">
+    #update
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::Shape::Box" class="md-nav__link">
+    Box
+  </a>
+  
+    <nav class="md-nav" aria-label="Box">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-methods" class="md-nav__link">
+    Class methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Class methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Box.moment(m,width,height)" class="md-nav__link">
+    .moment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Box.new(body,width,height,radius)" class="md-nav__link">
+    .new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::Shape::Circle" class="md-nav__link">
+    Circle
+  </a>
+  
+    <nav class="md-nav" aria-label="Circle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-methods_1" class="md-nav__link">
+    Class methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Class methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Circle.area(r1,r2)" class="md-nav__link">
+    .area
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Circle.moment(m,r1,r2,offset)" class="md-nav__link">
+    .moment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Circle.new(body,radius,offset)" class="md-nav__link">
+    .new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Circle#offset()" class="md-nav__link">
+    #offset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Circle#offset=(offset)" class="md-nav__link">
+    #offset=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Circle#radius()" class="md-nav__link">
+    #radius
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Circle#radius=(radius)" class="md-nav__link">
+    #radius=
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::Shape::Poly" class="md-nav__link">
+    Poly
+  </a>
+  
+    <nav class="md-nav" aria-label="Poly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#included-modules" class="md-nav__link">
+    Included modules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#direct-known-subclasses_1" class="md-nav__link">
+    Direct known subclasses
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class-methods_2" class="md-nav__link">
+    Class methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Class methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Poly.area(verts,radius)" class="md-nav__link">
+    .area
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Poly.centroid(verts)" class="md-nav__link">
+    .centroid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Poly.convex_hull(verts,tol)" class="md-nav__link">
+    .convex_hull
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Poly.moment(m,verts,offset,radius)" class="md-nav__link">
+    .moment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Poly.new(body,verts,transform,radius)" class="md-nav__link">
+    .new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_2" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Poly#radius()" class="md-nav__link">
+    #radius
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Poly#radius=(radius)" class="md-nav__link">
+    #radius=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Poly#set_verts(verts,transform)" class="md-nav__link">
+    #set_verts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Poly#size()" class="md-nav__link">
+    #size
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Poly#unsafe_fetch(index)" class="md-nav__link">
+    #unsafe_fetch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::Shape::Segment" class="md-nav__link">
+    Segment
+  </a>
+  
+    <nav class="md-nav" aria-label="Segment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-methods_3" class="md-nav__link">
+    Class methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Class methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Segment.area(a,b,radius)" class="md-nav__link">
+    .area
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Segment.moment(m,a,b,radius)" class="md-nav__link">
+    .moment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Segment.new(body,a,b,radius)" class="md-nav__link">
+    .new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_3" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Segment#a()" class="md-nav__link">
+    #a
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Segment#b()" class="md-nav__link">
+    #b
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Segment#normal()" class="md-nav__link">
+    #normal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Segment#radius()" class="md-nav__link">
+    #radius
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Segment#radius=(radius)" class="md-nav__link">
+    #radius=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Segment#set_endpoints(a,b)" class="md-nav__link">
+    #set_endpoints
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Shape::Segment#set_neighbors(prev,next)" class="md-nav__link">
+    #set_neighbors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::ShapeFilter" class="md-nav__link">
+    ShapeFilter
+  </a>
+  
+    <nav class="md-nav" aria-label="ShapeFilter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constants" class="md-nav__link">
+    Constants
+  </a>
+  
+    <nav class="md-nav" aria-label="Constants">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::ShapeFilter::ALL" class="md-nav__link">
+    ALL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::ShapeFilter::ALL_CATEGORIES" class="md-nav__link">
+    ALL_CATEGORIES
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::ShapeFilter::NO_GROUP" class="md-nav__link">
+    NO_GROUP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::ShapeFilter::NONE" class="md-nav__link">
+    NONE
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class-methods_4" class="md-nav__link">
+    Class methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Class methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::ShapeFilter.new(group,categories,mask)" class="md-nav__link">
+    .new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_4" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::ShapeFilter#categories()" class="md-nav__link">
+    #categories
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::ShapeFilter#categories=(categories)" class="md-nav__link">
+    #categories=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::ShapeFilter#group()" class="md-nav__link">
+    #group
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::ShapeFilter#group=(group)" class="md-nav__link">
+    #group=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::ShapeFilter#mask()" class="md-nav__link">
+    #mask
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::ShapeFilter#mask=(mask)" class="md-nav__link">
+    #mask=
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::ShapeFilter::Bitmask" class="md-nav__link">
+    Bitmask
+  </a>
+  
+    <nav class="md-nav" aria-label="Bitmask">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alias-definition" class="md-nav__link">
+    Alias definition
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::ShapeFilter::Group" class="md-nav__link">
+    Group
+  </a>
+  
+    <nav class="md-nav" aria-label="Group">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alias-definition_1" class="md-nav__link">
+    Alias definition
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/oprypin/crystal-chipmunk/blob/master/docs/shapes.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>Shapes</h1>
+                
+                <div class="doc doc-object doc-type class">
+<h2 class="doc doc-heading" id="CP::Shape">
+
+abstract class <code>CP::Shape</code>
+      <br />
+<small>inherits <code>Reference</code></small>
+  <a class="headerlink" href="#CP::Shape" title="Permanent link">#</a></h2>
+<div class="doc doc-contents first">
+<p>Defines the shape of a rigid body.</p>
+<div class="doc doc-children">
+<h3 id="direct-known-subclasses">Direct known subclasses<a class="headerlink" href="#direct-known-subclasses" title="Permanent link">#</a></h3>
+<code><a href="#CP::Shape::Circle">CP::Shape::Circle</a></code>
+              <code><a href="#CP::Shape::Poly">CP::Shape::Poly</a></code>
+              <code><a href="#CP::Shape::Segment">CP::Shape::Segment</a></code>
+
+
+            <h3 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#area()">
+
+    <code>
+      #area<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#area()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Get the calculated area of this shape.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L112">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#bb()">
+
+    <code>
+      #bb<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::BB">BB</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#bb()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Get the bounding box that contains the shape given its current position and angle.</p>
+<p>Only guaranteed to be valid after <a href="#CP::Shape#cache_bb()"><code>cache_bb</code></a> or <a href="space.html#CP::Space#step(dt)"><code>Space#step</code></a> is called.
+Moving a body that a shape is connected to does not update its bounding box.
+For shapes used for queries that aren't attached to bodies, you can also use <a href="#CP::Shape#update(transform)"><code>update</code></a>.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L126">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#body()">
+
+    <code>
+      #body<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">?</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#body()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>The <a href="body.html#CP::Body"><code>Body</code></a> this shape is added to.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L78">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#body=(body)">
+
+    <code>
+      #body=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="sc">?)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#body=(body)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Set the <a href="body.html#CP::Body"><code>Body</code></a> this shape is added to.</p>
+<p>Can only be used if the shape is not currently added to a space.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L84">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#cache_bb()">
+
+    <code>
+      #cache_bb<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::BB">BB</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#cache_bb()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Update, cache and return the bounding box of a shape based on the body it's attached to.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L43">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#center_of_gravity()">
+
+    <code>
+      #center_of_gravity<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#center_of_gravity()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Get the centroid of this shape.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L117">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#collide(b)">
+
+    <code>
+      #collide<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">b</span> <span class="p">:</span> <a href="#CP::Shape">Shape</a><span class="p">)</span> <span class="p">:</span> <a href="collisions.html#CP::ContactPointSet">ContactPointSet</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#collide(b)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Return contact information about two shapes.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L68">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#collision_type()">
+
+    <code>
+      #collision_type<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">CollisionType</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#collision_type()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>User defined collision type for the shape.</p>
+<p>See <a href="space.html#CP::Space#add_collision_handler(a,b,handler)"><code>Space#add_collision_handler</code></a> for more information.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L177">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#collision_type=(collision_type)">
+
+    <code>
+      #collision_type=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">collision_type</span> <span class="p">:</span> <span class="n">Int</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#collision_type=(collision_type)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L180">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#density()">
+
+    <code>
+      #density<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#density()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Get the density of the shape if you are having Chipmunk calculate mass properties for you.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L98">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#density=(density)">
+
+    <code>
+      #density=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">density</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#density=(density)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Set the density of this shape to have Chipmunk calculate mass properties for you.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L102">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#elasticity()">
+
+    <code>
+      #elasticity<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#elasticity()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>The elasticity of this shape.</p>
+<p>A value of 0.0 gives no bounce, while a value of 1.0 will give a
+'perfect' bounce. However due to inaccuracies in the simulation
+using 1.0 or greater is not recommended.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L145">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#elasticity=(elasticity)">
+
+    <code>
+      #elasticity=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">elasticity</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#elasticity=(elasticity)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L148">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#filter()">
+
+    <code>
+      #filter<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="#CP::ShapeFilter">ShapeFilter</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#filter()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>The collision filtering parameters of this shape.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L185">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#filter=(filter)">
+
+    <code>
+      #filter=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">filter</span> <span class="p">:</span> <a href="#CP::ShapeFilter">ShapeFilter</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#filter=(filter)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L188">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#friction()">
+
+    <code>
+      #friction<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#friction()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>The friction of this shape.</p>
+<p>Chipmunk uses the Coulomb friction model, a value of 0.0 is
+frictionless. A value over 1.0 is also perfectly fine.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L156">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#friction=(friction)">
+
+    <code>
+      #friction=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">friction</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#friction=(friction)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L159">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#mass()">
+
+    <code>
+      #mass<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#mass()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Get the mass of the shape if you are having Chipmunk calculate mass properties for you.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L89">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#mass=(mass)">
+
+    <code>
+      #mass=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">mass</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#mass=(mass)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Set the mass of this shape to have Chipmunk calculate mass properties for you.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L93">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#moment()">
+
+    <code>
+      #moment<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#moment()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Get the calculated moment of inertia for this shape.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L107">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#point_query(p)">
+
+    <code>
+      #point_query<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="nb">p</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">)</span> <span class="p">:</span> <span class="n">PointQueryInfo</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#point_query(p)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Perform a nearest point query. It finds the closest point on the surface of shape to a specific point.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L55">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#segment_query(a,b,radius)">
+
+    <code>
+      #segment_query<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="n">SegmentQueryInfo</span><span class="p">?</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#segment_query(a,b,radius)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Perform a segment query against a shape: check if the line segment from start to end intersects the shape.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L61">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#sensor=(sensor)">
+
+    <code>
+      #sensor=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">sensor</span> <span class="p">:</span> <span class="n">Bool</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#sensor=(sensor)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L136">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#sensor?()">
+
+    <code>
+      #sensor?<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Bool</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#sensor?()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Is the shape set to be a sensor or not?</p>
+<p>Sensors only call collision callbacks, and never generate real collisions.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L133">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#space()">
+
+    <code>
+      #space<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="space.html#CP::Space">Space</a><span class="p">?</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#space()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>The <a href="space.html#CP::Space"><code>Space</code></a> this shape is added to.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L73">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#surface_velocity()">
+
+    <code>
+      #surface_velocity<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#surface_velocity()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>The surface velocity of this shape.</p>
+<p>Useful for creating conveyor belts or players that move around. This
+value is only used when calculating friction, not resolving the collision.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L167">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#surface_velocity=(surface_velocity)">
+
+    <code>
+      #surface_velocity=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">surface_velocity</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#surface_velocity=(surface_velocity)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L170">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape#update(transform)">
+
+    <code>
+      #update<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">transform</span> <span class="p">:</span> <a href="vector-math.html#CP::Transform">Transform</a><span class="p">)</span> <span class="p">:</span> <a href="vector-math.html#CP::BB">BB</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape#update(transform)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Update, cache and return the bounding box of a shape with an explicit transformation.</p>
+<p>Useful if you have a shape without a body and want to use it for querying.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L50">View source</a>]
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-type class">
+<h2 class="doc doc-heading" id="CP::Shape::Box">
+
+class <code>CP::Shape::Box</code>
+      <br />
+<small>inherits <code><a href="#CP::Shape::Poly">CP::Shape::Poly</a></code></small>
+  <a class="headerlink" href="#CP::Shape::Box" title="Permanent link">#</a></h2>
+<div class="doc doc-contents first">
+<p>A special case of a polygon - a rectangle.</p>
+<p>The boxes will always be centered at the center of gravity of the
+body you are attaching them to. If you want to create an off-center
+box, you will need to use <a href="#CP::Shape::Poly"><code>Poly</code></a>.</p>
+<div class="doc doc-children">
+<h3 id="class-methods">Class methods<a class="headerlink" href="#class-methods" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 class="doc doc-heading" id="CP::Shape::Box.moment(m,width,height)">
+
+    <code>
+      .moment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">width</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">height</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Box.moment(m,width,height)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Calculate the moment of inertia for a solid box.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L391">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 class="doc doc-heading" id="CP::Shape::Box.moment(m,box)">
+
+    <code>
+      .moment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">box</span> <span class="p">:</span> <a href="vector-math.html#CP::BB">BB</a><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Box.moment(m,box)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Calculate the moment of inertia for a solid box.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L396">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 class="doc doc-heading" id="CP::Shape::Box.new(body,width,height,radius)">
+
+    <code>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="sc">?,</span> <span class="n">width</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">height</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Box.new(body,width,height,radius)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Initialize a box shaped polygon shape with rounded corners.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L401">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 class="doc doc-heading" id="CP::Shape::Box.new(body,box,radius)">
+
+    <code>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="sc">?,</span> <span class="n">box</span> <span class="p">:</span> <a href="vector-math.html#CP::BB">BB</a><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Box.new(body,box,radius)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Initialize an offset box shaped polygon shape with rounded corners.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L407">View source</a>]
+</div>
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-type class">
+<h2 class="doc doc-heading" id="CP::Shape::Circle">
+
+class <code>CP::Shape::Circle</code>
+      <br />
+<small>inherits <code><a href="#CP::Shape">CP::Shape</a></code></small>
+  <a class="headerlink" href="#CP::Shape::Circle" title="Permanent link">#</a></h2>
+<div class="doc doc-contents first">
+<p>A circle shape defined by a radius</p>
+<p>This is the fastest and simplest collision shape</p>
+<div class="doc doc-children">
+<h3 id="class-methods_1">Class methods<a class="headerlink" href="#class-methods_1" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 class="doc doc-heading" id="CP::Shape::Circle.area(r1,r2)">
+
+    <code>
+      .area<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">r1</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">r2</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Circle.area(r1,r2)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Calculate area of a hollow circle.</p>
+<p><em>r1</em> and <em>r2</em> are the inner and outer diameters. A solid circle has an inner diameter of 0.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L206">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 class="doc doc-heading" id="CP::Shape::Circle.moment(m,r1,r2,offset)">
+
+    <code>
+      .moment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">r1</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">r2</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">offset</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a> <span class="o">=</span> <span class="n">CP</span><span class="o">::</span><span class="n">Vect</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Circle.moment(m,r1,r2,offset)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Calculate the moment of inertia for a circle.</p>
+<p><em>r1</em> and <em>r2</em> are the inner and outer diameters. A solid circle has an inner diameter of 0.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L199">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 class="doc doc-heading" id="CP::Shape::Circle.new(body,radius,offset)">
+
+    <code>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="sc">?,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">offset</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a> <span class="o">=</span> <span class="n">CP</span><span class="o">::</span><span class="n">Vect</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Circle.new(body,radius,offset)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>The parameters are: the <em>body</em> to attach the circle to; the <em>offset</em> from the
+body's center of gravity in body local coordinates.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L212">View source</a>]
+</div>
+<h3 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape::Circle#offset()">
+
+    <code>
+      #offset<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Circle#offset()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Get the offset of a circle shape.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L224">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape::Circle#offset=(offset)">
+
+    <code>
+      #offset=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">offset</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Circle#offset=(offset)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p><strong>Unsafe.</strong> Set the offset of a circle shape.</p>
+<p>This change is only picked up as a change to the position
+of the shape's surface, but not its velocity. Changing it will
+not result in realistic physical behavior. Only use if you know
+what you are doing!</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/unsafe.cr#L54">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape::Circle#radius()">
+
+    <code>
+      #radius<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Circle#radius()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Get the radius of a circle shape.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L229">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape::Circle#radius=(radius)">
+
+    <code>
+      #radius=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Circle#radius=(radius)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p><strong>Unsafe.</strong> Set the radius of a circle shape.</p>
+<p>This change is only picked up as a change to the position
+of the shape's surface, but not its velocity. Changing it will
+not result in realistic physical behavior. Only use if you know
+what you are doing!</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/unsafe.cr#L44">View source</a>]
+</div>
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-type class">
+<h2 class="doc doc-heading" id="CP::Shape::Poly">
+
+class <code>CP::Shape::Poly</code>
+      <br />
+<small>inherits <code><a href="#CP::Shape">CP::Shape</a></code></small>
+  <a class="headerlink" href="#CP::Shape::Poly" title="Permanent link">#</a></h2>
+<div class="doc doc-contents first">
+<p>A convex polygon shape</p>
+<p>Slowest, but most flexible collision shape.</p>
+<div class="doc doc-children">
+<h3 id="included-modules">Included modules<a class="headerlink" href="#included-modules" title="Permanent link">#</a></h3>
+<code>Enumerable</code>
+              <code>Indexable</code>
+            <h3 id="direct-known-subclasses_1">Direct known subclasses<a class="headerlink" href="#direct-known-subclasses_1" title="Permanent link">#</a></h3>
+<code><a href="#CP::Shape::Box">CP::Shape::Box</a></code>
+
+
+            <h3 id="class-methods_2">Class methods<a class="headerlink" href="#class-methods_2" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 class="doc doc-heading" id="CP::Shape::Poly.area(verts,radius)">
+
+    <code>
+      .area<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">verts</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span> <span class="o">|</span> <span class="n">Slice</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">),</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Poly.area(verts,radius)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Calculate the signed area of a polygon.</p>
+<p>A clockwise winding gives positive area.
+This is probably backwards from what you expect, but matches Chipmunk's winding for poly shapes.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L308">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 class="doc doc-heading" id="CP::Shape::Poly.centroid(verts)">
+
+    <code>
+      .centroid<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">verts</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span> <span class="o">|</span> <span class="n">Slice</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">))</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Poly.centroid(verts)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Calculate the natural centroid of a polygon.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L313">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 class="doc doc-heading" id="CP::Shape::Poly.convex_hull(verts,tol)">
+
+    <code>
+      .convex_hull<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">verts</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span> <span class="o">|</span> <span class="n">Slice</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">),</span> <span class="n">tol</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="n">Tuple</span><span class="p">(</span><span class="n">Slice</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">),</span> <span class="n">Int32</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Poly.convex_hull(verts,tol)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Calculate the convex hull of a given set of points.</p>
+<p><em>tol</em> is the allowed amount to shrink the hull when simplifying it.
+A tolerance of 0.0 creates an exact hull.</p>
+<p>Returns the convex hull and the index where the first vertex
+in the hull came from (i.e. <code>verts[first] == result[0]</code>)</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L324">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 class="doc doc-heading" id="CP::Shape::Poly.moment(m,verts,offset,radius)">
+
+    <code>
+      .moment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">verts</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span> <span class="o">|</span> <span class="n">Slice</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">),</span> <span class="n">offset</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a> <span class="o">=</span> <span class="n">CP</span><span class="o">::</span><span class="n">Vect</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Poly.moment(m,verts,offset,radius)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Calculate the moment of inertia for a solid polygon shape.</p>
+<p>Assumes its center of gravity is at its centroid. The offset is added to each vertex.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L300">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 class="doc doc-heading" id="CP::Shape::Poly.new(body,verts,transform,radius)">
+
+    <code>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="sc">?,</span> <span class="n">verts</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span> <span class="o">|</span> <span class="n">Slice</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">),</span> <span class="n">transform</span> <span class="p">:</span> <a href="vector-math.html#CP::Transform">Transform</a> <span class="o">=</span> <span class="n">Transform</span><span class="o">::</span><span class="no">IDENTITY</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Poly.new(body,verts,transform,radius)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Initialize a polygon shape with rounded corners.
+A convex hull will be created from the vertices.</p>
+<p>The parameters are: the <em>body</em> to attach the poly to; the <em>verts</em> (vertices) of the polygon;
+the <em>transform</em> to apply to every vertex; the radius of the corners.</p>
+<p>Adding a small radius will bevel the corners and can significantly reduce problems
+where the poly gets stuck on seams in your geometry.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L341">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 class="doc doc-heading" id="CP::Shape::Poly.new(body,verts,radius)">
+
+    <code>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="sc">?,</span> <span class="n">verts</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span> <span class="o">|</span> <span class="n">Slice</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">),</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Poly.new(body,verts,radius)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Initialize a polygon shape with rounded corners.
+The vertices must be convex with a counter-clockwise winding.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L348">View source</a>]
+</div>
+<h3 id="methods_2">Methods<a class="headerlink" href="#methods_2" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape::Poly#radius()">
+
+    <code>
+      #radius<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Poly#radius()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Get the radius of a polygon shape.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L379">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape::Poly#radius=(radius)">
+
+    <code>
+      #radius=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Poly#radius=(radius)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p><strong>Unsafe.</strong> Set the radius of a poly shape.</p>
+<p>This change is only picked up as a change to the position
+of the shape's surface, but not its velocity. Changing it will
+not result in realistic physical behavior. Only use if you know
+what you are doing!</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/unsafe.cr#L98">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape::Poly#set_verts(verts,transform)">
+
+    <code>
+      #set_verts<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">verts</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span> <span class="o">|</span> <span class="n">Slice</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">),</span> <span class="n">transform</span> <span class="p">:</span> <a href="vector-math.html#CP::Transform">Transform</a> <span class="o">=</span> <span class="n">Transform</span><span class="o">::</span><span class="no">IDENTITY</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Poly#set_verts(verts,transform)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p><strong>Unsafe.</strong> Set the vertices of a poly shape.</p>
+<p>This change is only picked up as a change to the position
+of the shape's surface, but not its velocity. Changing it will
+not result in realistic physical behavior. Only use if you know
+what you are doing!</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/unsafe.cr#L88">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape::Poly#size()">
+
+    <code>
+      #size<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Int32</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Poly#size()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Get the number of verts in a polygon shape.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L365">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape::Poly#unsafe_fetch(index)">
+
+    <code>
+      #unsafe_fetch<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">index</span> <span class="p">:</span> <span class="n">Int</span><span class="p">)</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Poly#unsafe_fetch(index)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Get the <em>i</em>-th vertex of a polygon shape.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L370">View source</a>]
+</div>
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-type class">
+<h2 class="doc doc-heading" id="CP::Shape::Segment">
+
+class <code>CP::Shape::Segment</code>
+      <br />
+<small>inherits <code><a href="#CP::Shape">CP::Shape</a></code></small>
+  <a class="headerlink" href="#CP::Shape::Segment" title="Permanent link">#</a></h2>
+<div class="doc doc-contents first">
+<p>A line segment shape between two points.</p>
+<p>Meant mainly as a static shape. Can be beveled in order to give them a thickness.</p>
+<div class="doc doc-children">
+<h3 id="class-methods_3">Class methods<a class="headerlink" href="#class-methods_3" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 class="doc doc-heading" id="CP::Shape::Segment.area(a,b,radius)">
+
+    <code>
+      .area<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Segment.area(a,b,radius)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Calculate the area of a fattened (capsule shaped) line segment.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L246">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 class="doc doc-heading" id="CP::Shape::Segment.moment(m,a,b,radius)">
+
+    <code>
+      .moment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Segment.moment(m,a,b,radius)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Calculate the moment of inertia for a line segment.</p>
+<p>Beveling radius is not supported.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L241">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 class="doc doc-heading" id="CP::Shape::Segment.new(body,a,b,radius)">
+
+    <code>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="sc">?,</span> <span class="n">a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Segment.new(body,a,b,radius)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>The parameters are: the <em>body</em> to attach the segment to; the endpoints (<em>a</em>, <em>b</em>) to attach the segment to;
+the <em>radius</em> of the half-circles at the ends of the segment (thickness is twice the radius).</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L252">View source</a>]
+</div>
+<h3 id="methods_3">Methods<a class="headerlink" href="#methods_3" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape::Segment#a()">
+
+    <code>
+      #a<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Segment#a()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Get the first endpoint of a segment shape.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L274">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape::Segment#b()">
+
+    <code>
+      #b<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Segment#b()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Get the second endpoint of a segment shape.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L278">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape::Segment#normal()">
+
+    <code>
+      #normal<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Segment#normal()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Get the normal of a segment shape.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L283">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape::Segment#radius()">
+
+    <code>
+      #radius<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Segment#radius()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Get the radius of a segment shape.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L288">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape::Segment#radius=(radius)">
+
+    <code>
+      #radius=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Segment#radius=(radius)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p><strong>Unsafe.</strong> Set the radius of a segment shape.</p>
+<p>This change is only picked up as a change to the position
+of the shape's surface, but not its velocity. Changing it will
+not result in realistic physical behavior. Only use if you know
+what you are doing!</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/unsafe.cr#L76">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape::Segment#set_endpoints(a,b)">
+
+    <code>
+      #set_endpoints<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Segment#set_endpoints(a,b)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p><strong>Unsafe.</strong> Set the endpoints of a segment shape.</p>
+<p>This change is only picked up as a change to the position
+of the shape's surface, but not its velocity. Changing it will
+not result in realistic physical behavior. Only use if you know
+what you are doing!</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/unsafe.cr#L66">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::Shape::Segment#set_neighbors(prev,next)">
+
+    <code>
+      #set_neighbors<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">prev</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="k">next</span> <span class="n">next_</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::Shape::Segment#set_neighbors(prev,next)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Let Chipmunk know about the geometry of adjacent segments to avoid colliding with endcaps.</p>
+<p>When you have a number of segment shapes that are all joined
+together, things can still collide with the "cracks" between the
+segments. By setting the neighbor segment endpoints you can tell
+Chipmunk to avoid colliding with the inner parts of the crack.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L269">View source</a>]
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-type struct">
+<h2 class="doc doc-heading" id="CP::ShapeFilter">
+
+struct <code>CP::ShapeFilter</code>
+      <br />
+<small>inherits <code>Struct</code></small>
+  <a class="headerlink" href="#CP::ShapeFilter" title="Permanent link">#</a></h2>
+<div class="doc doc-contents first">
+<p>Fast collision filtering type that is used to determine if two objects collide before calling
+collision or query callbacks.</p>
+<p>Chipmunk has two primary means of ignoring collisions: groups and
+category masks.</p>
+<p>Groups are used to ignore collisions between parts on a complex object. A
+ragdoll is a good example. When jointing an arm onto the torso, you'll
+want them to allow them to overlap. Groups allow you to do exactly that.
+Shapes that have the same group don't generate collisions. So by placing
+all of the shapes in a ragdoll in the same group, you'll prevent it from
+colliding against other parts of itself.</p>
+<p>Category masks allow you to mark which categories an object belongs to
+and which categories it collidies with. By default, objects exist in
+every category and collide with every category.</p>
+<p>The type of categories and mask in <a href="#CP::ShapeFilter"><code>ShapeFilter</code></a> is <code>UInt32</code>.</p>
+<p>There is one last way of filtering collisions using collision handlers.
+See the section on callbacks for more information. Collision handlers can
+be more flexible, but can be slower. Fast collision filtering rejects
+collisions before running the expensive collision detection code, so
+using groups or category masks is preferred.</p>
+<div class="doc doc-children">
+<h3 id="constants">Constants<a class="headerlink" href="#constants" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-constant">
+<h4 class="doc doc-heading" id="CP::ShapeFilter::ALL">
+
+    <code>ALL</code>
+  <a class="headerlink" href="#CP::ShapeFilter::ALL" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Collision filter value for a shape that will collide with anything except <a href="#CP::ShapeFilter::NONE"><code>NONE</code></a>.</p>
+</div>
+</div>
+<div class="doc doc-object doc-constant">
+<h4 class="doc doc-heading" id="CP::ShapeFilter::ALL_CATEGORIES">
+
+    <code>ALL_CATEGORIES</code>
+  <a class="headerlink" href="#CP::ShapeFilter::ALL_CATEGORIES" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Value for signifying that a shape is in every category.</p>
+</div>
+</div>
+<div class="doc doc-object doc-constant">
+<h4 class="doc doc-heading" id="CP::ShapeFilter::NO_GROUP">
+
+    <code>NO_GROUP</code>
+  <a class="headerlink" href="#CP::ShapeFilter::NO_GROUP" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Value signifying that a shape is in no group.</p>
+</div>
+</div>
+<div class="doc doc-object doc-constant">
+<h4 class="doc doc-heading" id="CP::ShapeFilter::NONE">
+
+    <code>NONE</code>
+  <a class="headerlink" href="#CP::ShapeFilter::NONE" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Collision filter value for a shape that does not collide with anything.</p>
+</div>
+</div>
+<h3 id="class-methods_4">Class methods<a class="headerlink" href="#class-methods_4" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 class="doc doc-heading" id="CP::ShapeFilter.new(group,categories,mask)">
+
+    <code>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">group</span> <span class="p">:</span> <span class="n">Int</span> <span class="o">=</span> <span class="no">NO_GROUP</span><span class="p">,</span> <span class="n">categories</span> <span class="p">:</span> <span class="n">Int</span> <span class="o">=</span> <span class="no">ALL_CATEGORIES</span><span class="p">,</span> <span class="n">mask</span> <span class="p">:</span> <span class="n">Int</span> <span class="o">=</span> <span class="no">ALL_CATEGORIES</span><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::ShapeFilter.new(group,categories,mask)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L149">View source</a>]
+</div>
+<h3 id="methods_4">Methods<a class="headerlink" href="#methods_4" title="Permanent link">#</a></h3>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::ShapeFilter#categories()">
+
+    <code>
+      #categories<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="#CP::ShapeFilter::Bitmask">Bitmask</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::ShapeFilter#categories()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>A bitmask of user definable categories that this object belongs to.</p>
+<p>The category/mask combinations of both objects in a collision must agree for a collision to occur.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L141">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::ShapeFilter#categories=(categories)">
+
+    <code>
+      #categories=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">categories</span> <span class="p">:</span> <a href="#CP::ShapeFilter::Bitmask">Bitmask</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::ShapeFilter#categories=(categories)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L142">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::ShapeFilter#group()">
+
+    <code>
+      #group<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="#CP::ShapeFilter::Group">Group</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::ShapeFilter#group()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>Two objects with the same non-zero group value do not collide.</p>
+<p>This is generally used to group objects in a composite object together to disable self collisions.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L136">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::ShapeFilter#group=(group)">
+
+    <code>
+      #group=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">group</span> <span class="p">:</span> <a href="#CP::ShapeFilter::Group">Group</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::ShapeFilter#group=(group)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L137">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::ShapeFilter#mask()">
+
+    <code>
+      #mask<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="#CP::ShapeFilter::Bitmask">Bitmask</a></code></span>
+    </code>
+  <a class="headerlink" href="#CP::ShapeFilter#mask()" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+<p>A bitmask of user definable category types that this object object collides with.</p>
+<p>The category/mask combinations of both objects in a collision must agree for a collision to occur.</p>
+</div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L146">View source</a>]
+</div>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 class="doc doc-heading" id="CP::ShapeFilter#mask=(mask)">
+
+    <code>
+      #mask=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">mask</span> <span class="p">:</span> <a href="#CP::ShapeFilter::Bitmask">Bitmask</a><span class="p">)</span></code></span>
+    </code>
+  <a class="headerlink" href="#CP::ShapeFilter#mask=(mask)" title="Permanent link">#</a></h4>
+<div class="doc doc-contents ">
+  </div>
+
+    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L147">View source</a>]
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-type alias">
+<h2 class="doc doc-heading" id="CP::ShapeFilter::Bitmask">
+
+alias <code>CP::ShapeFilter::Bitmask</code>
+  <a class="headerlink" href="#CP::ShapeFilter::Bitmask" title="Permanent link">#</a></h2>
+<div class="doc doc-contents first">
+<div class="doc doc-children">
+<h3 id="alias-definition">Alias definition<a class="headerlink" href="#alias-definition" title="Permanent link">#</a></h3>
+<code class="highlight language-crystal"><span class="n">UInt32</span></code>
+
+
+
+      </div>
+</div>
+</div>
+<div class="doc doc-object doc-type alias">
+<h2 class="doc doc-heading" id="CP::ShapeFilter::Group">
+
+alias <code>CP::ShapeFilter::Group</code>
+  <a class="headerlink" href="#CP::ShapeFilter::Group" title="Permanent link">#</a></h2>
+<div class="doc doc-contents first">
+<div class="doc doc-children">
+<h3 id="alias-definition_1">Alias definition<a class="headerlink" href="#alias-definition_1" title="Permanent link">#</a></h3>
+<code class="highlight language-crystal"><span class="n">UInt64</span></code>
+
+
+
+      </div>
+</div>
+</div>
+</div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="body.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Body
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="constraints.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Constraints
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/vendor.93c04032.min.js"></script>
+      <script src="assets/javascripts/bundle.83e5331e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: ".",
+          features: [],
+          search: Object.assign({
+            worker: "assets/javascripts/worker/search.8c7e0a7e.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
