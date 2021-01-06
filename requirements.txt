@@ -1,4 +1,4 @@
 mkdocs
 mkdocs-material
-git+https://github.com/oprypin/mkdocstrings-crystal@master
-git+https://github.com/oprypin/mkdocs-literate-nav@master
+mkdocstrings-crystal
+mkdocs-literate-nav

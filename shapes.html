@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-chipmunk/shapes.html">
       
       <link rel="shortcut icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.dev1, mkdocs-material-6.2.3">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.3">
     
     
       
@@ -20,10 +20,10 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.15aa0b43.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.3b61ea93.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.75751829.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.39b8e14a.min.css">
         
           
           
@@ -1905,7 +1905,7 @@ abstract class <code>CP::Shape</code>
 <h4 class="doc doc-heading" id="CP::Shape#area()">
 
     <code>
-      #area<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
+      #area<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="nb">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#area()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -1918,7 +1918,7 @@ abstract class <code>CP::Shape</code>
 <h4 class="doc doc-heading" id="CP::Shape#bb()">
 
     <code>
-      #bb<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::BB">BB</a></code></span>
+      #bb<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="no">BB</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#bb()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -1934,7 +1934,7 @@ For shapes used for queries that aren't attached to bodies, you can also use <a 
 <h4 class="doc doc-heading" id="CP::Shape#body()">
 
     <code>
-      #body<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">?</span></code></span>
+      #body<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Body?</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#body()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -1947,7 +1947,7 @@ For shapes used for queries that aren't attached to bodies, you can also use <a 
 <h4 class="doc doc-heading" id="CP::Shape#body=(body)">
 
     <code>
-      #body=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="sc">?)</span></code></span>
+      #body=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <span class="n">Body?</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#body=(body)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -1961,7 +1961,7 @@ For shapes used for queries that aren't attached to bodies, you can also use <a 
 <h4 class="doc doc-heading" id="CP::Shape#cache_bb()">
 
     <code>
-      #cache_bb<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::BB">BB</a></code></span>
+      #cache_bb<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="no">BB</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#cache_bb()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -1974,7 +1974,7 @@ For shapes used for queries that aren't attached to bodies, you can also use <a 
 <h4 class="doc doc-heading" id="CP::Shape#center_of_gravity()">
 
     <code>
-      #center_of_gravity<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
+      #center_of_gravity<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Vect</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#center_of_gravity()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -1987,7 +1987,7 @@ For shapes used for queries that aren't attached to bodies, you can also use <a 
 <h4 class="doc doc-heading" id="CP::Shape#collide(b)">
 
     <code>
-      #collide<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">b</span> <span class="p">:</span> <a href="#CP::Shape">Shape</a><span class="p">)</span> <span class="p">:</span> <a href="collisions.html#CP::ContactPointSet">ContactPointSet</a></code></span>
+      #collide<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">b</span> <span class="p">:</span> <span class="n">Shape</span><span class="p">)</span> <span class="p">:</span> <span class="n">ContactPointSet</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#collide(b)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2014,7 +2014,7 @@ For shapes used for queries that aren't attached to bodies, you can also use <a 
 <h4 class="doc doc-heading" id="CP::Shape#collision_type=(collision_type)">
 
     <code>
-      #collision_type=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">collision_type</span> <span class="p">:</span> <span class="n">Int</span><span class="p">)</span></code></span>
+      #collision_type=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">collision_type</span> <span class="p">:</span> <span class="nb">Int</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#collision_type=(collision_type)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2026,7 +2026,7 @@ For shapes used for queries that aren't attached to bodies, you can also use <a 
 <h4 class="doc doc-heading" id="CP::Shape#density()">
 
     <code>
-      #density<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
+      #density<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="nb">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#density()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2039,7 +2039,7 @@ For shapes used for queries that aren't attached to bodies, you can also use <a 
 <h4 class="doc doc-heading" id="CP::Shape#density=(density)">
 
     <code>
-      #density=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">density</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
+      #density=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">density</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#density=(density)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2052,7 +2052,7 @@ For shapes used for queries that aren't attached to bodies, you can also use <a 
 <h4 class="doc doc-heading" id="CP::Shape#elasticity()">
 
     <code>
-      #elasticity<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
+      #elasticity<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="nb">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#elasticity()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2068,7 +2068,7 @@ using 1.0 or greater is not recommended.</p>
 <h4 class="doc doc-heading" id="CP::Shape#elasticity=(elasticity)">
 
     <code>
-      #elasticity=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">elasticity</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
+      #elasticity=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">elasticity</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#elasticity=(elasticity)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2080,7 +2080,7 @@ using 1.0 or greater is not recommended.</p>
 <h4 class="doc doc-heading" id="CP::Shape#filter()">
 
     <code>
-      #filter<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="#CP::ShapeFilter">ShapeFilter</a></code></span>
+      #filter<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">ShapeFilter</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#filter()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2093,7 +2093,7 @@ using 1.0 or greater is not recommended.</p>
 <h4 class="doc doc-heading" id="CP::Shape#filter=(filter)">
 
     <code>
-      #filter=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">filter</span> <span class="p">:</span> <a href="#CP::ShapeFilter">ShapeFilter</a><span class="p">)</span></code></span>
+      #filter=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">filter</span> <span class="p">:</span> <span class="n">ShapeFilter</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#filter=(filter)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2105,7 +2105,7 @@ using 1.0 or greater is not recommended.</p>
 <h4 class="doc doc-heading" id="CP::Shape#friction()">
 
     <code>
-      #friction<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
+      #friction<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="nb">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#friction()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2120,7 +2120,7 @@ frictionless. A value over 1.0 is also perfectly fine.</p>
 <h4 class="doc doc-heading" id="CP::Shape#friction=(friction)">
 
     <code>
-      #friction=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">friction</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
+      #friction=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">friction</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#friction=(friction)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2132,7 +2132,7 @@ frictionless. A value over 1.0 is also perfectly fine.</p>
 <h4 class="doc doc-heading" id="CP::Shape#mass()">
 
     <code>
-      #mass<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
+      #mass<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="nb">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#mass()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2145,7 +2145,7 @@ frictionless. A value over 1.0 is also perfectly fine.</p>
 <h4 class="doc doc-heading" id="CP::Shape#mass=(mass)">
 
     <code>
-      #mass=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">mass</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
+      #mass=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">mass</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#mass=(mass)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2158,7 +2158,7 @@ frictionless. A value over 1.0 is also perfectly fine.</p>
 <h4 class="doc doc-heading" id="CP::Shape#moment()">
 
     <code>
-      #moment<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
+      #moment<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="nb">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#moment()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2184,7 +2184,7 @@ frictionless. A value over 1.0 is also perfectly fine.</p>
 <h4 class="doc doc-heading" id="CP::Shape#segment_query(a,b,radius)">
 
     <code>
-      #segment_query<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="n">SegmentQueryInfo</span><span class="p">?</span></code></span>
+      #segment_query<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="n">SegmentQueryInfo?</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#segment_query(a,b,radius)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2197,7 +2197,7 @@ frictionless. A value over 1.0 is also perfectly fine.</p>
 <h4 class="doc doc-heading" id="CP::Shape#sensor=(sensor)">
 
     <code>
-      #sensor=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">sensor</span> <span class="p">:</span> <span class="n">Bool</span><span class="p">)</span></code></span>
+      #sensor=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">sensor</span> <span class="p">:</span> <span class="nb">Bool</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#sensor=(sensor)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2209,7 +2209,7 @@ frictionless. A value over 1.0 is also perfectly fine.</p>
 <h4 class="doc doc-heading" id="CP::Shape#sensor?()">
 
     <code>
-      #sensor?<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Bool</span></code></span>
+      #sensor?<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="nb">Bool</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#sensor?()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2223,7 +2223,7 @@ frictionless. A value over 1.0 is also perfectly fine.</p>
 <h4 class="doc doc-heading" id="CP::Shape#space()">
 
     <code>
-      #space<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="space.html#CP::Space">Space</a><span class="p">?</span></code></span>
+      #space<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Space?</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#space()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2236,7 +2236,7 @@ frictionless. A value over 1.0 is also perfectly fine.</p>
 <h4 class="doc doc-heading" id="CP::Shape#surface_velocity()">
 
     <code>
-      #surface_velocity<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
+      #surface_velocity<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Vect</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#surface_velocity()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2251,7 +2251,7 @@ value is only used when calculating friction, not resolving the collision.</p>
 <h4 class="doc doc-heading" id="CP::Shape#surface_velocity=(surface_velocity)">
 
     <code>
-      #surface_velocity=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">surface_velocity</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
+      #surface_velocity=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">surface_velocity</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#surface_velocity=(surface_velocity)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2263,7 +2263,7 @@ value is only used when calculating friction, not resolving the collision.</p>
 <h4 class="doc doc-heading" id="CP::Shape#update(transform)">
 
     <code>
-      #update<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">transform</span> <span class="p">:</span> <a href="vector-math.html#CP::Transform">Transform</a><span class="p">)</span> <span class="p">:</span> <a href="vector-math.html#CP::BB">BB</a></code></span>
+      #update<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">transform</span> <span class="p">:</span> <span class="n">Transform</span><span class="p">)</span> <span class="p">:</span> <span class="no">BB</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#update(transform)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2293,7 +2293,7 @@ box, you will need to use <a href="#CP::Shape::Poly"><code>Poly</code></a>.</p>
 <h4 class="doc doc-heading" id="CP::Shape::Box.moment(m,width,height)">
 
     <code>
-      .moment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">width</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">height</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
+      .moment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="n">width</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="n">height</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">)</span> <span class="p">:</span> <span class="nb">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Box.moment(m,width,height)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2306,7 +2306,7 @@ box, you will need to use <a href="#CP::Shape::Poly"><code>Poly</code></a>.</p>
 <h4 class="doc doc-heading" id="CP::Shape::Box.moment(m,box)">
 
     <code>
-      .moment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">box</span> <span class="p">:</span> <a href="vector-math.html#CP::BB">BB</a><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
+      .moment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="n">box</span> <span class="p">:</span> <span class="no">BB</span><span class="p">)</span> <span class="p">:</span> <span class="nb">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Box.moment(m,box)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2319,7 +2319,7 @@ box, you will need to use <a href="#CP::Shape::Poly"><code>Poly</code></a>.</p>
 <h4 class="doc doc-heading" id="CP::Shape::Box.new(body,width,height,radius)">
 
     <code>
-      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="sc">?,</span> <span class="n">width</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">height</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></span>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <span class="n">Body?</span><span class="p">,</span> <span class="n">width</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="n">height</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Box.new(body,width,height,radius)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2332,7 +2332,7 @@ box, you will need to use <a href="#CP::Shape::Poly"><code>Poly</code></a>.</p>
 <h4 class="doc doc-heading" id="CP::Shape::Box.new(body,box,radius)">
 
     <code>
-      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="sc">?,</span> <span class="n">box</span> <span class="p">:</span> <a href="vector-math.html#CP::BB">BB</a><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></span>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <span class="n">Body?</span><span class="p">,</span> <span class="n">box</span> <span class="p">:</span> <span class="no">BB</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Box.new(body,box,radius)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2360,7 +2360,7 @@ class <code>CP::Shape::Circle</code>
 <h4 class="doc doc-heading" id="CP::Shape::Circle.area(r1,r2)">
 
     <code>
-      .area<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">r1</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">r2</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
+      .area<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">r1</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="n">r2</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">)</span> <span class="p">:</span> <span class="nb">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Circle.area(r1,r2)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2374,7 +2374,7 @@ class <code>CP::Shape::Circle</code>
 <h4 class="doc doc-heading" id="CP::Shape::Circle.moment(m,r1,r2,offset)">
 
     <code>
-      .moment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">r1</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">r2</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">offset</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a> <span class="o">=</span> <span class="n">CP</span><span class="o">::</span><span class="n">Vect</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
+      .moment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="n">r1</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="n">r2</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="n">offset</span> <span class="p">:</span> <span class="n">Vect</span> <span class="o">=</span> <span class="no">CP</span><span class="o">::</span><span class="n">Vect</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span> <span class="p">:</span> <span class="nb">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Circle.moment(m,r1,r2,offset)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2388,7 +2388,7 @@ class <code>CP::Shape::Circle</code>
 <h4 class="doc doc-heading" id="CP::Shape::Circle.new(body,radius,offset)">
 
     <code>
-      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="sc">?,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">offset</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a> <span class="o">=</span> <span class="n">CP</span><span class="o">::</span><span class="n">Vect</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span></code></span>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <span class="n">Body?</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="n">offset</span> <span class="p">:</span> <span class="n">Vect</span> <span class="o">=</span> <span class="no">CP</span><span class="o">::</span><span class="n">Vect</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Circle.new(body,radius,offset)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2403,7 +2403,7 @@ body's center of gravity in body local coordinates.</p>
 <h4 class="doc doc-heading" id="CP::Shape::Circle#offset()">
 
     <code>
-      #offset<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
+      #offset<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Vect</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Circle#offset()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2416,7 +2416,7 @@ body's center of gravity in body local coordinates.</p>
 <h4 class="doc doc-heading" id="CP::Shape::Circle#offset=(offset)">
 
     <code>
-      #offset=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">offset</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
+      #offset=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">offset</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Circle#offset=(offset)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2433,7 +2433,7 @@ what you are doing!</p>
 <h4 class="doc doc-heading" id="CP::Shape::Circle#radius()">
 
     <code>
-      #radius<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
+      #radius<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="nb">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Circle#radius()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2446,7 +2446,7 @@ what you are doing!</p>
 <h4 class="doc doc-heading" id="CP::Shape::Circle#radius=(radius)">
 
     <code>
-      #radius=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
+      #radius=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Circle#radius=(radius)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2485,7 +2485,7 @@ class <code>CP::Shape::Poly</code>
 <h4 class="doc doc-heading" id="CP::Shape::Poly.area(verts,radius)">
 
     <code>
-      .area<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">verts</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span> <span class="o">|</span> <span class="n">Slice</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">),</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
+      .area<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">verts</span> <span class="p">:</span> <span class="nb">Array</span><span class="p">(</span><span class="n">Vect</span><span class="p">)</span> <span class="o">|</span> <span class="nb">Slice</span><span class="p">(</span><span class="n">Vect</span><span class="p">),</span> <span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="nb">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Poly.area(verts,radius)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2500,7 +2500,7 @@ This is probably backwards from what you expect, but matches Chipmunk's winding 
 <h4 class="doc doc-heading" id="CP::Shape::Poly.centroid(verts)">
 
     <code>
-      .centroid<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">verts</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span> <span class="o">|</span> <span class="n">Slice</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">))</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
+      .centroid<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">verts</span> <span class="p">:</span> <span class="nb">Array</span><span class="p">(</span><span class="n">Vect</span><span class="p">)</span> <span class="o">|</span> <span class="nb">Slice</span><span class="p">(</span><span class="n">Vect</span><span class="p">))</span> <span class="p">:</span> <span class="n">Vect</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Poly.centroid(verts)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2513,7 +2513,7 @@ This is probably backwards from what you expect, but matches Chipmunk's winding 
 <h4 class="doc doc-heading" id="CP::Shape::Poly.convex_hull(verts,tol)">
 
     <code>
-      .convex_hull<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">verts</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span> <span class="o">|</span> <span class="n">Slice</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">),</span> <span class="n">tol</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="n">Tuple</span><span class="p">(</span><span class="n">Slice</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">),</span> <span class="n">Int32</span><span class="p">)</span></code></span>
+      .convex_hull<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">verts</span> <span class="p">:</span> <span class="nb">Array</span><span class="p">(</span><span class="n">Vect</span><span class="p">)</span> <span class="o">|</span> <span class="nb">Slice</span><span class="p">(</span><span class="n">Vect</span><span class="p">),</span> <span class="n">tol</span> <span class="p">:</span> <span class="nb">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="nb">Tuple</span><span class="p">(</span><span class="nb">Slice</span><span class="p">(</span><span class="n">Vect</span><span class="p">),</span> <span class="nb">Int32</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Poly.convex_hull(verts,tol)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2530,7 +2530,7 @@ in the hull came from (i.e. <code>verts[first] == result[0]</code>)</p>
 <h4 class="doc doc-heading" id="CP::Shape::Poly.moment(m,verts,offset,radius)">
 
     <code>
-      .moment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">verts</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span> <span class="o">|</span> <span class="n">Slice</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">),</span> <span class="n">offset</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a> <span class="o">=</span> <span class="n">CP</span><span class="o">::</span><span class="n">Vect</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
+      .moment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="n">verts</span> <span class="p">:</span> <span class="nb">Array</span><span class="p">(</span><span class="n">Vect</span><span class="p">)</span> <span class="o">|</span> <span class="nb">Slice</span><span class="p">(</span><span class="n">Vect</span><span class="p">),</span> <span class="n">offset</span> <span class="p">:</span> <span class="n">Vect</span> <span class="o">=</span> <span class="no">CP</span><span class="o">::</span><span class="n">Vect</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="nb">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Poly.moment(m,verts,offset,radius)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2544,7 +2544,7 @@ in the hull came from (i.e. <code>verts[first] == result[0]</code>)</p>
 <h4 class="doc doc-heading" id="CP::Shape::Poly.new(body,verts,transform,radius)">
 
     <code>
-      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="sc">?,</span> <span class="n">verts</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span> <span class="o">|</span> <span class="n">Slice</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">),</span> <span class="n">transform</span> <span class="p">:</span> <a href="vector-math.html#CP::Transform">Transform</a> <span class="o">=</span> <span class="n">Transform</span><span class="o">::</span><span class="no">IDENTITY</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></span>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <span class="n">Body?</span><span class="p">,</span> <span class="n">verts</span> <span class="p">:</span> <span class="nb">Array</span><span class="p">(</span><span class="n">Vect</span><span class="p">)</span> <span class="o">|</span> <span class="nb">Slice</span><span class="p">(</span><span class="n">Vect</span><span class="p">),</span> <span class="n">transform</span> <span class="p">:</span> <span class="n">Transform</span> <span class="o">=</span> <span class="n">Transform</span><span class="o">::</span><span class="no">IDENTITY</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Poly.new(body,verts,transform,radius)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2562,7 +2562,7 @@ where the poly gets stuck on seams in your geometry.</p>
 <h4 class="doc doc-heading" id="CP::Shape::Poly.new(body,verts,radius)">
 
     <code>
-      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="sc">?,</span> <span class="n">verts</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span> <span class="o">|</span> <span class="n">Slice</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">),</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <span class="n">Body?</span><span class="p">,</span> <span class="n">verts</span> <span class="p">:</span> <span class="nb">Array</span><span class="p">(</span><span class="n">Vect</span><span class="p">)</span> <span class="o">|</span> <span class="nb">Slice</span><span class="p">(</span><span class="n">Vect</span><span class="p">),</span> <span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Poly.new(body,verts,radius)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2577,7 +2577,7 @@ The vertices must be convex with a counter-clockwise winding.</p>
 <h4 class="doc doc-heading" id="CP::Shape::Poly#radius()">
 
     <code>
-      #radius<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
+      #radius<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="nb">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Poly#radius()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2590,7 +2590,7 @@ The vertices must be convex with a counter-clockwise winding.</p>
 <h4 class="doc doc-heading" id="CP::Shape::Poly#radius=(radius)">
 
     <code>
-      #radius=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
+      #radius=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Poly#radius=(radius)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2607,7 +2607,7 @@ what you are doing!</p>
 <h4 class="doc doc-heading" id="CP::Shape::Poly#set_verts(verts,transform)">
 
     <code>
-      #set_verts<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">verts</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span> <span class="o">|</span> <span class="n">Slice</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">),</span> <span class="n">transform</span> <span class="p">:</span> <a href="vector-math.html#CP::Transform">Transform</a> <span class="o">=</span> <span class="n">Transform</span><span class="o">::</span><span class="no">IDENTITY</span><span class="p">)</span></code></span>
+      #set_verts<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">verts</span> <span class="p">:</span> <span class="nb">Array</span><span class="p">(</span><span class="n">Vect</span><span class="p">)</span> <span class="o">|</span> <span class="nb">Slice</span><span class="p">(</span><span class="n">Vect</span><span class="p">),</span> <span class="n">transform</span> <span class="p">:</span> <span class="n">Transform</span> <span class="o">=</span> <span class="n">Transform</span><span class="o">::</span><span class="no">IDENTITY</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Poly#set_verts(verts,transform)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2624,7 +2624,7 @@ what you are doing!</p>
 <h4 class="doc doc-heading" id="CP::Shape::Poly#size()">
 
     <code>
-      #size<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Int32</span></code></span>
+      #size<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="nb">Int32</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Poly#size()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2637,7 +2637,7 @@ what you are doing!</p>
 <h4 class="doc doc-heading" id="CP::Shape::Poly#unsafe_fetch(index)">
 
     <code>
-      #unsafe_fetch<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">index</span> <span class="p">:</span> <span class="n">Int</span><span class="p">)</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
+      #unsafe_fetch<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">index</span> <span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">:</span> <span class="n">Vect</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Poly#unsafe_fetch(index)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2665,7 +2665,7 @@ class <code>CP::Shape::Segment</code>
 <h4 class="doc doc-heading" id="CP::Shape::Segment.area(a,b,radius)">
 
     <code>
-      .area<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
+      .area<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">)</span> <span class="p">:</span> <span class="nb">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Segment.area(a,b,radius)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2678,7 +2678,7 @@ class <code>CP::Shape::Segment</code>
 <h4 class="doc doc-heading" id="CP::Shape::Segment.moment(m,a,b,radius)">
 
     <code>
-      .moment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
+      .moment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="n">a</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="nb">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Segment.moment(m,a,b,radius)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2692,7 +2692,7 @@ class <code>CP::Shape::Segment</code>
 <h4 class="doc doc-heading" id="CP::Shape::Segment.new(body,a,b,radius)">
 
     <code>
-      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="sc">?,</span> <span class="n">a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></span>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <span class="n">Body?</span><span class="p">,</span> <span class="n">a</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Segment.new(body,a,b,radius)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2707,7 +2707,7 @@ the <em>radius</em> of the half-circles at the ends of the segment (thickness is
 <h4 class="doc doc-heading" id="CP::Shape::Segment#a()">
 
     <code>
-      #a<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
+      #a<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Vect</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Segment#a()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2720,7 +2720,7 @@ the <em>radius</em> of the half-circles at the ends of the segment (thickness is
 <h4 class="doc doc-heading" id="CP::Shape::Segment#b()">
 
     <code>
-      #b<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
+      #b<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Vect</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Segment#b()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2733,7 +2733,7 @@ the <em>radius</em> of the half-circles at the ends of the segment (thickness is
 <h4 class="doc doc-heading" id="CP::Shape::Segment#normal()">
 
     <code>
-      #normal<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
+      #normal<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Vect</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Segment#normal()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2746,7 +2746,7 @@ the <em>radius</em> of the half-circles at the ends of the segment (thickness is
 <h4 class="doc doc-heading" id="CP::Shape::Segment#radius()">
 
     <code>
-      #radius<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
+      #radius<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="nb">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Segment#radius()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2759,7 +2759,7 @@ the <em>radius</em> of the half-circles at the ends of the segment (thickness is
 <h4 class="doc doc-heading" id="CP::Shape::Segment#radius=(radius)">
 
     <code>
-      #radius=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
+      #radius=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Segment#radius=(radius)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2776,7 +2776,7 @@ what you are doing!</p>
 <h4 class="doc doc-heading" id="CP::Shape::Segment#set_endpoints(a,b)">
 
     <code>
-      #set_endpoints<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
+      #set_endpoints<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Segment#set_endpoints(a,b)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2793,7 +2793,7 @@ what you are doing!</p>
 <h4 class="doc doc-heading" id="CP::Shape::Segment#set_neighbors(prev,next)">
 
     <code>
-      #set_neighbors<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">prev</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="k">next</span> <span class="n">next_</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
+      #set_neighbors<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">prev</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="k">next</span> <span class="n">next_</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Segment#set_neighbors(prev,next)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2880,7 +2880,7 @@ using groups or category masks is preferred.</p>
 <h4 class="doc doc-heading" id="CP::ShapeFilter.new(group,categories,mask)">
 
     <code>
-      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">group</span> <span class="p">:</span> <span class="n">Int</span> <span class="o">=</span> <span class="no">NO_GROUP</span><span class="p">,</span> <span class="n">categories</span> <span class="p">:</span> <span class="n">Int</span> <span class="o">=</span> <span class="no">ALL_CATEGORIES</span><span class="p">,</span> <span class="n">mask</span> <span class="p">:</span> <span class="n">Int</span> <span class="o">=</span> <span class="no">ALL_CATEGORIES</span><span class="p">)</span></code></span>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">group</span> <span class="p">:</span> <span class="nb">Int</span> <span class="o">=</span> <span class="no">NO_GROUP</span><span class="p">,</span> <span class="n">categories</span> <span class="p">:</span> <span class="nb">Int</span> <span class="o">=</span> <span class="no">ALL_CATEGORIES</span><span class="p">,</span> <span class="n">mask</span> <span class="p">:</span> <span class="nb">Int</span> <span class="o">=</span> <span class="no">ALL_CATEGORIES</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::ShapeFilter.new(group,categories,mask)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2893,7 +2893,7 @@ using groups or category masks is preferred.</p>
 <h4 class="doc doc-heading" id="CP::ShapeFilter#categories()">
 
     <code>
-      #categories<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="#CP::ShapeFilter::Bitmask">Bitmask</a></code></span>
+      #categories<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Bitmask</span></code></span>
     </code>
   <a class="headerlink" href="#CP::ShapeFilter#categories()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2907,7 +2907,7 @@ using groups or category masks is preferred.</p>
 <h4 class="doc doc-heading" id="CP::ShapeFilter#categories=(categories)">
 
     <code>
-      #categories=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">categories</span> <span class="p">:</span> <a href="#CP::ShapeFilter::Bitmask">Bitmask</a><span class="p">)</span></code></span>
+      #categories=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">categories</span> <span class="p">:</span> <span class="n">Bitmask</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::ShapeFilter#categories=(categories)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2919,7 +2919,7 @@ using groups or category masks is preferred.</p>
 <h4 class="doc doc-heading" id="CP::ShapeFilter#group()">
 
     <code>
-      #group<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="#CP::ShapeFilter::Group">Group</a></code></span>
+      #group<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Group</span></code></span>
     </code>
   <a class="headerlink" href="#CP::ShapeFilter#group()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2933,7 +2933,7 @@ using groups or category masks is preferred.</p>
 <h4 class="doc doc-heading" id="CP::ShapeFilter#group=(group)">
 
     <code>
-      #group=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">group</span> <span class="p">:</span> <a href="#CP::ShapeFilter::Group">Group</a><span class="p">)</span></code></span>
+      #group=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">group</span> <span class="p">:</span> <span class="n">Group</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::ShapeFilter#group=(group)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2945,7 +2945,7 @@ using groups or category masks is preferred.</p>
 <h4 class="doc doc-heading" id="CP::ShapeFilter#mask()">
 
     <code>
-      #mask<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="#CP::ShapeFilter::Bitmask">Bitmask</a></code></span>
+      #mask<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Bitmask</span></code></span>
     </code>
   <a class="headerlink" href="#CP::ShapeFilter#mask()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2959,7 +2959,7 @@ using groups or category masks is preferred.</p>
 <h4 class="doc doc-heading" id="CP::ShapeFilter#mask=(mask)">
 
     <code>
-      #mask=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">mask</span> <span class="p">:</span> <a href="#CP::ShapeFilter::Bitmask">Bitmask</a><span class="p">)</span></code></span>
+      #mask=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">mask</span> <span class="p">:</span> <span class="n">Bitmask</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::ShapeFilter#mask=(mask)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2977,7 +2977,7 @@ alias <code>CP::ShapeFilter::Bitmask</code>
 <div class="doc doc-contents first">
 <div class="doc doc-children">
 <h3 id="alias-definition">Alias definition<a class="headerlink" href="#alias-definition" title="Permanent link">#</a></h3>
-<code class="highlight language-crystal"><span class="n">UInt32</span></code>
+<code class="highlight language-crystal"><span class="nb">UInt32</span></code>
 
 
 
@@ -2992,7 +2992,7 @@ alias <code>CP::ShapeFilter::Group</code>
 <div class="doc doc-contents first">
 <div class="doc doc-children">
 <h3 id="alias-definition_1">Alias definition<a class="headerlink" href="#alias-definition_1" title="Permanent link">#</a></h3>
-<code class="highlight language-crystal"><span class="n">UInt64</span></code>
+<code class="highlight language-crystal"><span class="nb">UInt64</span></code>
 
 
 
@@ -3066,8 +3066,8 @@ alias <code>CP::ShapeFilter::Group</code>
       
     </div>
     
-      <script src="assets/javascripts/vendor.93c04032.min.js"></script>
-      <script src="assets/javascripts/bundle.83e5331e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="assets/javascripts/vendor.08c56446.min.js"></script>
+      <script src="assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
