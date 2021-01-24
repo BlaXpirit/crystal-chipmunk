@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://oprypin.github.io/crystal-chipmunk/shapes.html">
       
       <link rel="shortcut icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.3">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.5">
     
     
       
@@ -20,10 +20,10 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.3b61ea93.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.15aa0b43.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.39b8e14a.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.75751829.min.css">
         
           
           
@@ -201,25 +201,15 @@
       
 
 
-
-  <li class="md-nav__item">
-    <a href="space.html" class="md-nav__link">
-      Space
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-
-  <li class="md-nav__item">
-    <a href="body.html" class="md-nav__link">
-      Body
-    </a>
-  </li>
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="space.html" class="md-nav__link">
+        Space
+      </a>
+    </li>
+  
 
     
       
@@ -228,23 +218,41 @@
 
 
   
+  
+  
+    <li class="md-nav__item">
+      <a href="body.html" class="md-nav__link">
+        Body
+      </a>
+    </li>
+  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Shapes
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="shapes.html" class="md-nav__link md-nav__link--active">
-      Shapes
-    </a>
     
       
+      
+      
+
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Shapes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="shapes.html" class="md-nav__link md-nav__link--active">
+        Shapes
+      </a>
+      
+        
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -1016,21 +1024,9 @@
     </ul>
   
 </nav>
-    
-  </li>
-
-    
       
-      
-      
-
-
-
-  <li class="md-nav__item">
-    <a href="constraints.html" class="md-nav__link">
-      Constraints
-    </a>
-  </li>
+    </li>
+  
 
     
       
@@ -1038,25 +1034,15 @@
       
 
 
-
-  <li class="md-nav__item">
-    <a href="collisions.html" class="md-nav__link">
-      Collisions
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-
-  <li class="md-nav__item">
-    <a href="queries.html" class="md-nav__link">
-      Queries
-    </a>
-  </li>
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="constraints.html" class="md-nav__link">
+        Constraints
+      </a>
+    </li>
+  
 
     
       
@@ -1064,12 +1050,15 @@
       
 
 
-
-  <li class="md-nav__item">
-    <a href="vector-math.html" class="md-nav__link">
-      Vector math
-    </a>
-  </li>
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="collisions.html" class="md-nav__link">
+        Collisions
+      </a>
+    </li>
+  
 
     
       
@@ -1077,12 +1066,47 @@
       
 
 
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="queries.html" class="md-nav__link">
+        Queries
+      </a>
+    </li>
+  
 
-  <li class="md-nav__item">
-    <a href="debug-draw.html" class="md-nav__link">
-      Debug draw
-    </a>
-  </li>
+    
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="vector-math.html" class="md-nav__link">
+        Vector math
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="debug-draw.html" class="md-nav__link">
+        Debug draw
+      </a>
+    </li>
+  
 
     
   </ul>
@@ -1905,20 +1929,19 @@ abstract class <code>CP::Shape</code>
 <h4 class="doc doc-heading" id="CP::Shape#area()">
 
     <code>
-      #area<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="nb">Float64</span></code></span>
+      #area<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#area()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Get the calculated area of this shape.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L112">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L112">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#bb()">
 
     <code>
-      #bb<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="no">BB</span></code></span>
+      #bb<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::BB">BB</a></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#bb()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -1927,74 +1950,68 @@ abstract class <code>CP::Shape</code>
 Moving a body that a shape is connected to does not update its bounding box.
 For shapes used for queries that aren't attached to bodies, you can also use <a href="#CP::Shape#update(transform)"><code>update</code></a>.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L126">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L126">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#body()">
 
     <code>
-      #body<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Body?</span></code></span>
+      #body<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="body.html#CP::Body">Body?</a></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#body()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>The <a href="body.html#CP::Body"><code>Body</code></a> this shape is added to.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L78">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L78">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#body=(body)">
 
     <code>
-      #body=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <span class="n">Body?</span><span class="p">)</span></code></span>
+      #body=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <a href="body.html#CP::Body">Body?</a><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#body=(body)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Set the <a href="body.html#CP::Body"><code>Body</code></a> this shape is added to.</p>
 <p>Can only be used if the shape is not currently added to a space.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L84">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L84">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#cache_bb()">
 
     <code>
-      #cache_bb<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="no">BB</span></code></span>
+      #cache_bb<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::BB">BB</a></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#cache_bb()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Update, cache and return the bounding box of a shape based on the body it's attached to.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L43">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L43">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#center_of_gravity()">
 
     <code>
-      #center_of_gravity<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Vect</span></code></span>
+      #center_of_gravity<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#center_of_gravity()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Get the centroid of this shape.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L117">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L117">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#collide(b)">
 
     <code>
-      #collide<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">b</span> <span class="p">:</span> <span class="n">Shape</span><span class="p">)</span> <span class="p">:</span> <span class="n">ContactPointSet</span></code></span>
+      #collide<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">b</span> <span class="p">:</span> <a href="#CP::Shape">Shape</a><span class="p">)</span> <span class="p">:</span> <a href="collisions.html#CP::ContactPointSet">ContactPointSet</a></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#collide(b)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Return contact information about two shapes.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L68">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L68">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#collision_type()">
@@ -2007,52 +2024,48 @@ For shapes used for queries that aren't attached to bodies, you can also use <a 
 <p>User defined collision type for the shape.</p>
 <p>See <a href="space.html#CP::Space#add_collision_handler(a,b,handler)"><code>Space#add_collision_handler</code></a> for more information.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L177">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L177">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#collision_type=(collision_type)">
 
     <code>
-      #collision_type=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">collision_type</span> <span class="p">:</span> <span class="nb">Int</span><span class="p">)</span></code></span>
+      #collision_type=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">collision_type</span> <span class="p">:</span> <span class="n">Int</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#collision_type=(collision_type)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
   </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L180">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L180">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#density()">
 
     <code>
-      #density<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="nb">Float64</span></code></span>
+      #density<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#density()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Get the density of the shape if you are having Chipmunk calculate mass properties for you.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L98">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L98">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#density=(density)">
 
     <code>
-      #density=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">density</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">)</span></code></span>
+      #density=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">density</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#density=(density)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Set the density of this shape to have Chipmunk calculate mass properties for you.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L102">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L102">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#elasticity()">
 
     <code>
-      #elasticity<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="nb">Float64</span></code></span>
+      #elasticity<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#elasticity()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2061,51 +2074,47 @@ For shapes used for queries that aren't attached to bodies, you can also use <a 
 'perfect' bounce. However due to inaccuracies in the simulation
 using 1.0 or greater is not recommended.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L145">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L145">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#elasticity=(elasticity)">
 
     <code>
-      #elasticity=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">elasticity</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">)</span></code></span>
+      #elasticity=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">elasticity</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#elasticity=(elasticity)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
   </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L148">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L148">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#filter()">
 
     <code>
-      #filter<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">ShapeFilter</span></code></span>
+      #filter<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="#CP::ShapeFilter">ShapeFilter</a></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#filter()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>The collision filtering parameters of this shape.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L185">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L185">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#filter=(filter)">
 
     <code>
-      #filter=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">filter</span> <span class="p">:</span> <span class="n">ShapeFilter</span><span class="p">)</span></code></span>
+      #filter=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">filter</span> <span class="p">:</span> <a href="#CP::ShapeFilter">ShapeFilter</a><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#filter=(filter)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
   </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L188">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L188">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#friction()">
 
     <code>
-      #friction<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="nb">Float64</span></code></span>
+      #friction<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#friction()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2113,59 +2122,54 @@ using 1.0 or greater is not recommended.</p>
 <p>Chipmunk uses the Coulomb friction model, a value of 0.0 is
 frictionless. A value over 1.0 is also perfectly fine.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L156">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L156">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#friction=(friction)">
 
     <code>
-      #friction=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">friction</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">)</span></code></span>
+      #friction=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">friction</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#friction=(friction)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
   </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L159">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L159">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#mass()">
 
     <code>
-      #mass<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="nb">Float64</span></code></span>
+      #mass<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#mass()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Get the mass of the shape if you are having Chipmunk calculate mass properties for you.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L89">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L89">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#mass=(mass)">
 
     <code>
-      #mass=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">mass</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">)</span></code></span>
+      #mass=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">mass</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#mass=(mass)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Set the mass of this shape to have Chipmunk calculate mass properties for you.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L93">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L93">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#moment()">
 
     <code>
-      #moment<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="nb">Float64</span></code></span>
+      #moment<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#moment()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Get the calculated moment of inertia for this shape.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L107">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L107">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#point_query(p)">
@@ -2177,66 +2181,61 @@ frictionless. A value over 1.0 is also perfectly fine.</p>
 <div class="doc doc-contents ">
 <p>Perform a nearest point query. It finds the closest point on the surface of shape to a specific point.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L55">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L55">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#segment_query(a,b,radius)">
 
     <code>
-      #segment_query<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="n">SegmentQueryInfo?</span></code></span>
+      #segment_query<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="n">SegmentQueryInfo?</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#segment_query(a,b,radius)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Perform a segment query against a shape: check if the line segment from start to end intersects the shape.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L61">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L61">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#sensor=(sensor)">
 
     <code>
-      #sensor=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">sensor</span> <span class="p">:</span> <span class="nb">Bool</span><span class="p">)</span></code></span>
+      #sensor=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">sensor</span> <span class="p">:</span> <span class="n">Bool</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#sensor=(sensor)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
   </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L136">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L136">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#sensor?()">
 
     <code>
-      #sensor?<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="nb">Bool</span></code></span>
+      #sensor?<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Bool</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#sensor?()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Is the shape set to be a sensor or not?</p>
 <p>Sensors only call collision callbacks, and never generate real collisions.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L133">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L133">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#space()">
 
     <code>
-      #space<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Space?</span></code></span>
+      #space<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="space.html#CP::Space">Space?</a></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#space()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>The <a href="space.html#CP::Space"><code>Space</code></a> this shape is added to.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L73">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L73">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#surface_velocity()">
 
     <code>
-      #surface_velocity<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Vect</span></code></span>
+      #surface_velocity<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#surface_velocity()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2244,34 +2243,31 @@ frictionless. A value over 1.0 is also perfectly fine.</p>
 <p>Useful for creating conveyor belts or players that move around. This
 value is only used when calculating friction, not resolving the collision.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L167">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L167">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#surface_velocity=(surface_velocity)">
 
     <code>
-      #surface_velocity=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">surface_velocity</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">)</span></code></span>
+      #surface_velocity=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">surface_velocity</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#surface_velocity=(surface_velocity)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
   </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L170">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L170">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape#update(transform)">
 
     <code>
-      #update<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">transform</span> <span class="p">:</span> <span class="n">Transform</span><span class="p">)</span> <span class="p">:</span> <span class="no">BB</span></code></span>
+      #update<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">transform</span> <span class="p">:</span> <a href="vector-math.html#CP::Transform">Transform</a><span class="p">)</span> <span class="p">:</span> <a href="vector-math.html#CP::BB">BB</a></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape#update(transform)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Update, cache and return the bounding box of a shape with an explicit transformation.</p>
 <p>Useful if you have a shape without a body and want to use it for querying.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L50">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L50">View source</a>
 </div>
 </div>
 </div>
@@ -2293,53 +2289,49 @@ box, you will need to use <a href="#CP::Shape::Poly"><code>Poly</code></a>.</p>
 <h4 class="doc doc-heading" id="CP::Shape::Box.moment(m,width,height)">
 
     <code>
-      .moment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="n">width</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="n">height</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">)</span> <span class="p">:</span> <span class="nb">Float64</span></code></span>
+      .moment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">width</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">height</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Box.moment(m,width,height)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Calculate the moment of inertia for a solid box.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L391">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L391">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-class_method">
 <h4 class="doc doc-heading" id="CP::Shape::Box.moment(m,box)">
 
     <code>
-      .moment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="n">box</span> <span class="p">:</span> <span class="no">BB</span><span class="p">)</span> <span class="p">:</span> <span class="nb">Float64</span></code></span>
+      .moment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">box</span> <span class="p">:</span> <a href="vector-math.html#CP::BB">BB</a><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Box.moment(m,box)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Calculate the moment of inertia for a solid box.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L396">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L396">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-class_method">
 <h4 class="doc doc-heading" id="CP::Shape::Box.new(body,width,height,radius)">
 
     <code>
-      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <span class="n">Body?</span><span class="p">,</span> <span class="n">width</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="n">height</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></span>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <a href="body.html#CP::Body">Body?</a><span class="p">,</span> <span class="n">width</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">height</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Box.new(body,width,height,radius)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Initialize a box shaped polygon shape with rounded corners.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L401">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L401">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-class_method">
 <h4 class="doc doc-heading" id="CP::Shape::Box.new(body,box,radius)">
 
     <code>
-      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <span class="n">Body?</span><span class="p">,</span> <span class="n">box</span> <span class="p">:</span> <span class="no">BB</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></span>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <a href="body.html#CP::Body">Body?</a><span class="p">,</span> <span class="n">box</span> <span class="p">:</span> <a href="vector-math.html#CP::BB">BB</a><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Box.new(body,box,radius)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Initialize an offset box shaped polygon shape with rounded corners.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L407">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L407">View source</a>
 </div>
 </div>
 </div>
@@ -2360,63 +2352,59 @@ class <code>CP::Shape::Circle</code>
 <h4 class="doc doc-heading" id="CP::Shape::Circle.area(r1,r2)">
 
     <code>
-      .area<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">r1</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="n">r2</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">)</span> <span class="p">:</span> <span class="nb">Float64</span></code></span>
+      .area<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">r1</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">r2</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Circle.area(r1,r2)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Calculate area of a hollow circle.</p>
 <p><em>r1</em> and <em>r2</em> are the inner and outer diameters. A solid circle has an inner diameter of 0.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L206">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L206">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-class_method">
 <h4 class="doc doc-heading" id="CP::Shape::Circle.moment(m,r1,r2,offset)">
 
     <code>
-      .moment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="n">r1</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="n">r2</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="n">offset</span> <span class="p">:</span> <span class="n">Vect</span> <span class="o">=</span> <span class="no">CP</span><span class="o">::</span><span class="n">Vect</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span> <span class="p">:</span> <span class="nb">Float64</span></code></span>
+      .moment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">r1</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">r2</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">offset</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a> <span class="o">=</span> <span class="n">CP</span><span class="o">::</span><span class="n">Vect</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Circle.moment(m,r1,r2,offset)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Calculate the moment of inertia for a circle.</p>
 <p><em>r1</em> and <em>r2</em> are the inner and outer diameters. A solid circle has an inner diameter of 0.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L199">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L199">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-class_method">
 <h4 class="doc doc-heading" id="CP::Shape::Circle.new(body,radius,offset)">
 
     <code>
-      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <span class="n">Body?</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="n">offset</span> <span class="p">:</span> <span class="n">Vect</span> <span class="o">=</span> <span class="no">CP</span><span class="o">::</span><span class="n">Vect</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span></code></span>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <a href="body.html#CP::Body">Body?</a><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">offset</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a> <span class="o">=</span> <span class="n">CP</span><span class="o">::</span><span class="n">Vect</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Circle.new(body,radius,offset)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>The parameters are: the <em>body</em> to attach the circle to; the <em>offset</em> from the
 body's center of gravity in body local coordinates.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L212">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L212">View source</a>
 </div>
 <h3 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">#</a></h3>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape::Circle#offset()">
 
     <code>
-      #offset<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Vect</span></code></span>
+      #offset<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Circle#offset()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Get the offset of a circle shape.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L224">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L224">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape::Circle#offset=(offset)">
 
     <code>
-      #offset=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">offset</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">)</span></code></span>
+      #offset=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">offset</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Circle#offset=(offset)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2426,27 +2414,25 @@ of the shape's surface, but not its velocity. Changing it will
 not result in realistic physical behavior. Only use if you know
 what you are doing!</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/unsafe.cr#L54">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/unsafe.cr#L54">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape::Circle#radius()">
 
     <code>
-      #radius<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="nb">Float64</span></code></span>
+      #radius<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Circle#radius()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Get the radius of a circle shape.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L229">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L229">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape::Circle#radius=(radius)">
 
     <code>
-      #radius=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">)</span></code></span>
+      #radius=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Circle#radius=(radius)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2456,8 +2442,7 @@ of the shape's surface, but not its velocity. Changing it will
 not result in realistic physical behavior. Only use if you know
 what you are doing!</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/unsafe.cr#L44">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/unsafe.cr#L44">View source</a>
 </div>
 </div>
 </div>
@@ -2485,7 +2470,7 @@ class <code>CP::Shape::Poly</code>
 <h4 class="doc doc-heading" id="CP::Shape::Poly.area(verts,radius)">
 
     <code>
-      .area<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">verts</span> <span class="p">:</span> <span class="nb">Array</span><span class="p">(</span><span class="n">Vect</span><span class="p">)</span> <span class="o">|</span> <span class="nb">Slice</span><span class="p">(</span><span class="n">Vect</span><span class="p">),</span> <span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="nb">Float64</span></code></span>
+      .area<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">verts</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span> <span class="o">|</span> <span class="n">Slice</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">),</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Poly.area(verts,radius)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2493,27 +2478,25 @@ class <code>CP::Shape::Poly</code>
 <p>A clockwise winding gives positive area.
 This is probably backwards from what you expect, but matches Chipmunk's winding for poly shapes.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L308">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L308">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-class_method">
 <h4 class="doc doc-heading" id="CP::Shape::Poly.centroid(verts)">
 
     <code>
-      .centroid<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">verts</span> <span class="p">:</span> <span class="nb">Array</span><span class="p">(</span><span class="n">Vect</span><span class="p">)</span> <span class="o">|</span> <span class="nb">Slice</span><span class="p">(</span><span class="n">Vect</span><span class="p">))</span> <span class="p">:</span> <span class="n">Vect</span></code></span>
+      .centroid<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">verts</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span> <span class="o">|</span> <span class="n">Slice</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">))</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Poly.centroid(verts)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Calculate the natural centroid of a polygon.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L313">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L313">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-class_method">
 <h4 class="doc doc-heading" id="CP::Shape::Poly.convex_hull(verts,tol)">
 
     <code>
-      .convex_hull<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">verts</span> <span class="p">:</span> <span class="nb">Array</span><span class="p">(</span><span class="n">Vect</span><span class="p">)</span> <span class="o">|</span> <span class="nb">Slice</span><span class="p">(</span><span class="n">Vect</span><span class="p">),</span> <span class="n">tol</span> <span class="p">:</span> <span class="nb">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="nb">Tuple</span><span class="p">(</span><span class="nb">Slice</span><span class="p">(</span><span class="n">Vect</span><span class="p">),</span> <span class="nb">Int32</span><span class="p">)</span></code></span>
+      .convex_hull<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">verts</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span> <span class="o">|</span> <span class="n">Slice</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">),</span> <span class="n">tol</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="n">Tuple</span><span class="p">(</span><span class="n">Slice</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">),</span> <span class="n">Int32</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Poly.convex_hull(verts,tol)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2523,28 +2506,26 @@ A tolerance of 0.0 creates an exact hull.</p>
 <p>Returns the convex hull and the index where the first vertex
 in the hull came from (i.e. <code>verts[first] == result[0]</code>)</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L324">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L324">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-class_method">
 <h4 class="doc doc-heading" id="CP::Shape::Poly.moment(m,verts,offset,radius)">
 
     <code>
-      .moment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="n">verts</span> <span class="p">:</span> <span class="nb">Array</span><span class="p">(</span><span class="n">Vect</span><span class="p">)</span> <span class="o">|</span> <span class="nb">Slice</span><span class="p">(</span><span class="n">Vect</span><span class="p">),</span> <span class="n">offset</span> <span class="p">:</span> <span class="n">Vect</span> <span class="o">=</span> <span class="no">CP</span><span class="o">::</span><span class="n">Vect</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="nb">Float64</span></code></span>
+      .moment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">verts</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span> <span class="o">|</span> <span class="n">Slice</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">),</span> <span class="n">offset</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a> <span class="o">=</span> <span class="n">CP</span><span class="o">::</span><span class="n">Vect</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Poly.moment(m,verts,offset,radius)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Calculate the moment of inertia for a solid polygon shape.</p>
 <p>Assumes its center of gravity is at its centroid. The offset is added to each vertex.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L300">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L300">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-class_method">
 <h4 class="doc doc-heading" id="CP::Shape::Poly.new(body,verts,transform,radius)">
 
     <code>
-      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <span class="n">Body?</span><span class="p">,</span> <span class="n">verts</span> <span class="p">:</span> <span class="nb">Array</span><span class="p">(</span><span class="n">Vect</span><span class="p">)</span> <span class="o">|</span> <span class="nb">Slice</span><span class="p">(</span><span class="n">Vect</span><span class="p">),</span> <span class="n">transform</span> <span class="p">:</span> <span class="n">Transform</span> <span class="o">=</span> <span class="n">Transform</span><span class="o">::</span><span class="no">IDENTITY</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></span>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <a href="body.html#CP::Body">Body?</a><span class="p">,</span> <span class="n">verts</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span> <span class="o">|</span> <span class="n">Slice</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">),</span> <span class="n">transform</span> <span class="p">:</span> <a href="vector-math.html#CP::Transform">Transform</a> <span class="o">=</span> <span class="n">Transform</span><span class="o">::</span><span class="no">IDENTITY</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Poly.new(body,verts,transform,radius)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2555,42 +2536,39 @@ the <em>transform</em> to apply to every vertex; the radius of the corners.</p>
 <p>Adding a small radius will bevel the corners and can significantly reduce problems
 where the poly gets stuck on seams in your geometry.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L341">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L341">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-class_method">
 <h4 class="doc doc-heading" id="CP::Shape::Poly.new(body,verts,radius)">
 
     <code>
-      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <span class="n">Body?</span><span class="p">,</span> <span class="n">verts</span> <span class="p">:</span> <span class="nb">Array</span><span class="p">(</span><span class="n">Vect</span><span class="p">)</span> <span class="o">|</span> <span class="nb">Slice</span><span class="p">(</span><span class="n">Vect</span><span class="p">),</span> <span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">)</span></code></span>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <a href="body.html#CP::Body">Body?</a><span class="p">,</span> <span class="n">verts</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span> <span class="o">|</span> <span class="n">Slice</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">),</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Poly.new(body,verts,radius)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Initialize a polygon shape with rounded corners.
 The vertices must be convex with a counter-clockwise winding.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L348">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L348">View source</a>
 </div>
 <h3 id="methods_2">Methods<a class="headerlink" href="#methods_2" title="Permanent link">#</a></h3>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape::Poly#radius()">
 
     <code>
-      #radius<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="nb">Float64</span></code></span>
+      #radius<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Poly#radius()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Get the radius of a polygon shape.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L379">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L379">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape::Poly#radius=(radius)">
 
     <code>
-      #radius=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">)</span></code></span>
+      #radius=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Poly#radius=(radius)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2600,14 +2578,13 @@ of the shape's surface, but not its velocity. Changing it will
 not result in realistic physical behavior. Only use if you know
 what you are doing!</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/unsafe.cr#L98">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/unsafe.cr#L98">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape::Poly#set_verts(verts,transform)">
 
     <code>
-      #set_verts<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">verts</span> <span class="p">:</span> <span class="nb">Array</span><span class="p">(</span><span class="n">Vect</span><span class="p">)</span> <span class="o">|</span> <span class="nb">Slice</span><span class="p">(</span><span class="n">Vect</span><span class="p">),</span> <span class="n">transform</span> <span class="p">:</span> <span class="n">Transform</span> <span class="o">=</span> <span class="n">Transform</span><span class="o">::</span><span class="no">IDENTITY</span><span class="p">)</span></code></span>
+      #set_verts<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">verts</span> <span class="p">:</span> <span class="n">Array</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span> <span class="o">|</span> <span class="n">Slice</span><span class="p">(</span><a href="vector-math.html#CP::Vect">Vect</a><span class="p">),</span> <span class="n">transform</span> <span class="p">:</span> <a href="vector-math.html#CP::Transform">Transform</a> <span class="o">=</span> <span class="n">Transform</span><span class="o">::</span><span class="no">IDENTITY</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Poly#set_verts(verts,transform)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2617,34 +2594,31 @@ of the shape's surface, but not its velocity. Changing it will
 not result in realistic physical behavior. Only use if you know
 what you are doing!</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/unsafe.cr#L88">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/unsafe.cr#L88">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape::Poly#size()">
 
     <code>
-      #size<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="nb">Int32</span></code></span>
+      #size<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Int32</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Poly#size()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Get the number of verts in a polygon shape.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L365">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L365">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape::Poly#unsafe_fetch(index)">
 
     <code>
-      #unsafe_fetch<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">index</span> <span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">:</span> <span class="n">Vect</span></code></span>
+      #unsafe_fetch<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">index</span> <span class="p">:</span> <span class="n">Int</span><span class="p">)</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Poly#unsafe_fetch(index)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Get the <em>i</em>-th vertex of a polygon shape.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L370">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L370">View source</a>
 </div>
 </div>
 </div>
@@ -2665,101 +2639,94 @@ class <code>CP::Shape::Segment</code>
 <h4 class="doc doc-heading" id="CP::Shape::Segment.area(a,b,radius)">
 
     <code>
-      .area<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">)</span> <span class="p">:</span> <span class="nb">Float64</span></code></span>
+      .area<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Segment.area(a,b,radius)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Calculate the area of a fattened (capsule shaped) line segment.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L246">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L246">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-class_method">
 <h4 class="doc doc-heading" id="CP::Shape::Segment.moment(m,a,b,radius)">
 
     <code>
-      .moment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="n">a</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="nb">Float64</span></code></span>
+      .moment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">m</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Segment.moment(m,a,b,radius)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Calculate the moment of inertia for a line segment.</p>
 <p>Beveling radius is not supported.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L241">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L241">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-class_method">
 <h4 class="doc doc-heading" id="CP::Shape::Segment.new(body,a,b,radius)">
 
     <code>
-      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <span class="n">Body?</span><span class="p">,</span> <span class="n">a</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></span>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">body</span> <span class="p">:</span> <a href="body.html#CP::Body">Body?</a><span class="p">,</span> <span class="n">a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Segment.new(body,a,b,radius)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>The parameters are: the <em>body</em> to attach the segment to; the endpoints (<em>a</em>, <em>b</em>) to attach the segment to;
 the <em>radius</em> of the half-circles at the ends of the segment (thickness is twice the radius).</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L252">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L252">View source</a>
 </div>
 <h3 id="methods_3">Methods<a class="headerlink" href="#methods_3" title="Permanent link">#</a></h3>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape::Segment#a()">
 
     <code>
-      #a<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Vect</span></code></span>
+      #a<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Segment#a()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Get the first endpoint of a segment shape.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L274">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L274">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape::Segment#b()">
 
     <code>
-      #b<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Vect</span></code></span>
+      #b<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Segment#b()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Get the second endpoint of a segment shape.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L278">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L278">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape::Segment#normal()">
 
     <code>
-      #normal<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Vect</span></code></span>
+      #normal<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Segment#normal()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Get the normal of a segment shape.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L283">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L283">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape::Segment#radius()">
 
     <code>
-      #radius<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="nb">Float64</span></code></span>
+      #radius<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Segment#radius()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Get the radius of a segment shape.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L288">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L288">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape::Segment#radius=(radius)">
 
     <code>
-      #radius=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">radius</span> <span class="p">:</span> <span class="nb">Number</span><span class="p">)</span></code></span>
+      #radius=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">radius</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Segment#radius=(radius)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2769,14 +2736,13 @@ of the shape's surface, but not its velocity. Changing it will
 not result in realistic physical behavior. Only use if you know
 what you are doing!</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/unsafe.cr#L76">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/unsafe.cr#L76">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape::Segment#set_endpoints(a,b)">
 
     <code>
-      #set_endpoints<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">)</span></code></span>
+      #set_endpoints<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Segment#set_endpoints(a,b)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2786,14 +2752,13 @@ of the shape's surface, but not its velocity. Changing it will
 not result in realistic physical behavior. Only use if you know
 what you are doing!</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/unsafe.cr#L66">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/unsafe.cr#L66">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::Shape::Segment#set_neighbors(prev,next)">
 
     <code>
-      #set_neighbors<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">prev</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">,</span> <span class="k">next</span> <span class="n">next_</span> <span class="p">:</span> <span class="n">Vect</span><span class="p">)</span></code></span>
+      #set_neighbors<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">prev</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="k">next</span> <span class="n">next_</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::Shape::Segment#set_neighbors(prev,next)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
@@ -2803,8 +2768,7 @@ together, things can still collide with the "cracks" between the
 segments. By setting the neighbor segment endpoints you can tell
 Chipmunk to avoid colliding with the inner parts of the crack.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L269">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/shape.cr#L269">View source</a>
 </div>
 </div>
 </div>
@@ -2842,7 +2806,9 @@ using groups or category masks is preferred.</p>
 <div class="doc doc-object doc-constant">
 <h4 class="doc doc-heading" id="CP::ShapeFilter::ALL">
 
-    <code>ALL</code>
+    <code>
+      ALL = <span style="font-weight: normal"><code class="highlight language-crystal"><span class="n">new</span><span class="p">(</span><span class="no">NO_GROUP</span><span class="p">,</span> <span class="no">ALL_CATEGORIES</span><span class="p">,</span> <span class="no">ALL_CATEGORIES</span><span class="p">)</span></code></span>
+    </code>
   <a class="headerlink" href="#CP::ShapeFilter::ALL" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Collision filter value for a shape that will collide with anything except <a href="#CP::ShapeFilter::NONE"><code>NONE</code></a>.</p>
@@ -2851,7 +2817,9 @@ using groups or category masks is preferred.</p>
 <div class="doc doc-object doc-constant">
 <h4 class="doc doc-heading" id="CP::ShapeFilter::ALL_CATEGORIES">
 
-    <code>ALL_CATEGORIES</code>
+    <code>
+      ALL_CATEGORIES = <span style="font-weight: normal"><code class="highlight language-crystal"><span class="o">~</span><span class="p">(</span><span class="n">Bitmask</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span></code></span>
+    </code>
   <a class="headerlink" href="#CP::ShapeFilter::ALL_CATEGORIES" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Value for signifying that a shape is in every category.</p>
@@ -2860,7 +2828,9 @@ using groups or category masks is preferred.</p>
 <div class="doc doc-object doc-constant">
 <h4 class="doc doc-heading" id="CP::ShapeFilter::NO_GROUP">
 
-    <code>NO_GROUP</code>
+    <code>
+      NO_GROUP = <span style="font-weight: normal"><code class="highlight language-crystal"><span class="n">Group</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span></code></span>
+    </code>
   <a class="headerlink" href="#CP::ShapeFilter::NO_GROUP" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Value signifying that a shape is in no group.</p>
@@ -2869,7 +2839,9 @@ using groups or category masks is preferred.</p>
 <div class="doc doc-object doc-constant">
 <h4 class="doc doc-heading" id="CP::ShapeFilter::NONE">
 
-    <code>NONE</code>
+    <code>
+      NONE = <span style="font-weight: normal"><code class="highlight language-crystal"><span class="n">new</span><span class="p">(</span><span class="no">NO_GROUP</span><span class="p">,</span> <span class="o">~</span><span class="no">ALL_CATEGORIES</span><span class="p">,</span> <span class="o">~</span><span class="no">ALL_CATEGORIES</span><span class="p">)</span></code></span>
+    </code>
   <a class="headerlink" href="#CP::ShapeFilter::NONE" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Collision filter value for a shape that does not collide with anything.</p>
@@ -2880,92 +2852,85 @@ using groups or category masks is preferred.</p>
 <h4 class="doc doc-heading" id="CP::ShapeFilter.new(group,categories,mask)">
 
     <code>
-      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">group</span> <span class="p">:</span> <span class="nb">Int</span> <span class="o">=</span> <span class="no">NO_GROUP</span><span class="p">,</span> <span class="n">categories</span> <span class="p">:</span> <span class="nb">Int</span> <span class="o">=</span> <span class="no">ALL_CATEGORIES</span><span class="p">,</span> <span class="n">mask</span> <span class="p">:</span> <span class="nb">Int</span> <span class="o">=</span> <span class="no">ALL_CATEGORIES</span><span class="p">)</span></code></span>
+      .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">group</span> <span class="p">:</span> <span class="n">Int</span> <span class="o">=</span> <span class="no">NO_GROUP</span><span class="p">,</span> <span class="n">categories</span> <span class="p">:</span> <span class="n">Int</span> <span class="o">=</span> <span class="no">ALL_CATEGORIES</span><span class="p">,</span> <span class="n">mask</span> <span class="p">:</span> <span class="n">Int</span> <span class="o">=</span> <span class="no">ALL_CATEGORIES</span><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::ShapeFilter.new(group,categories,mask)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
   </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L149">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L149">View source</a>
 </div>
 <h3 id="methods_4">Methods<a class="headerlink" href="#methods_4" title="Permanent link">#</a></h3>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::ShapeFilter#categories()">
 
     <code>
-      #categories<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Bitmask</span></code></span>
+      #categories<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="#CP::ShapeFilter::Bitmask">Bitmask</a></code></span>
     </code>
   <a class="headerlink" href="#CP::ShapeFilter#categories()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>A bitmask of user definable categories that this object belongs to.</p>
 <p>The category/mask combinations of both objects in a collision must agree for a collision to occur.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L141">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L141">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::ShapeFilter#categories=(categories)">
 
     <code>
-      #categories=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">categories</span> <span class="p">:</span> <span class="n">Bitmask</span><span class="p">)</span></code></span>
+      #categories=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">categories</span> <span class="p">:</span> <a href="#CP::ShapeFilter::Bitmask">Bitmask</a><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::ShapeFilter#categories=(categories)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
   </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L142">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L142">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::ShapeFilter#group()">
 
     <code>
-      #group<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Group</span></code></span>
+      #group<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="#CP::ShapeFilter::Group">Group</a></code></span>
     </code>
   <a class="headerlink" href="#CP::ShapeFilter#group()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>Two objects with the same non-zero group value do not collide.</p>
 <p>This is generally used to group objects in a composite object together to disable self collisions.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L136">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L136">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::ShapeFilter#group=(group)">
 
     <code>
-      #group=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">group</span> <span class="p">:</span> <span class="n">Group</span><span class="p">)</span></code></span>
+      #group=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">group</span> <span class="p">:</span> <a href="#CP::ShapeFilter::Group">Group</a><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::ShapeFilter#group=(group)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
   </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L137">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L137">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::ShapeFilter#mask()">
 
     <code>
-      #mask<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Bitmask</span></code></span>
+      #mask<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="#CP::ShapeFilter::Bitmask">Bitmask</a></code></span>
     </code>
   <a class="headerlink" href="#CP::ShapeFilter#mask()" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
 <p>A bitmask of user definable category types that this object object collides with.</p>
 <p>The category/mask combinations of both objects in a collision must agree for a collision to occur.</p>
 </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L146">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L146">View source</a>
 </div>
 <div class="doc doc-object doc-method doc-instance_method">
 <h4 class="doc doc-heading" id="CP::ShapeFilter#mask=(mask)">
 
     <code>
-      #mask=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">mask</span> <span class="p">:</span> <span class="n">Bitmask</span><span class="p">)</span></code></span>
+      #mask=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">mask</span> <span class="p">:</span> <a href="#CP::ShapeFilter::Bitmask">Bitmask</a><span class="p">)</span></code></span>
     </code>
   <a class="headerlink" href="#CP::ShapeFilter#mask=(mask)" title="Permanent link">#</a></h4>
 <div class="doc doc-contents ">
   </div>
-
-    [<a href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L147">View source</a>]
+<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/query.cr#L147">View source</a>
 </div>
 </div>
 </div>
@@ -2977,7 +2942,7 @@ alias <code>CP::ShapeFilter::Bitmask</code>
 <div class="doc doc-contents first">
 <div class="doc doc-children">
 <h3 id="alias-definition">Alias definition<a class="headerlink" href="#alias-definition" title="Permanent link">#</a></h3>
-<code class="highlight language-crystal"><span class="nb">UInt32</span></code>
+<code class="highlight language-crystal"><span class="n">UInt32</span></code>
 
 
 
@@ -2992,7 +2957,7 @@ alias <code>CP::ShapeFilter::Group</code>
 <div class="doc doc-contents first">
 <div class="doc doc-children">
 <h3 id="alias-definition_1">Alias definition<a class="headerlink" href="#alias-definition_1" title="Permanent link">#</a></h3>
-<code class="highlight language-crystal"><span class="nb">UInt64</span></code>
+<code class="highlight language-crystal"><span class="n">UInt64</span></code>
 
 
 
@@ -3066,8 +3031,8 @@ alias <code>CP::ShapeFilter::Group</code>
       
     </div>
     
-      <script src="assets/javascripts/vendor.08c56446.min.js"></script>
-      <script src="assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="assets/javascripts/vendor.93c04032.min.js"></script>
+      <script src="assets/javascripts/bundle.83e5331e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
