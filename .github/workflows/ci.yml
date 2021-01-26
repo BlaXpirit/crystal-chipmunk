@@ -57,7 +57,7 @@ jobs:
       - name: Install Chipmunk
         working-directory: chipmunk
         run: |
-          sudo make install
+          sudo cmake --build . -j4 --target install
       - name: Set up environment
         run: |
           echo "LD_LIBRARY_PATH=/usr/local/lib" >>$GITHUB_ENV
