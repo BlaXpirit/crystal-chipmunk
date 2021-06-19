@@ -11,8 +11,8 @@
       
         <link rel="canonical" href="https://oprypin.github.io/crystal-chipmunk/vector-math.html">
       
-      <link rel="shortcut icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.6">
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.8">
     
     
       
@@ -20,10 +20,10 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.cb6bc1d0.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.ca7ac06f.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.39b8e14a.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.f1a3b89f.min.css">
         
           
           
@@ -37,15 +37,19 @@
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
       
     
     
+    
+      <link rel="stylesheet" href="assets/_mkdocstrings.css">
     
       <link rel="stylesheet" href="css/mkdocstrings.css">
     
     
       
+
+
     
     
   </head>
@@ -57,8 +61,9 @@
     
     
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="teal" data-md-color-accent="light-blue">
-      
   
+    
+    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -75,27 +80,25 @@
       
     </div>
     
-      
-
-<header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://oprypin.github.io/crystal-chipmunk" title="crystal-chipmunk" class="md-header-nav__button md-logo" aria-label="crystal-chipmunk">
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="crystal-chipmunk" class="md-header__button md-logo" aria-label="crystal-chipmunk" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
 
     </a>
-    <label class="md-header-nav__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
     </label>
-    <div class="md-header-nav__title" data-md-component="header-title">
-      <div class="md-header-nav__ellipsis">
-        <div class="md-header-nav__topic">
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
           <span class="md-ellipsis">
             crystal-chipmunk
           </span>
         </div>
-        <div class="md-header-nav__topic">
+        <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
               Vector math
@@ -105,8 +108,10 @@
       </div>
     </div>
     
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
       
 <div class="md-search" data-md-component="search" role="dialog">
@@ -115,11 +120,11 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
       </button>
     </form>
     <div class="md-search__output">
@@ -136,9 +141,9 @@
 </div>
     
     
-      <div class="md-header-nav__source">
+      <div class="md-header__source">
         
-<a href="https://github.com/oprypin/crystal-chipmunk/" title="Go to repository" class="md-source">
+<a href="https://github.com/oprypin/crystal-chipmunk/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
@@ -162,20 +167,18 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
 
 
-
-
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://oprypin.github.io/crystal-chipmunk" title="crystal-chipmunk" class="md-nav__button md-logo" aria-label="crystal-chipmunk">
+    <a href="index.html" title="crystal-chipmunk" class="md-nav__button md-logo" aria-label="crystal-chipmunk" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
 
     </a>
     crystal-chipmunk
@@ -183,7 +186,7 @@
   
     <div class="md-nav__source">
       
-<a href="https://github.com/oprypin/crystal-chipmunk/" title="Go to repository" class="md-source">
+<a href="https://github.com/oprypin/crystal-chipmunk/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
@@ -204,8 +207,8 @@
   
   
     <li class="md-nav__item">
-      <a href="space.html" class="md-nav__link">
-        Space
+      <a href="index.html" class="md-nav__link">
+        crystal-chipmunk
       </a>
     </li>
   
@@ -234,8 +237,8 @@
   
   
     <li class="md-nav__item">
-      <a href="shapes.html" class="md-nav__link">
-        Shapes
+      <a href="collisions.html" class="md-nav__link">
+        Collisions
       </a>
     </li>
   
@@ -264,8 +267,8 @@
   
   
     <li class="md-nav__item">
-      <a href="collisions.html" class="md-nav__link">
-        Collisions
+      <a href="debug-draw.html" class="md-nav__link">
+        Debug draw
       </a>
     </li>
   
@@ -292,12 +295,43 @@
 
   
   
+  
+    <li class="md-nav__item">
+      <a href="shapes.html" class="md-nav__link">
+        Shapes
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="space.html" class="md-nav__link">
+        Space
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
@@ -314,11 +348,12 @@
   
   
   
+  
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#CP" class="md-nav__link">
@@ -329,14 +364,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#extended-modules" class="md-nav__link">
-    Extended modules
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#methods" class="md-nav__link">
+  <a href="#CP-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -365,7 +393,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP#vzero()" class="md-nav__link">
+  <a href="#CP#vzero" class="md-nav__link">
     #vzero
   </a>
   
@@ -390,7 +418,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods" class="md-nav__link">
+  <a href="#CP::Vect-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -445,7 +473,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_1" class="md-nav__link">
+  <a href="#CP::Vect-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -523,14 +551,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Vect#length()" class="md-nav__link">
+  <a href="#CP::Vect#length" class="md-nav__link">
     #length
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Vect#lengthsq()" class="md-nav__link">
+  <a href="#CP::Vect#lengthsq" class="md-nav__link">
     #lengthsq
   </a>
   
@@ -544,14 +572,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Vect#normalize()" class="md-nav__link">
+  <a href="#CP::Vect#normalize" class="md-nav__link">
     #normalize
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Vect#perp()" class="md-nav__link">
+  <a href="#CP::Vect#perp" class="md-nav__link">
     #perp
   </a>
   
@@ -572,14 +600,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Vect#rperp()" class="md-nav__link">
+  <a href="#CP::Vect#rperp" class="md-nav__link">
     #rperp
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Vect#to_angle()" class="md-nav__link">
+  <a href="#CP::Vect#to_angle" class="md-nav__link">
     #to_angle
   </a>
   
@@ -593,7 +621,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Vect#x()" class="md-nav__link">
+  <a href="#CP::Vect#x" class="md-nav__link">
     #x
   </a>
   
@@ -607,7 +635,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Vect#y()" class="md-nav__link">
+  <a href="#CP::Vect#y" class="md-nav__link">
     #y
   </a>
   
@@ -639,7 +667,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods_1" class="md-nav__link">
+  <a href="#CP::BB-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -673,7 +701,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_2" class="md-nav__link">
+  <a href="#CP::BB-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -681,14 +709,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::BB#area()" class="md-nav__link">
+  <a href="#CP::BB#area" class="md-nav__link">
     #area
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::BB#bottom()" class="md-nav__link">
+  <a href="#CP::BB#bottom" class="md-nav__link">
     #bottom
   </a>
   
@@ -702,7 +730,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::BB#center()" class="md-nav__link">
+  <a href="#CP::BB#center" class="md-nav__link">
     #center
   </a>
   
@@ -744,7 +772,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::BB#left()" class="md-nav__link">
+  <a href="#CP::BB#left" class="md-nav__link">
     #left
   </a>
   
@@ -772,7 +800,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::BB#right()" class="md-nav__link">
+  <a href="#CP::BB#right" class="md-nav__link">
     #right
   </a>
   
@@ -793,7 +821,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::BB#top()" class="md-nav__link">
+  <a href="#CP::BB#top" class="md-nav__link">
     #top
   </a>
   
@@ -832,7 +860,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods_2" class="md-nav__link">
+  <a href="#CP::Mat2x2-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -852,7 +880,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_3" class="md-nav__link">
+  <a href="#CP::Mat2x2-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -860,7 +888,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::Mat2x2#a()" class="md-nav__link">
+  <a href="#CP::Mat2x2#a" class="md-nav__link">
     #a
   </a>
   
@@ -874,7 +902,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Mat2x2#b()" class="md-nav__link">
+  <a href="#CP::Mat2x2#b" class="md-nav__link">
     #b
   </a>
   
@@ -888,7 +916,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Mat2x2#c()" class="md-nav__link">
+  <a href="#CP::Mat2x2#c" class="md-nav__link">
     #c
   </a>
   
@@ -902,7 +930,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Mat2x2#d()" class="md-nav__link">
+  <a href="#CP::Mat2x2#d" class="md-nav__link">
     #d
   </a>
   
@@ -941,7 +969,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#constants" class="md-nav__link">
+  <a href="#CP::Transform-constants" class="md-nav__link">
     Constants
   </a>
   
@@ -961,7 +989,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#class-methods_3" class="md-nav__link">
+  <a href="#CP::Transform-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -1011,7 +1039,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Transform.rigid_inverse()" class="md-nav__link">
+  <a href="#CP::Transform.rigid_inverse" class="md-nav__link">
     .rigid_inverse
   </a>
   
@@ -1044,7 +1072,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_4" class="md-nav__link">
+  <a href="#CP::Transform-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -1059,7 +1087,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Transform#a()" class="md-nav__link">
+  <a href="#CP::Transform#a" class="md-nav__link">
     #a
   </a>
   
@@ -1073,7 +1101,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Transform#b()" class="md-nav__link">
+  <a href="#CP::Transform#b" class="md-nav__link">
     #b
   </a>
   
@@ -1087,7 +1115,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Transform#c()" class="md-nav__link">
+  <a href="#CP::Transform#c" class="md-nav__link">
     #c
   </a>
   
@@ -1101,7 +1129,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Transform#d()" class="md-nav__link">
+  <a href="#CP::Transform#d" class="md-nav__link">
     #d
   </a>
   
@@ -1115,7 +1143,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Transform#inverse()" class="md-nav__link">
+  <a href="#CP::Transform#inverse" class="md-nav__link">
     #inverse
   </a>
   
@@ -1143,7 +1171,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Transform#tx()" class="md-nav__link">
+  <a href="#CP::Transform#tx" class="md-nav__link">
     #tx
   </a>
   
@@ -1157,7 +1185,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Transform#ty()" class="md-nav__link">
+  <a href="#CP::Transform#ty" class="md-nav__link">
     #ty
   </a>
   
@@ -1202,21 +1230,6 @@
   
 
     
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="debug-draw.html" class="md-nav__link">
-        Debug draw
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -1225,7 +1238,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1233,11 +1246,12 @@
   
   
   
+  
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#CP" class="md-nav__link">
@@ -1248,14 +1262,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#extended-modules" class="md-nav__link">
-    Extended modules
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#methods" class="md-nav__link">
+  <a href="#CP-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -1284,7 +1291,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP#vzero()" class="md-nav__link">
+  <a href="#CP#vzero" class="md-nav__link">
     #vzero
   </a>
   
@@ -1309,7 +1316,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods" class="md-nav__link">
+  <a href="#CP::Vect-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -1364,7 +1371,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_1" class="md-nav__link">
+  <a href="#CP::Vect-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -1442,14 +1449,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Vect#length()" class="md-nav__link">
+  <a href="#CP::Vect#length" class="md-nav__link">
     #length
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Vect#lengthsq()" class="md-nav__link">
+  <a href="#CP::Vect#lengthsq" class="md-nav__link">
     #lengthsq
   </a>
   
@@ -1463,14 +1470,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Vect#normalize()" class="md-nav__link">
+  <a href="#CP::Vect#normalize" class="md-nav__link">
     #normalize
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Vect#perp()" class="md-nav__link">
+  <a href="#CP::Vect#perp" class="md-nav__link">
     #perp
   </a>
   
@@ -1491,14 +1498,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Vect#rperp()" class="md-nav__link">
+  <a href="#CP::Vect#rperp" class="md-nav__link">
     #rperp
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Vect#to_angle()" class="md-nav__link">
+  <a href="#CP::Vect#to_angle" class="md-nav__link">
     #to_angle
   </a>
   
@@ -1512,7 +1519,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Vect#x()" class="md-nav__link">
+  <a href="#CP::Vect#x" class="md-nav__link">
     #x
   </a>
   
@@ -1526,7 +1533,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Vect#y()" class="md-nav__link">
+  <a href="#CP::Vect#y" class="md-nav__link">
     #y
   </a>
   
@@ -1558,7 +1565,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods_1" class="md-nav__link">
+  <a href="#CP::BB-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -1592,7 +1599,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_2" class="md-nav__link">
+  <a href="#CP::BB-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -1600,14 +1607,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::BB#area()" class="md-nav__link">
+  <a href="#CP::BB#area" class="md-nav__link">
     #area
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::BB#bottom()" class="md-nav__link">
+  <a href="#CP::BB#bottom" class="md-nav__link">
     #bottom
   </a>
   
@@ -1621,7 +1628,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::BB#center()" class="md-nav__link">
+  <a href="#CP::BB#center" class="md-nav__link">
     #center
   </a>
   
@@ -1663,7 +1670,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::BB#left()" class="md-nav__link">
+  <a href="#CP::BB#left" class="md-nav__link">
     #left
   </a>
   
@@ -1691,7 +1698,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::BB#right()" class="md-nav__link">
+  <a href="#CP::BB#right" class="md-nav__link">
     #right
   </a>
   
@@ -1712,7 +1719,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::BB#top()" class="md-nav__link">
+  <a href="#CP::BB#top" class="md-nav__link">
     #top
   </a>
   
@@ -1751,7 +1758,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods_2" class="md-nav__link">
+  <a href="#CP::Mat2x2-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -1771,7 +1778,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_3" class="md-nav__link">
+  <a href="#CP::Mat2x2-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -1779,7 +1786,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::Mat2x2#a()" class="md-nav__link">
+  <a href="#CP::Mat2x2#a" class="md-nav__link">
     #a
   </a>
   
@@ -1793,7 +1800,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Mat2x2#b()" class="md-nav__link">
+  <a href="#CP::Mat2x2#b" class="md-nav__link">
     #b
   </a>
   
@@ -1807,7 +1814,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Mat2x2#c()" class="md-nav__link">
+  <a href="#CP::Mat2x2#c" class="md-nav__link">
     #c
   </a>
   
@@ -1821,7 +1828,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Mat2x2#d()" class="md-nav__link">
+  <a href="#CP::Mat2x2#d" class="md-nav__link">
     #d
   </a>
   
@@ -1860,7 +1867,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#constants" class="md-nav__link">
+  <a href="#CP::Transform-constants" class="md-nav__link">
     Constants
   </a>
   
@@ -1880,7 +1887,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#class-methods_3" class="md-nav__link">
+  <a href="#CP::Transform-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -1930,7 +1937,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Transform.rigid_inverse()" class="md-nav__link">
+  <a href="#CP::Transform.rigid_inverse" class="md-nav__link">
     .rigid_inverse
   </a>
   
@@ -1963,7 +1970,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_4" class="md-nav__link">
+  <a href="#CP::Transform-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -1978,7 +1985,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Transform#a()" class="md-nav__link">
+  <a href="#CP::Transform#a" class="md-nav__link">
     #a
   </a>
   
@@ -1992,7 +1999,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Transform#b()" class="md-nav__link">
+  <a href="#CP::Transform#b" class="md-nav__link">
     #b
   </a>
   
@@ -2006,7 +2013,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Transform#c()" class="md-nav__link">
+  <a href="#CP::Transform#c" class="md-nav__link">
     #c
   </a>
   
@@ -2020,7 +2027,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Transform#d()" class="md-nav__link">
+  <a href="#CP::Transform#d" class="md-nav__link">
     #d
   </a>
   
@@ -2034,7 +2041,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Transform#inverse()" class="md-nav__link">
+  <a href="#CP::Transform#inverse" class="md-nav__link">
     #inverse
   </a>
   
@@ -2062,7 +2069,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Transform#tx()" class="md-nav__link">
+  <a href="#CP::Transform#tx" class="md-nav__link">
     #tx
   </a>
   
@@ -2076,7 +2083,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Transform#ty()" class="md-nav__link">
+  <a href="#CP::Transform#ty" class="md-nav__link">
     #ty
   </a>
   
@@ -2121,7 +2128,7 @@
               </div>
             
           
-          <div class="md-content">
+          <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
@@ -2133,1227 +2140,1168 @@
                   <h1>Vector math</h1>
                 
                 <div class="doc doc-object doc-type module">
-<h2 class="doc doc-heading" id="CP">
+<h2 id="CP" class="doc doc-heading">module <code>CP</code>
+<a href="#CP" class="headerlink" title="Permanent link">#</a></h2>
+  <div class="doc doc-contents first">
 
-module <code>CP</code>
-  <a class="headerlink" href="#CP" title="Permanent link">#</a></h2>
-<div class="doc doc-contents first">
-<div class="doc doc-children">
-<h3 id="extended-modules">Extended modules<a class="headerlink" href="#extended-modules" title="Permanent link">#</a></h3>
-<code><a href="#CP">CP</a></code>
+      <div class="doc doc-children">
+
+            <h3>Extended modules</h3>
+              <code><a href="#CP">CP</a></code>
 
 
-            <h3 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">#</a></h3>
+<h3 id="CP-methods">Methods<a href="#CP-methods" class="headerlink" title="Permanent link">#</a></h3>
+
 <div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP#lerp(f1,f2,t)">
-
-    <code>
+<h4 id="CP#lerp(f1,f2,t)" class="doc doc-heading">    <code>
       #lerp<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">f1</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">f2</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">t</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <span class="n">Number</span></code></span>
     </code>
-  <a class="headerlink" href="#CP#lerp(f1,f2,t)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Linearly interpolate (or extrapolate) between <em>f1</em> and <em>f2</em> by <em>t</em> percent.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L27">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP#lerpconst(f1,f2,d)">
+<a href="#CP#lerp(f1,f2,t)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Linearly interpolate (or extrapolate) between <em>f1</em> and <em>f2</em> by <em>t</em> percent.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L27">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP#lerpconst(f1,f2,d)" class="doc doc-heading">    <code>
       #lerpconst<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">f1</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">f2</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">d</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <span class="n">Number</span></code></span>
     </code>
-  <a class="headerlink" href="#CP#lerpconst(f1,f2,d)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Linearly interpolate from <em>f1</em> to <em>f2</em> by no more than <em>d</em>.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L32">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP#v(x,y)">
+<a href="#CP#lerpconst(f1,f2,d)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Linearly interpolate from <em>f1</em> to <em>f2</em> by no more than <em>d</em>.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L32">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP#v(x,y)" class="doc doc-heading">    <code>
       #v<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP#v(x,y)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Convenience function to create a <a href="#CP::Vect"><code>Vect</code></a>.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L201">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP#vzero()">
+<a href="#CP#v(x,y)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Convenience function to create a <a href="#CP::Vect"><code>Vect</code></a>.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L201">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP#vzero" class="doc doc-heading">    <code>
       #vzero<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP#vzero()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Zero <a href="#CP::Vect"><code>Vect</code></a>.</p>
+<a href="#CP#vzero" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Zero <a href="#CP::Vect"><code>Vect</code></a>.</p>  </div>
+
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L206">View source</a>
+</div>      </div>
+  </div>
+
 </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L206">View source</a>
-</div>
-</div>
-</div>
-</div>
+
 <div class="doc doc-object doc-type struct">
-<h2 class="doc doc-heading" id="CP::Vect">
-
-struct <code>CP::Vect</code>
-      <br />
-<small>inherits <code>Struct</code></small>
-  <a class="headerlink" href="#CP::Vect" title="Permanent link">#</a></h2>
-<div class="doc doc-contents first">
+<h2 id="CP::Vect" class="doc doc-heading">struct <code>CP::Vect</code>
+      <br/><small>inherits <code>Struct</code></small>
+<a href="#CP::Vect" class="headerlink" title="Permanent link">#</a></h2>
+  <div class="doc doc-contents first">
 <p>Chipmunk's 2D vector type.</p>
-<div class="doc doc-children">
-<h3 id="class-methods">Class methods<a class="headerlink" href="#class-methods" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Vect.angle(a)">
+      <div class="doc doc-children">
 
-    <code>
+
+
+<h3 id="CP::Vect-class-methods">Class methods<a href="#CP::Vect-class-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Vect.angle(a)" class="doc doc-heading">    <code>
       .angle<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <span class="k">self</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect.angle(a)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Returns the unit length vector for the given angle (in radians).</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L47">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Vect.lerp(v1,v2,t)">
+<a href="#CP::Vect.angle(a)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Returns the unit length vector for the given angle (in radians).</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L47">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Vect.lerp(v1,v2,t)" class="doc doc-heading">    <code>
       .lerp<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">v1</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">,</span> <span class="n">v2</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">,</span> <span class="n">t</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect.lerp(v1,v2,t)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Linearly interpolate between <em>v1</em> and <em>v2</em>.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L136">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Vect.lerpconst(v1,v2,d)">
+<a href="#CP::Vect.lerp(v1,v2,t)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Linearly interpolate between <em>v1</em> and <em>v2</em>.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L136">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Vect.lerpconst(v1,v2,d)" class="doc doc-heading">    <code>
       .lerpconst<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">v1</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">,</span> <span class="n">v2</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">,</span> <span class="n">d</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect.lerpconst(v1,v2,d)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Linearly interpolate between <em>v1</em> towards <em>v2</em> by distance <em>d</em>.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L171">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Vect.new(x,y)">
+<a href="#CP::Vect.lerpconst(v1,v2,d)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Linearly interpolate between <em>v1</em> towards <em>v2</em> by distance <em>d</em>.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L171">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Vect.new(x,y)" class="doc doc-heading">    <code>
       .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">x</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">y</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect.new(x,y)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Vect.new(x,y)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L41">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Vect.slerp(v1,v2,t)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L41">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Vect.slerp(v1,v2,t)" class="doc doc-heading">    <code>
       .slerp<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">v1</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">,</span> <span class="n">v2</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">,</span> <span class="n">t</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect.slerp(v1,v2,t)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Spherical linearly interpolate between <em>v1</em> and <em>v2</em>.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L147">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Vect.slerpconst(v1,v2,a)">
+<a href="#CP::Vect.slerp(v1,v2,t)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Spherical linearly interpolate between <em>v1</em> and <em>v2</em>.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L147">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Vect.slerpconst(v1,v2,a)" class="doc doc-heading">    <code>
       .slerpconst<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">v1</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">,</span> <span class="n">v2</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">,</span> <span class="n">a</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect.slerpconst(v1,v2,a)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Spherical linearly interpolate between <em>v1</em> towards <em>v2</em> by no more than angle <em>a</em> radians</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L159">View source</a>
-</div>
-<h3 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Vect#*(s)">
+<a href="#CP::Vect.slerpconst(v1,v2,a)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Spherical linearly interpolate between <em>v1</em> towards <em>v2</em> by no more than angle <em>a</em> radians</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L159">View source</a>
+</div><h3 id="CP::Vect-methods">Methods<a href="#CP::Vect-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Vect#*(s)" class="doc doc-heading">    <code>
       #*<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">s</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect#*(s)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Scalar multiplication.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L74">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Vect#+(v2)">
+<a href="#CP::Vect#*(s)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Scalar multiplication.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L74">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Vect#+(v2)" class="doc doc-heading">    <code>
       #+<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">v2</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">)</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect#+(v2)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Add two vectors</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L59">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Vect#-(v2)">
+<a href="#CP::Vect#+(v2)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Add two vectors</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L59">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Vect#-(v2)" class="doc doc-heading">    <code>
       #-<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">v2</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">)</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect#-(v2)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Subtract two vectors.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L64">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Vect#-()">
+<a href="#CP::Vect#-(v2)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Subtract two vectors.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L64">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Vect#-" class="doc doc-heading">    <code>
       #-<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect#-()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Negate a vector.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L69">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Vect#==(v2)">
+<a href="#CP::Vect#-" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Negate a vector.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L69">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Vect#==(v2)" class="doc doc-heading">    <code>
       #==<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">v2</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">)</span> <span class="p">:</span> <span class="n">Bool</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect#==(v2)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Vect#==(v2)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>Check if two vectors are equal.</p>
-<p>(Be careful when comparing floating point numbers!)</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L54">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Vect#clamp(len)">
+<p>(Be careful when comparing floating point numbers!)</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L54">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Vect#clamp(len)" class="doc doc-heading">    <code>
       #clamp<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">len</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect#clamp(len)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Clamp the vector to length len.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L166">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Vect#closest_point_on_segment(a,b)">
+<a href="#CP::Vect#clamp(len)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Clamp the vector to length len.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L166">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Vect#closest_point_on_segment(a,b)" class="doc doc-heading">    <code>
       #closest_point_on_segment<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">)</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect#closest_point_on_segment(a,b)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Returns the closest point on the line segment <code>a</code> <code>b</code>, to the point stored in this <a href="#CP::Vect"><code>Vect</code></a>.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L193">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Vect#cross(v2)">
+<a href="#CP::Vect#closest_point_on_segment(a,b)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Returns the closest point on the line segment <code>a</code> <code>b</code>, to the point stored in this <a href="#CP::Vect"><code>Vect</code></a>.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L193">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Vect#cross(v2)" class="doc doc-heading">    <code>
       #cross<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">v2</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect#cross(v2)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Vect#cross(v2)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>2D vector cross product analog.</p>
 <p>The cross product of 2D vectors results in a 3D vector with only a z component.
-This function returns the magnitude of the z value.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L87">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Vect#dist(v2)">
+This function returns the magnitude of the z value.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L87">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Vect#dist(v2)" class="doc doc-heading">    <code>
       #dist<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">v2</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect#dist(v2)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Returns the distance between this vector and <em>v2</em>.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L176">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Vect#distsq(v2)">
+<a href="#CP::Vect#dist(v2)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Returns the distance between this vector and <em>v2</em>.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L176">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Vect#distsq(v2)" class="doc doc-heading">    <code>
       #distsq<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">v2</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect#distsq(v2)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Vect#distsq(v2)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>Returns the squared distance between this vector and <em>v2</em>.</p>
-<p>Faster than <a href="#CP::Vect#dist(v2)"><code>dist</code></a> when you only need to compare distances.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L183">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Vect#dot(v2)">
+<p>Faster than <a href="#CP::Vect#dist(v2)"><code>dist</code></a> when you only need to compare distances.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L183">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Vect#dot(v2)" class="doc doc-heading">    <code>
       #dot<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">v2</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect#dot(v2)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Vector dot product.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L79">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Vect#length()">
+<a href="#CP::Vect#dot(v2)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Vector dot product.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L79">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Vect#length" class="doc doc-heading">    <code>
       #length<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect#length()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Returns the length of the vector.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L131">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Vect#lengthsq()">
+<a href="#CP::Vect#length" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Returns the length of the vector.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L131">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Vect#lengthsq" class="doc doc-heading">    <code>
       #lengthsq<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect#lengthsq()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Vect#lengthsq" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>Returns the squared length of the vector.</p>
-<p>Faster than <a href="#CP::Vect#length()"><code>length</code></a> when you only need to compare lengths.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L126">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Vect#near?(v2,dist)">
+<p>Faster than <a href="#CP::Vect#length"><code>length</code></a> when you only need to compare lengths.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L126">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Vect#near?(v2,dist)" class="doc doc-heading">    <code>
       #near?<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">v2</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">,</span> <span class="n">dist</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <span class="n">Bool</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect#near?(v2,dist)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Returns true if the distance between this vector and <em>v2</em> is less than <em>dist</em>.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L188">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Vect#normalize()">
+<a href="#CP::Vect#near?(v2,dist)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Returns true if the distance between this vector and <em>v2</em> is less than <em>dist</em>.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L188">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Vect#normalize" class="doc doc-heading">    <code>
       #normalize<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect#normalize()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Returns a normalized copy of the vector (unit vector).</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L141">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Vect#perp()">
+<a href="#CP::Vect#normalize" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Returns a normalized copy of the vector (unit vector).</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L141">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Vect#perp" class="doc doc-heading">    <code>
       #perp<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect#perp()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Returns a perpendicular vector. (90 degree rotation)</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L92">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Vect#project(v2)">
+<a href="#CP::Vect#perp" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Returns a perpendicular vector. (90 degree rotation)</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L92">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Vect#project(v2)" class="doc doc-heading">    <code>
       #project<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">v2</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">)</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect#project(v2)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Returns the vector projection of the vector onto <em>v2</em>.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L102">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Vect#rotate(v2)">
+<a href="#CP::Vect#project(v2)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Returns the vector projection of the vector onto <em>v2</em>.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L102">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Vect#rotate(v2)" class="doc doc-heading">    <code>
       #rotate<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">v2</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">)</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect#rotate(v2)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Vect#rotate(v2)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>Uses complex number multiplication to rotate the vector by <em>v2</em>.</p>
-<p>Scaling will occur if the vector is not a unit vector.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L114">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Vect#rperp()">
+<p>Scaling will occur if the vector is not a unit vector.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L114">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Vect#rperp" class="doc doc-heading">    <code>
       #rperp<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect#rperp()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Returns a perpendicular vector. (-90 degree rotation)</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L97">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Vect#to_angle()">
+<a href="#CP::Vect#rperp" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Returns a perpendicular vector. (-90 degree rotation)</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L97">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Vect#to_angle" class="doc doc-heading">    <code>
       #to_angle<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect#to_angle()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Returns the angular direction the vector is pointing in (in radians).</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L107">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Vect#unrotate(v2)">
+<a href="#CP::Vect#to_angle" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Returns the angular direction the vector is pointing in (in radians).</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L107">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Vect#unrotate(v2)" class="doc doc-heading">    <code>
       #unrotate<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">v2</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">)</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect#unrotate(v2)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Inverse of <a href="#CP::Vect#rotate(v2)"><code>rotate</code></a>.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L119">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Vect#x()">
+<a href="#CP::Vect#unrotate(v2)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Inverse of <a href="#CP::Vect#rotate(v2)"><code>rotate</code></a>.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L119">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Vect#x" class="doc doc-heading">    <code>
       #x<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect#x()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Vect#x" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L39">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Vect#x=(x)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L39">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Vect#x=(x)" class="doc doc-heading">    <code>
       #x=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">x</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect#x=(x)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Vect#x=(x)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L39">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Vect#y()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L39">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Vect#y" class="doc doc-heading">    <code>
       #y<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect#y()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Vect#y" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L39">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Vect#y=(y)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L39">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Vect#y=(y)" class="doc doc-heading">    <code>
       #y=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">y</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Vect#y=(y)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Vect#y=(y)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L39">View source</a>
+
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L39">View source</a>
+</div>      </div>
+  </div>
+
 </div>
-</div>
-</div>
-</div>
+
 <div class="doc doc-object doc-type struct">
-<h2 class="doc doc-heading" id="CP::BB">
-
-struct <code>CP::BB</code>
-      <br />
-<small>inherits <code>Struct</code></small>
-  <a class="headerlink" href="#CP::BB" title="Permanent link">#</a></h2>
-<div class="doc doc-contents first">
+<h2 id="CP::BB" class="doc doc-heading">struct <code>CP::BB</code>
+      <br/><small>inherits <code>Struct</code></small>
+<a href="#CP::BB" class="headerlink" title="Permanent link">#</a></h2>
+  <div class="doc doc-contents first">
 <p>Chipmunk's axis-aligned 2D bounding box type. (left, bottom, right, top)</p>
-<div class="doc doc-children">
-<h3 id="class-methods_1">Class methods<a class="headerlink" href="#class-methods_1" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::BB.new(left,bottom,right,top)">
+      <div class="doc doc-children">
 
-    <code>
+
+
+<h3 id="CP::BB-class-methods">Class methods<a href="#CP::BB-class-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::BB.new(left,bottom,right,top)" class="doc doc-heading">    <code>
       .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">left</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">bottom</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">right</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">top</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::BB.new(left,bottom,right,top)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::BB.new(left,bottom,right,top)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L363">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::BB.new_for_circle(p,r)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L363">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::BB.new_for_circle(p,r)" class="doc doc-heading">    <code>
       .new_for_circle<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="nb">p</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">,</span> <span class="n">r</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <span class="k">self</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::BB.new_for_circle(p,r)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Constructs a <a href="#CP::BB"><code>BB</code></a> fitting a circle with the position <em>p</em> and radius <em>r</em>.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L376">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::BB.new_for_extents(c,hw,hh)">
+<a href="#CP::BB.new_for_circle(p,r)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Constructs a <a href="#CP::BB"><code>BB</code></a> fitting a circle with the position <em>p</em> and radius <em>r</em>.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L376">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::BB.new_for_extents(c,hw,hh)" class="doc doc-heading">    <code>
       .new_for_extents<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">c</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">,</span> <span class="n">hw</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">hh</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <span class="k">self</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::BB.new_for_extents(c,hw,hh)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Constructs a <a href="#CP::BB"><code>BB</code></a> centered on a point with the given extents (half sizes).</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L371">View source</a>
-</div>
-<h3 id="methods_2">Methods<a class="headerlink" href="#methods_2" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::BB#area()">
+<a href="#CP::BB.new_for_extents(c,hw,hh)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Constructs a <a href="#CP::BB"><code>BB</code></a> centered on a point with the given extents (half sizes).</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L371">View source</a>
+</div><h3 id="CP::BB-methods">Methods<a href="#CP::BB-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::BB#area" class="doc doc-heading">    <code>
       #area<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::BB#area()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Returns the area of the bounding box.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L411">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::BB#bottom()">
+<a href="#CP::BB#area" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Returns the area of the bounding box.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L411">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::BB#bottom" class="doc doc-heading">    <code>
       #bottom<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::BB#bottom()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::BB#bottom" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L361">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::BB#bottom=(bottom)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L361">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::BB#bottom=(bottom)" class="doc doc-heading">    <code>
       #bottom=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">bottom</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::BB#bottom=(bottom)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::BB#bottom=(bottom)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L361">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::BB#center()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L361">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::BB#center" class="doc doc-heading">    <code>
       #center<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::BB#center()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Returns the center of a bounding box.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L406">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::BB#clamp_vect(v)">
+<a href="#CP::BB#center" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Returns the center of a bounding box.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L406">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::BB#clamp_vect(v)" class="doc doc-heading">    <code>
       #clamp_vect<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">v</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">)</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::BB#clamp_vect(v)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Clamp a vector to a bounding box</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L445">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::BB#contains?(point)">
+<a href="#CP::BB#clamp_vect(v)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Clamp a vector to a bounding box</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L445">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::BB#contains?(point)" class="doc doc-heading">    <code>
       #contains?<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">point</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">)</span> <span class="p">:</span> <span class="n">Bool</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::BB#contains?(point)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Returns true if this <a href="#CP::BB"><code>BB</code></a> contains the <em>point</em>.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L391">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::BB#contains?(other)">
+<a href="#CP::BB#contains?(point)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Returns true if this <a href="#CP::BB"><code>BB</code></a> contains the <em>point</em>.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L391">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::BB#contains?(other)" class="doc doc-heading">    <code>
       #contains?<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">other</span> <span class="p">:</span> <a href="#CP::BB">BB</a><span class="p">)</span> <span class="p">:</span> <span class="n">Bool</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::BB#contains?(other)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Returns true if the <em>other</em> <a href="#CP::BB"><code>BB</code></a> lies completely within this one.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L386">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::BB#expand(point)">
+<a href="#CP::BB#contains?(other)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Returns true if the <em>other</em> <a href="#CP::BB"><code>BB</code></a> lies completely within this one.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L386">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::BB#expand(point)" class="doc doc-heading">    <code>
       #expand<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">point</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">)</span> <span class="p">:</span> <a href="#CP::BB">BB</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::BB#expand(point)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Returns the minimal bounding box that contains both this <a href="#CP::BB"><code>BB</code></a> and the <em>point</em>.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L401">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::BB#intersects?(other)">
+<a href="#CP::BB#expand(point)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Returns the minimal bounding box that contains both this <a href="#CP::BB"><code>BB</code></a> and the <em>point</em>.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L401">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::BB#intersects?(other)" class="doc doc-heading">    <code>
       #intersects?<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">other</span> <span class="p">:</span> <a href="#CP::BB">BB</a><span class="p">)</span> <span class="p">:</span> <span class="n">Bool</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::BB#intersects?(other)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Returns true if this <a href="#CP::BB"><code>BB</code></a> intersects the <em>other</em>.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L381">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::BB#intersects_segment?(a,b)">
+<a href="#CP::BB#intersects?(other)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Returns true if this <a href="#CP::BB"><code>BB</code></a> intersects the <em>other</em>.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L381">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::BB#intersects_segment?(a,b)" class="doc doc-heading">    <code>
       #intersects_segment?<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">)</span> <span class="p">:</span> <span class="n">Bool</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::BB#intersects_segment?(a,b)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Return true if the bounding box intersects the line segment with ends <em>a</em> and <em>b</em>.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L440">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::BB#left()">
+<a href="#CP::BB#intersects_segment?(a,b)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Return true if the bounding box intersects the line segment with ends <em>a</em> and <em>b</em>.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L440">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::BB#left" class="doc doc-heading">    <code>
       #left<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::BB#left()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::BB#left" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L361">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::BB#left=(left)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L361">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::BB#left=(left)" class="doc doc-heading">    <code>
       #left=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">left</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::BB#left=(left)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::BB#left=(left)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L361">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::BB#merge(other)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L361">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::BB#merge(other)" class="doc doc-heading">    <code>
       #merge<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">other</span> <span class="p">:</span> <a href="#CP::BB">BB</a><span class="p">)</span> <span class="p">:</span> <a href="#CP::BB">BB</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::BB#merge(other)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Returns a bounding box that holds both bounding boxes.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L396">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::BB#offset(v)">
+<a href="#CP::BB#merge(other)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Returns a bounding box that holds both bounding boxes.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L396">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::BB#offset(v)" class="doc doc-heading">    <code>
       #offset<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">v</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">)</span> <span class="p">:</span> <a href="#CP::BB">BB</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::BB#offset(v)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Returns a bounding box offseted by <em>v</em>.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L461">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::BB#right()">
+<a href="#CP::BB#offset(v)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Returns a bounding box offseted by <em>v</em>.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L461">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::BB#right" class="doc doc-heading">    <code>
       #right<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::BB#right()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::BB#right" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L361">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::BB#right=(right)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L361">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::BB#right=(right)" class="doc doc-heading">    <code>
       #right=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">right</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::BB#right=(right)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::BB#right=(right)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L361">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::BB#segment_query(a,b)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L361">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::BB#segment_query(a,b)" class="doc doc-heading">    <code>
       #segment_query<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::BB#segment_query(a,b)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::BB#segment_query(a,b)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>Returns the fraction along the segment query the <a href="#CP::BB"><code>BB</code></a> is hit.</p>
-<p>Returns INFINITY if it doesn't hit.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L418">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::BB#top()">
+<p>Returns INFINITY if it doesn't hit.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L418">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::BB#top" class="doc doc-heading">    <code>
       #top<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::BB#top()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::BB#top" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L361">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::BB#top=(top)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L361">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::BB#top=(top)" class="doc doc-heading">    <code>
       #top=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">top</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::BB#top=(top)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::BB#top=(top)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L361">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::BB#wrap_vect(v)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L361">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::BB#wrap_vect(v)" class="doc doc-heading">    <code>
       #wrap_vect<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">v</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">)</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::BB#wrap_vect(v)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Wrap a vector to a bounding box.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L450">View source</a>
-</div>
-</div>
-</div>
-</div>
-<div class="doc doc-object doc-type struct">
-<h2 class="doc doc-heading" id="CP::Mat2x2">
+<a href="#CP::BB#wrap_vect(v)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Wrap a vector to a bounding box.</p>  </div>
 
-struct <code>CP::Mat2x2</code>
-      <br />
-<small>inherits <code>Struct</code></small>
-  <a class="headerlink" href="#CP::Mat2x2" title="Permanent link">#</a></h2>
-<div class="doc doc-contents first">
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L450">View source</a>
+</div>      </div>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-type struct">
+<h2 id="CP::Mat2x2" class="doc doc-heading">struct <code>CP::Mat2x2</code>
+      <br/><small>inherits <code>Struct</code></small>
+<a href="#CP::Mat2x2" class="headerlink" title="Permanent link">#</a></h2>
+  <div class="doc doc-contents first">
 <p>2x2 matrix type used for tensors and such.</p>
 <p>(row major: <code>[[a b][c d]]</code>)</p>
-<div class="doc doc-children">
-<h3 id="class-methods_2">Class methods<a class="headerlink" href="#class-methods_2" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Mat2x2.new(a,b,c,d)">
+      <div class="doc doc-children">
 
-    <code>
+
+
+<h3 id="CP::Mat2x2-class-methods">Class methods<a href="#CP::Mat2x2-class-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Mat2x2.new(a,b,c,d)" class="doc doc-heading">    <code>
       .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">c</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">d</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Mat2x2.new(a,b,c,d)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Mat2x2.new(a,b,c,d)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L346">View source</a>
-</div>
-<h3 id="methods_3">Methods<a class="headerlink" href="#methods_3" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Mat2x2#a()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L346">View source</a>
+</div><h3 id="CP::Mat2x2-methods">Methods<a href="#CP::Mat2x2-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Mat2x2#a" class="doc doc-heading">    <code>
       #a<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Mat2x2#a()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Mat2x2#a" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L344">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Mat2x2#a=(a)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L344">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Mat2x2#a=(a)" class="doc doc-heading">    <code>
       #a=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Mat2x2#a=(a)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Mat2x2#a=(a)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L344">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Mat2x2#b()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L344">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Mat2x2#b" class="doc doc-heading">    <code>
       #b<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Mat2x2#b()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Mat2x2#b" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L344">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Mat2x2#b=(b)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L344">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Mat2x2#b=(b)" class="doc doc-heading">    <code>
       #b=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">b</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Mat2x2#b=(b)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Mat2x2#b=(b)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L344">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Mat2x2#c()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L344">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Mat2x2#c" class="doc doc-heading">    <code>
       #c<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Mat2x2#c()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Mat2x2#c" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L344">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Mat2x2#c=(c)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L344">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Mat2x2#c=(c)" class="doc doc-heading">    <code>
       #c=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">c</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Mat2x2#c=(c)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Mat2x2#c=(c)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L344">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Mat2x2#d()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L344">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Mat2x2#d" class="doc doc-heading">    <code>
       #d<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Mat2x2#d()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Mat2x2#d" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L344">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Mat2x2#d=(d)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L344">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Mat2x2#d=(d)" class="doc doc-heading">    <code>
       #d=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">d</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Mat2x2#d=(d)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Mat2x2#d=(d)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L344">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Mat2x2#transform(v)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L344">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Mat2x2#transform(v)" class="doc doc-heading">    <code>
       #transform<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">v</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">)</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Mat2x2#transform(v)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Mat2x2#transform(v)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L353">View source</a>
+
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L353">View source</a>
+</div>      </div>
+  </div>
+
 </div>
-</div>
-</div>
-</div>
+
 <div class="doc doc-object doc-type struct">
-<h2 class="doc doc-heading" id="CP::Transform">
-
-struct <code>CP::Transform</code>
-      <br />
-<small>inherits <code>Struct</code></small>
-  <a class="headerlink" href="#CP::Transform" title="Permanent link">#</a></h2>
-<div class="doc doc-contents first">
+<h2 id="CP::Transform" class="doc doc-heading">struct <code>CP::Transform</code>
+      <br/><small>inherits <code>Struct</code></small>
+<a href="#CP::Transform" class="headerlink" title="Permanent link">#</a></h2>
+  <div class="doc doc-contents first">
 <p>Column major 2x3 affine transform.</p>
-<div class="doc doc-children">
-<h3 id="constants">Constants<a class="headerlink" href="#constants" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-constant">
-<h4 class="doc doc-heading" id="CP::Transform::IDENTITY">
+      <div class="doc doc-children">
 
-    <code>
+
+<h3 id="CP::Transform-constants">Constants<a href="#CP::Transform-constants" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-constant">
+<h4 id="CP::Transform::IDENTITY" class="doc doc-heading">    <code>
       IDENTITY = <span style="font-weight: normal"><code class="highlight language-crystal"><span class="n">new</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform::IDENTITY" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Identity transform matrix.</p>
+<a href="#CP::Transform::IDENTITY" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Identity transform matrix.</p>  </div>
 </div>
-</div>
-<h3 id="class-methods_3">Class methods<a class="headerlink" href="#class-methods_3" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Transform.axial_scale(axis,pivot,scale)">
+<h3 id="CP::Transform-class-methods">Class methods<a href="#CP::Transform-class-methods" class="headerlink" title="Permanent link">#</a></h3>
 
-    <code>
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Transform.axial_scale(axis,pivot,scale)" class="doc doc-heading">    <code>
       .axial_scale<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">axis</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">,</span> <span class="n">pivot</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">,</span> <span class="n">scale</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <span class="k">self</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform.axial_scale(axis,pivot,scale)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Transform.axial_scale(axis,pivot,scale)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L329">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Transform.bone_scale(v0,v1)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L329">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Transform.bone_scale(v0,v1)" class="doc doc-heading">    <code>
       .bone_scale<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">v0</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">,</span> <span class="n">v1</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">)</span> <span class="p">:</span> <span class="k">self</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform.bone_scale(v0,v1)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Transform.bone_scale(v0,v1)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L324">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Transform.new(a,b,c,d,tx,ty)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L324">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Transform.new(a,b,c,d,tx,ty)" class="doc doc-heading">    <code>
       .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">c</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">d</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">tx</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">ty</span> <span class="p">:</span> <span class="n">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform.new(a,b,c,d,tx,ty)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Transform.new(a,b,c,d,tx,ty)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>Construct a new transform matrix.</p>
 <ul>
 <li>(<em>a</em>, <em>b</em>) is the x basis vector.</li>
 <li>(<em>c</em>, <em>d</em>) is the y basis vector.</li>
 <li>(<em>tx</em>, <em>ty</em>) is the translation.</li>
-</ul>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L224">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Transform.new_transpose(a,c,tx,b,d,ty)">
+</ul>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L224">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Transform.new_transpose(a,c,tx,b,d,ty)" class="doc doc-heading">    <code>
       .new_transpose<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">c</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">tx</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">d</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">ty</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <span class="k">self</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform.new_transpose(a,c,tx,b,d,ty)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Construct a new transform matrix in transposed order.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L234">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Transform.ortho(bb)">
+<a href="#CP::Transform.new_transpose(a,c,tx,b,d,ty)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Construct a new transform matrix in transposed order.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L234">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Transform.ortho(bb)" class="doc doc-heading">    <code>
       .ortho<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">bb</span> <span class="p">:</span> <a href="#CP::BB">BB</a><span class="p">)</span> <span class="p">:</span> <span class="k">self</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform.ortho(bb)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Transform.ortho(bb)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L317">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Transform.rigid(translate,radians)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L317">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Transform.rigid(translate,radians)" class="doc doc-heading">    <code>
       .rigid<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">translate</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">,</span> <span class="n">radians</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <a href="#CP::Transform">Transform</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform.rigid(translate,radians)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Create a rigid transformation matrix. (translation + rotation)</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L296">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Transform.rigid_inverse()">
+<a href="#CP::Transform.rigid(translate,radians)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Create a rigid transformation matrix. (translation + rotation)</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L296">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Transform.rigid_inverse" class="doc doc-heading">    <code>
       .rigid_inverse<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="#CP::Transform">Transform</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform.rigid_inverse()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Fast inverse of a rigid transformation matrix.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L302">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Transform.rotate(radians)">
+<a href="#CP::Transform.rigid_inverse" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Fast inverse of a rigid transformation matrix.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L302">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Transform.rotate(radians)" class="doc doc-heading">    <code>
       .rotate<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">radians</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <span class="k">self</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform.rotate(radians)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Create a rotation matrix.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L290">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Transform.scale(scale_x,scale_y)">
+<a href="#CP::Transform.rotate(radians)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Create a rotation matrix.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L290">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Transform.scale(scale_x,scale_y)" class="doc doc-heading">    <code>
       .scale<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">scale_x</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">scale_y</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span> <span class="p">:</span> <span class="k">self</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform.scale(scale_x,scale_y)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Create a scale matrix.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L285">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Transform.translate(translate)">
+<a href="#CP::Transform.scale(scale_x,scale_y)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Create a scale matrix.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L285">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Transform.translate(translate)" class="doc doc-heading">    <code>
       .translate<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">translate</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">)</span> <span class="p">:</span> <span class="k">self</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform.translate(translate)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Create a translation matrix.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L280">View source</a>
-</div>
-<h3 id="methods_4">Methods<a class="headerlink" href="#methods_4" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Transform#*(t2)">
+<a href="#CP::Transform.translate(translate)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Create a translation matrix.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L280">View source</a>
+</div><h3 id="CP::Transform-methods">Methods<a href="#CP::Transform-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Transform#*(t2)" class="doc doc-heading">    <code>
       #*<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">t2</span> <span class="p">:</span> <a href="#CP::Transform">Transform</a><span class="p">)</span> <span class="p">:</span> <a href="#CP::Transform">Transform</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform#*(t2)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Multiply two transformation matrices.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L248">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Transform#a()">
+<a href="#CP::Transform#*(t2)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Multiply two transformation matrices.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L248">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Transform#a" class="doc doc-heading">    <code>
       #a<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform#a()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Transform#a" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L216">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Transform#a=(a)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L216">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Transform#a=(a)" class="doc doc-heading">    <code>
       #a=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform#a=(a)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Transform#a=(a)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L216">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Transform#b()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L216">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Transform#b" class="doc doc-heading">    <code>
       #b<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform#b()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Transform#b" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L216">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Transform#b=(b)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L216">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Transform#b=(b)" class="doc doc-heading">    <code>
       #b=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">b</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform#b=(b)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Transform#b=(b)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L216">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Transform#c()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L216">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Transform#c" class="doc doc-heading">    <code>
       #c<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform#c()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Transform#c" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L216">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Transform#c=(c)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L216">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Transform#c=(c)" class="doc doc-heading">    <code>
       #c=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">c</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform#c=(c)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Transform#c=(c)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L216">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Transform#d()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L216">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Transform#d" class="doc doc-heading">    <code>
       #d<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform#d()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Transform#d" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L216">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Transform#d=(d)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L216">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Transform#d=(d)" class="doc doc-heading">    <code>
       #d=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">d</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform#d=(d)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Transform#d=(d)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L216">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Transform#inverse()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L216">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Transform#inverse" class="doc doc-heading">    <code>
       #inverse<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="#CP::Transform">Transform</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform#inverse()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Get the inverse of a transform matrix.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L239">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Transform#transform(bb)">
+<a href="#CP::Transform#inverse" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Get the inverse of a transform matrix.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L239">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Transform#transform(bb)" class="doc doc-heading">    <code>
       #transform<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">bb</span> <span class="p">:</span> <a href="#CP::BB">BB</a><span class="p">)</span> <span class="p">:</span> <a href="#CP::BB">BB</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform#transform(bb)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Transform a <a href="#CP::BB"><code>BB</code></a>.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L266">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Transform#transform_point(p)">
+<a href="#CP::Transform#transform(bb)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Transform a <a href="#CP::BB"><code>BB</code></a>.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L266">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Transform#transform_point(p)" class="doc doc-heading">    <code>
       #transform_point<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="nb">p</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">)</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform#transform_point(p)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Transform an absolute point. (i.e. a vertex)</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L256">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Transform#transform_vect(v)">
+<a href="#CP::Transform#transform_point(p)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Transform an absolute point. (i.e. a vertex)</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L256">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Transform#transform_vect(v)" class="doc doc-heading">    <code>
       #transform_vect<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">v</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a><span class="p">)</span> <span class="p">:</span> <a href="#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform#transform_vect(v)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Transform a vector (i.e. a normal)</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L261">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Transform#tx()">
+<a href="#CP::Transform#transform_vect(v)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Transform a vector (i.e. a normal)</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L261">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Transform#tx" class="doc doc-heading">    <code>
       #tx<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform#tx()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Transform#tx" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L217">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Transform#tx=(tx)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L217">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Transform#tx=(tx)" class="doc doc-heading">    <code>
       #tx=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">tx</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform#tx=(tx)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Transform#tx=(tx)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L217">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Transform#ty()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L217">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Transform#ty" class="doc doc-heading">    <code>
       #ty<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform#ty()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Transform#ty" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L217">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Transform#ty=(ty)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L217">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Transform#ty=(ty)" class="doc doc-heading">    <code>
       #ty=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">ty</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform#ty=(ty)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Transform#ty=(ty)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L217">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Transform#wrap(inner)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L217">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Transform#wrap(inner)" class="doc doc-heading">    <code>
       #wrap<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">inner</span> <span class="p">:</span> <a href="#CP::Transform">Transform</a><span class="p">)</span> <span class="p">:</span> <a href="#CP::Transform">Transform</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform#wrap(inner)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Transform#wrap(inner)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L309">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Transform#wrap_inverse(inner)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L309">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Transform#wrap_inverse(inner)" class="doc doc-heading">    <code>
       #wrap_inverse<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">inner</span> <span class="p">:</span> <a href="#CP::Transform">Transform</a><span class="p">)</span> <span class="p">:</span> <a href="#CP::Transform">Transform</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Transform#wrap_inverse(inner)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Transform#wrap_inverse(inner)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/vector.cr#L313">View source</a>
-</div>
-</div>
-</div>
+
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/vector.cr#L313">View source</a>
+</div>      </div>
+  </div>
+
 </div>
                 
               
@@ -3365,45 +3313,31 @@ struct <code>CP::Transform</code>
             </article>
           </div>
         </div>
+        
       </main>
       
         
 <footer class="md-footer">
   
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
         
-          <a href="queries.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <a href="space.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Space" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Space
             </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Queries
-              </div>
-            </div>
-          </a>
-        
-        
-          <a href="debug-draw.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Debug draw
-              </div>
-            </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
+          </div>
+        </a>
+      
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -3413,6 +3347,7 @@ struct <code>CP::Transform</code>
         <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
           Material for MkDocs
         </a>
+        
       </div>
       
     </div>
@@ -3420,19 +3355,13 @@ struct <code>CP::Transform</code>
 </footer>
       
     </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.b0710199.min.js", "version": null}</script>
     
-      <script src="assets/javascripts/vendor.53cc9318.min.js"></script>
-      <script src="assets/javascripts/bundle.e9c9f54f.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
-      
-      <script>
-        app = initialize({
-          base: ".",
-          features: [],
-          search: Object.assign({
-            worker: "assets/javascripts/worker/search.9c0e82ba.min.js"
-          }, typeof search !== "undefined" && search)
-        })
-      </script>
+    
+      <script src="assets/javascripts/bundle.76f349be.min.js"></script>
       
     
   </body>

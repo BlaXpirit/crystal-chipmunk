@@ -11,8 +11,8 @@
       
         <link rel="canonical" href="https://oprypin.github.io/crystal-chipmunk/collisions.html">
       
-      <link rel="shortcut icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.6">
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.8">
     
     
       
@@ -20,10 +20,10 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.cb6bc1d0.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.ca7ac06f.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.39b8e14a.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.f1a3b89f.min.css">
         
           
           
@@ -37,15 +37,19 @@
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
       
     
     
+    
+      <link rel="stylesheet" href="assets/_mkdocstrings.css">
     
       <link rel="stylesheet" href="css/mkdocstrings.css">
     
     
       
+
+
     
     
   </head>
@@ -57,8 +61,9 @@
     
     
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="teal" data-md-color-accent="light-blue">
-      
   
+    
+    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -75,27 +80,25 @@
       
     </div>
     
-      
-
-<header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://oprypin.github.io/crystal-chipmunk" title="crystal-chipmunk" class="md-header-nav__button md-logo" aria-label="crystal-chipmunk">
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="crystal-chipmunk" class="md-header__button md-logo" aria-label="crystal-chipmunk" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
 
     </a>
-    <label class="md-header-nav__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
     </label>
-    <div class="md-header-nav__title" data-md-component="header-title">
-      <div class="md-header-nav__ellipsis">
-        <div class="md-header-nav__topic">
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
           <span class="md-ellipsis">
             crystal-chipmunk
           </span>
         </div>
-        <div class="md-header-nav__topic">
+        <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
               Collisions
@@ -105,8 +108,10 @@
       </div>
     </div>
     
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
       
 <div class="md-search" data-md-component="search" role="dialog">
@@ -115,11 +120,11 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
       </button>
     </form>
     <div class="md-search__output">
@@ -136,9 +141,9 @@
 </div>
     
     
-      <div class="md-header-nav__source">
+      <div class="md-header__source">
         
-<a href="https://github.com/oprypin/crystal-chipmunk/" title="Go to repository" class="md-source">
+<a href="https://github.com/oprypin/crystal-chipmunk/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
@@ -162,20 +167,18 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
 
 
-
-
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://oprypin.github.io/crystal-chipmunk" title="crystal-chipmunk" class="md-nav__button md-logo" aria-label="crystal-chipmunk">
+    <a href="index.html" title="crystal-chipmunk" class="md-nav__button md-logo" aria-label="crystal-chipmunk" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
 
     </a>
     crystal-chipmunk
@@ -183,7 +186,7 @@
   
     <div class="md-nav__source">
       
-<a href="https://github.com/oprypin/crystal-chipmunk/" title="Go to repository" class="md-source">
+<a href="https://github.com/oprypin/crystal-chipmunk/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
@@ -204,8 +207,8 @@
   
   
     <li class="md-nav__item">
-      <a href="space.html" class="md-nav__link">
-        Space
+      <a href="index.html" class="md-nav__link">
+        crystal-chipmunk
       </a>
     </li>
   
@@ -221,6 +224,540 @@
     <li class="md-nav__item">
       <a href="body.html" class="md-nav__link">
         Body
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Collisions
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="collisions.html" class="md-nav__link md-nav__link--active">
+        Collisions
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#CP::Arbiter" class="md-nav__link">
+    Arbiter
+  </a>
+  
+    <nav class="md-nav" aria-label="Arbiter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter-methods" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#bodies" class="md-nav__link">
+    #bodies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#call_wildcard_begin_a(space)" class="md-nav__link">
+    #call_wildcard_begin_a
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#call_wildcard_begin_b(space)" class="md-nav__link">
+    #call_wildcard_begin_b
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#call_wildcard_post_solve_a(space)" class="md-nav__link">
+    #call_wildcard_post_solve_a
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#call_wildcard_post_solve_b(space)" class="md-nav__link">
+    #call_wildcard_post_solve_b
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#call_wildcard_pre_solve_a(space)" class="md-nav__link">
+    #call_wildcard_pre_solve_a
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#call_wildcard_pre_solve_b(space)" class="md-nav__link">
+    #call_wildcard_pre_solve_b
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#call_wildcard_separate_a(space)" class="md-nav__link">
+    #call_wildcard_separate_a
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#call_wildcard_separate_b(space)" class="md-nav__link">
+    #call_wildcard_separate_b
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#contact_point_set" class="md-nav__link">
+    #contact_point_set
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#contact_point_set=(contact_point_set)" class="md-nav__link">
+    #contact_point_set=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#count" class="md-nav__link">
+    #count
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#data" class="md-nav__link">
+    #data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#data=(data)" class="md-nav__link">
+    #data=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#depth(i)" class="md-nav__link">
+    #depth
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#first_contact?" class="md-nav__link">
+    #first_contact?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#friction" class="md-nav__link">
+    #friction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#friction=(friction)" class="md-nav__link">
+    #friction=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#ignore" class="md-nav__link">
+    #ignore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#normal" class="md-nav__link">
+    #normal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#point_a(i)" class="md-nav__link">
+    #point_a
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#point_b(i)" class="md-nav__link">
+    #point_b
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#removal?" class="md-nav__link">
+    #removal?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#restitution" class="md-nav__link">
+    #restitution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#restitution=(restitution)" class="md-nav__link">
+    #restitution=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#shapes" class="md-nav__link">
+    #shapes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#surface_velocity" class="md-nav__link">
+    #surface_velocity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#surface_velocity=(vr)" class="md-nav__link">
+    #surface_velocity=
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#total_impulse" class="md-nav__link">
+    #total_impulse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::Arbiter#total_ke" class="md-nav__link">
+    #total_ke
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::CollisionHandler" class="md-nav__link">
+    CollisionHandler
+  </a>
+  
+    <nav class="md-nav" aria-label="CollisionHandler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::CollisionHandler-methods" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::CollisionHandler#begin(arbiter,space)" class="md-nav__link">
+    #begin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::CollisionHandler#post_solve(arbiter,space)" class="md-nav__link">
+    #post_solve
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::CollisionHandler#pre_solve(arbiter,space)" class="md-nav__link">
+    #pre_solve
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::CollisionHandler#separate(arbiter,space)" class="md-nav__link">
+    #separate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::CollisionHandler#type_a" class="md-nav__link">
+    #type_a
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::CollisionHandler#type_b" class="md-nav__link">
+    #type_b
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::CollisionHandler::CollisionType" class="md-nav__link">
+    CollisionType
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::ContactPointSet" class="md-nav__link">
+    ContactPointSet
+  </a>
+  
+    <nav class="md-nav" aria-label="ContactPointSet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::ContactPointSet-class-methods" class="md-nav__link">
+    Class methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Class methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::ContactPointSet.new(points,normal)" class="md-nav__link">
+    .new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::ContactPointSet-methods" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::ContactPointSet#count" class="md-nav__link">
+    #count
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::ContactPointSet#normal" class="md-nav__link">
+    #normal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::ContactPointSet#points" class="md-nav__link">
+    #points
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#CP::ContactPointSet::ContactPoint" class="md-nav__link">
+    ContactPoint
+  </a>
+  
+    <nav class="md-nav" aria-label="ContactPoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::ContactPointSet::ContactPoint-class-methods" class="md-nav__link">
+    Class methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Class methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::ContactPointSet::ContactPoint.new(point_a,point_b,distance)" class="md-nav__link">
+    .new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::ContactPointSet::ContactPoint-methods" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#CP::ContactPointSet::ContactPoint#distance" class="md-nav__link">
+    #distance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::ContactPointSet::ContactPoint#point_a" class="md-nav__link">
+    #point_a
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#CP::ContactPointSet::ContactPoint#point_b" class="md-nav__link">
+    #point_b
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="constraints.html" class="md-nav__link">
+        Constraints
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="debug-draw.html" class="md-nav__link">
+        Debug draw
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="queries.html" class="md-nav__link">
+        Queries
       </a>
     </li>
   
@@ -249,523 +786,8 @@
   
   
     <li class="md-nav__item">
-      <a href="constraints.html" class="md-nav__link">
-        Constraints
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Collisions
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="collisions.html" class="md-nav__link md-nav__link--active">
-        Collisions
-      </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#CP::Arbiter" class="md-nav__link">
-    Arbiter
-  </a>
-  
-    <nav class="md-nav" aria-label="Arbiter">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#methods" class="md-nav__link">
-    Methods
-  </a>
-  
-    <nav class="md-nav" aria-label="Methods">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#bodies()" class="md-nav__link">
-    #bodies
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#call_wildcard_begin_a(space)" class="md-nav__link">
-    #call_wildcard_begin_a
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#call_wildcard_begin_b(space)" class="md-nav__link">
-    #call_wildcard_begin_b
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#call_wildcard_post_solve_a(space)" class="md-nav__link">
-    #call_wildcard_post_solve_a
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#call_wildcard_post_solve_b(space)" class="md-nav__link">
-    #call_wildcard_post_solve_b
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#call_wildcard_pre_solve_a(space)" class="md-nav__link">
-    #call_wildcard_pre_solve_a
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#call_wildcard_pre_solve_b(space)" class="md-nav__link">
-    #call_wildcard_pre_solve_b
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#call_wildcard_separate_a(space)" class="md-nav__link">
-    #call_wildcard_separate_a
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#call_wildcard_separate_b(space)" class="md-nav__link">
-    #call_wildcard_separate_b
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#contact_point_set()" class="md-nav__link">
-    #contact_point_set
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#contact_point_set=(contact_point_set)" class="md-nav__link">
-    #contact_point_set=
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#count()" class="md-nav__link">
-    #count
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#data()" class="md-nav__link">
-    #data
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#data=(data)" class="md-nav__link">
-    #data=
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#depth(i)" class="md-nav__link">
-    #depth
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#first_contact?()" class="md-nav__link">
-    #first_contact?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#friction()" class="md-nav__link">
-    #friction
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#friction=(friction)" class="md-nav__link">
-    #friction=
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#ignore()" class="md-nav__link">
-    #ignore
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#normal()" class="md-nav__link">
-    #normal
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#point_a(i)" class="md-nav__link">
-    #point_a
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#point_b(i)" class="md-nav__link">
-    #point_b
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#removal?()" class="md-nav__link">
-    #removal?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#restitution()" class="md-nav__link">
-    #restitution
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#restitution=(restitution)" class="md-nav__link">
-    #restitution=
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#shapes()" class="md-nav__link">
-    #shapes
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#surface_velocity()" class="md-nav__link">
-    #surface_velocity
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#surface_velocity=(vr)" class="md-nav__link">
-    #surface_velocity=
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#total_impulse()" class="md-nav__link">
-    #total_impulse
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::Arbiter#total_ke()" class="md-nav__link">
-    #total_ke
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#CP::CollisionHandler" class="md-nav__link">
-    CollisionHandler
-  </a>
-  
-    <nav class="md-nav" aria-label="CollisionHandler">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#methods_1" class="md-nav__link">
-    Methods
-  </a>
-  
-    <nav class="md-nav" aria-label="Methods">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#CP::CollisionHandler#begin(arbiter,space)" class="md-nav__link">
-    #begin
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::CollisionHandler#post_solve(arbiter,space)" class="md-nav__link">
-    #post_solve
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::CollisionHandler#pre_solve(arbiter,space)" class="md-nav__link">
-    #pre_solve
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::CollisionHandler#separate(arbiter,space)" class="md-nav__link">
-    #separate
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::CollisionHandler#type_a()" class="md-nav__link">
-    #type_a
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::CollisionHandler#type_b()" class="md-nav__link">
-    #type_b
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#CP::CollisionHandler::CollisionType" class="md-nav__link">
-    CollisionType
-  </a>
-  
-    <nav class="md-nav" aria-label="CollisionType">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#alias-definition" class="md-nav__link">
-    Alias definition
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#CP::ContactPointSet" class="md-nav__link">
-    ContactPointSet
-  </a>
-  
-    <nav class="md-nav" aria-label="ContactPointSet">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#class-methods" class="md-nav__link">
-    Class methods
-  </a>
-  
-    <nav class="md-nav" aria-label="Class methods">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#CP::ContactPointSet.new(points,normal)" class="md-nav__link">
-    .new
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#methods_2" class="md-nav__link">
-    Methods
-  </a>
-  
-    <nav class="md-nav" aria-label="Methods">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#CP::ContactPointSet#count()" class="md-nav__link">
-    #count
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::ContactPointSet#normal()" class="md-nav__link">
-    #normal
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::ContactPointSet#points()" class="md-nav__link">
-    #points
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#CP::ContactPointSet::ContactPoint" class="md-nav__link">
-    ContactPoint
-  </a>
-  
-    <nav class="md-nav" aria-label="ContactPoint">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#class-methods_1" class="md-nav__link">
-    Class methods
-  </a>
-  
-    <nav class="md-nav" aria-label="Class methods">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#CP::ContactPointSet::ContactPoint.new(point_a,point_b,distance)" class="md-nav__link">
-    .new
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#methods_3" class="md-nav__link">
-    Methods
-  </a>
-  
-    <nav class="md-nav" aria-label="Methods">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#CP::ContactPointSet::ContactPoint#distance()" class="md-nav__link">
-    #distance
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::ContactPointSet::ContactPoint#point_a()" class="md-nav__link">
-    #point_a
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#CP::ContactPointSet::ContactPoint#point_b()" class="md-nav__link">
-    #point_b
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="queries.html" class="md-nav__link">
-        Queries
+      <a href="space.html" class="md-nav__link">
+        Space
       </a>
     </li>
   
@@ -786,21 +808,6 @@
   
 
     
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="debug-draw.html" class="md-nav__link">
-        Debug draw
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -809,7 +816,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -817,11 +824,12 @@
   
   
   
+  
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#CP::Arbiter" class="md-nav__link">
@@ -832,7 +840,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#methods" class="md-nav__link">
+  <a href="#CP::Arbiter-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -840,7 +848,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::Arbiter#bodies()" class="md-nav__link">
+  <a href="#CP::Arbiter#bodies" class="md-nav__link">
     #bodies
   </a>
   
@@ -903,7 +911,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Arbiter#contact_point_set()" class="md-nav__link">
+  <a href="#CP::Arbiter#contact_point_set" class="md-nav__link">
     #contact_point_set
   </a>
   
@@ -917,14 +925,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Arbiter#count()" class="md-nav__link">
+  <a href="#CP::Arbiter#count" class="md-nav__link">
     #count
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Arbiter#data()" class="md-nav__link">
+  <a href="#CP::Arbiter#data" class="md-nav__link">
     #data
   </a>
   
@@ -945,14 +953,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Arbiter#first_contact?()" class="md-nav__link">
+  <a href="#CP::Arbiter#first_contact?" class="md-nav__link">
     #first_contact?
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Arbiter#friction()" class="md-nav__link">
+  <a href="#CP::Arbiter#friction" class="md-nav__link">
     #friction
   </a>
   
@@ -966,14 +974,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Arbiter#ignore()" class="md-nav__link">
+  <a href="#CP::Arbiter#ignore" class="md-nav__link">
     #ignore
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Arbiter#normal()" class="md-nav__link">
+  <a href="#CP::Arbiter#normal" class="md-nav__link">
     #normal
   </a>
   
@@ -994,14 +1002,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Arbiter#removal?()" class="md-nav__link">
+  <a href="#CP::Arbiter#removal?" class="md-nav__link">
     #removal?
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Arbiter#restitution()" class="md-nav__link">
+  <a href="#CP::Arbiter#restitution" class="md-nav__link">
     #restitution
   </a>
   
@@ -1015,14 +1023,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Arbiter#shapes()" class="md-nav__link">
+  <a href="#CP::Arbiter#shapes" class="md-nav__link">
     #shapes
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Arbiter#surface_velocity()" class="md-nav__link">
+  <a href="#CP::Arbiter#surface_velocity" class="md-nav__link">
     #surface_velocity
   </a>
   
@@ -1036,14 +1044,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Arbiter#total_impulse()" class="md-nav__link">
+  <a href="#CP::Arbiter#total_impulse" class="md-nav__link">
     #total_impulse
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Arbiter#total_ke()" class="md-nav__link">
+  <a href="#CP::Arbiter#total_ke" class="md-nav__link">
     #total_ke
   </a>
   
@@ -1068,7 +1076,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#methods_1" class="md-nav__link">
+  <a href="#CP::CollisionHandler-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -1104,14 +1112,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::CollisionHandler#type_a()" class="md-nav__link">
+  <a href="#CP::CollisionHandler#type_a" class="md-nav__link">
     #type_a
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::CollisionHandler#type_b()" class="md-nav__link">
+  <a href="#CP::CollisionHandler#type_b" class="md-nav__link">
     #type_b
   </a>
   
@@ -1132,19 +1140,6 @@
     CollisionType
   </a>
   
-    <nav class="md-nav" aria-label="CollisionType">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#alias-definition" class="md-nav__link">
-    Alias definition
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -1156,7 +1151,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods" class="md-nav__link">
+  <a href="#CP::ContactPointSet-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -1176,7 +1171,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_2" class="md-nav__link">
+  <a href="#CP::ContactPointSet-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -1184,21 +1179,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::ContactPointSet#count()" class="md-nav__link">
+  <a href="#CP::ContactPointSet#count" class="md-nav__link">
     #count
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::ContactPointSet#normal()" class="md-nav__link">
+  <a href="#CP::ContactPointSet#normal" class="md-nav__link">
     #normal
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::ContactPointSet#points()" class="md-nav__link">
+  <a href="#CP::ContactPointSet#points" class="md-nav__link">
     #points
   </a>
   
@@ -1223,7 +1218,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods_1" class="md-nav__link">
+  <a href="#CP::ContactPointSet::ContactPoint-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -1243,7 +1238,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_3" class="md-nav__link">
+  <a href="#CP::ContactPointSet::ContactPoint-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -1251,21 +1246,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::ContactPointSet::ContactPoint#distance()" class="md-nav__link">
+  <a href="#CP::ContactPointSet::ContactPoint#distance" class="md-nav__link">
     #distance
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::ContactPointSet::ContactPoint#point_a()" class="md-nav__link">
+  <a href="#CP::ContactPointSet::ContactPoint#point_a" class="md-nav__link">
     #point_a
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::ContactPointSet::ContactPoint#point_b()" class="md-nav__link">
+  <a href="#CP::ContactPointSet::ContactPoint#point_b" class="md-nav__link">
     #point_b
   </a>
   
@@ -1289,7 +1284,7 @@
               </div>
             
           
-          <div class="md-content">
+          <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
@@ -1301,13 +1296,10 @@
                   <h1>Collisions</h1>
                 
                 <div class="doc doc-object doc-type struct">
-<h2 class="doc doc-heading" id="CP::Arbiter">
-
-struct <code>CP::Arbiter</code>
-      <br />
-<small>inherits <code>Struct</code></small>
-  <a class="headerlink" href="#CP::Arbiter" title="Permanent link">#</a></h2>
-<div class="doc doc-contents first">
+<h2 id="CP::Arbiter" class="doc doc-heading">struct <code>CP::Arbiter</code>
+      <br/><small>inherits <code>Struct</code></small>
+<a href="#CP::Arbiter" class="headerlink" title="Permanent link">#</a></h2>
+  <div class="doc doc-contents first">
 <p>The Arbiter object encapsulates a pair of colliding shapes and all of
 the data about their collision.</p>
 <p>They are created when a collision starts, and persist until those
@@ -1317,346 +1309,325 @@ never hold on to an arbiter as you don't know when it will be
 destroyed! Use them within the callback where they are given to you
 and then forget about them or copy out the information you need from
 them.</p>
-<div class="doc doc-children">
-<h3 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#bodies()">
+      <div class="doc doc-children">
 
-    <code>
+
+
+<h3 id="CP::Arbiter-methods">Methods<a href="#CP::Arbiter-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#bodies" class="doc doc-heading">    <code>
       #bodies<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Tuple</span><span class="p">(</span><a href="body.html#CP::Body">Body</a><span class="p">,</span> <a href="body.html#CP::Body">Body</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#bodies()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Arbiter#bodies" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>Return the colliding bodies involved for this arbiter.</p>
 <p>The order of the <code>collision_type</code> the bodies are associated with values will match
-the order set when the collision handler was registered.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L165">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#call_wildcard_begin_a(space)">
+the order set when the collision handler was registered.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L165">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#call_wildcard_begin_a(space)" class="doc doc-heading">    <code>
       #call_wildcard_begin_a<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">space</span> <span class="p">:</span> <a href="space.html#CP::Space">Space</a><span class="p">)</span> <span class="p">:</span> <span class="n">Bool</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#call_wildcard_begin_a(space)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Arbiter#call_wildcard_begin_a(space)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>If you want a custom callback to invoke the wildcard callback for the first collision type, you must call this function explicitly.</p>
-<p>You must decide how to handle the wildcard's return value since it may disagree with the other wildcard handler's return value or your own.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L224">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#call_wildcard_begin_b(space)">
+<p>You must decide how to handle the wildcard's return value since it may disagree with the other wildcard handler's return value or your own.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L224">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#call_wildcard_begin_b(space)" class="doc doc-heading">    <code>
       #call_wildcard_begin_b<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">space</span> <span class="p">:</span> <a href="space.html#CP::Space">Space</a><span class="p">)</span> <span class="p">:</span> <span class="n">Bool</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#call_wildcard_begin_b(space)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Arbiter#call_wildcard_begin_b(space)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>If you want a custom callback to invoke the wildcard callback for the second collision type, you must call this function explicitly.</p>
-<p>You must decide how to handle the wildcard's return value since it may disagree with the other wildcard handler's return value or your own.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L230">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#call_wildcard_post_solve_a(space)">
+<p>You must decide how to handle the wildcard's return value since it may disagree with the other wildcard handler's return value or your own.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L230">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#call_wildcard_post_solve_a(space)" class="doc doc-heading">    <code>
       #call_wildcard_post_solve_a<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">space</span> <span class="p">:</span> <a href="space.html#CP::Space">Space</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#call_wildcard_post_solve_a(space)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>If you want a custom callback to invoke the wildcard callback for the first collision type, you must call this function explicitly.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L248">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#call_wildcard_post_solve_b(space)">
+<a href="#CP::Arbiter#call_wildcard_post_solve_a(space)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>If you want a custom callback to invoke the wildcard callback for the first collision type, you must call this function explicitly.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L248">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#call_wildcard_post_solve_b(space)" class="doc doc-heading">    <code>
       #call_wildcard_post_solve_b<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">space</span> <span class="p">:</span> <a href="space.html#CP::Space">Space</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#call_wildcard_post_solve_b(space)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>If you want a custom callback to invoke the wildcard callback for the second collision type, you must call this function explicitly.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L252">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#call_wildcard_pre_solve_a(space)">
+<a href="#CP::Arbiter#call_wildcard_post_solve_b(space)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>If you want a custom callback to invoke the wildcard callback for the second collision type, you must call this function explicitly.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L252">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#call_wildcard_pre_solve_a(space)" class="doc doc-heading">    <code>
       #call_wildcard_pre_solve_a<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">space</span> <span class="p">:</span> <a href="space.html#CP::Space">Space</a><span class="p">)</span> <span class="p">:</span> <span class="n">Bool</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#call_wildcard_pre_solve_a(space)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Arbiter#call_wildcard_pre_solve_a(space)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>If you want a custom callback to invoke the wildcard callback for the first collision type, you must call this function explicitly.</p>
-<p>You must decide how to handle the wildcard's return value since it may disagree with the other wildcard handler's return value or your own.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L237">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#call_wildcard_pre_solve_b(space)">
+<p>You must decide how to handle the wildcard's return value since it may disagree with the other wildcard handler's return value or your own.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L237">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#call_wildcard_pre_solve_b(space)" class="doc doc-heading">    <code>
       #call_wildcard_pre_solve_b<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">space</span> <span class="p">:</span> <a href="space.html#CP::Space">Space</a><span class="p">)</span> <span class="p">:</span> <span class="n">Bool</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#call_wildcard_pre_solve_b(space)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Arbiter#call_wildcard_pre_solve_b(space)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>If you want a custom callback to invoke the wildcard callback for the second collision type, you must call this function explicitly.</p>
-<p>You must decide how to handle the wildcard's return value since it may disagree with the other wildcard handler's return value or your own.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L243">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#call_wildcard_separate_a(space)">
+<p>You must decide how to handle the wildcard's return value since it may disagree with the other wildcard handler's return value or your own.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L243">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#call_wildcard_separate_a(space)" class="doc doc-heading">    <code>
       #call_wildcard_separate_a<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">space</span> <span class="p">:</span> <a href="space.html#CP::Space">Space</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#call_wildcard_separate_a(space)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>If you want a custom callback to invoke the wildcard callback for the first collision type, you must call this function explicitly.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L257">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#call_wildcard_separate_b(space)">
+<a href="#CP::Arbiter#call_wildcard_separate_a(space)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>If you want a custom callback to invoke the wildcard callback for the first collision type, you must call this function explicitly.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L257">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#call_wildcard_separate_b(space)" class="doc doc-heading">    <code>
       #call_wildcard_separate_b<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">space</span> <span class="p">:</span> <a href="space.html#CP::Space">Space</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#call_wildcard_separate_b(space)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>If you want a custom callback to invoke the wildcard callback for the second collision type, you must call this function explicitly.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L261">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#contact_point_set()">
+<a href="#CP::Arbiter#call_wildcard_separate_b(space)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>If you want a custom callback to invoke the wildcard callback for the second collision type, you must call this function explicitly.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L261">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#contact_point_set" class="doc doc-heading">    <code>
       #contact_point_set<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="#CP::ContactPointSet">ContactPointSet</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#contact_point_set()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Return a contact set from an arbiter.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L171">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#contact_point_set=(contact_point_set)">
+<a href="#CP::Arbiter#contact_point_set" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Return a contact set from an arbiter.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L171">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#contact_point_set=(contact_point_set)" class="doc doc-heading">    <code>
       #contact_point_set=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">contact_point_set</span> <span class="p">:</span> <a href="#CP::ContactPointSet">ContactPointSet</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#contact_point_set=(contact_point_set)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Arbiter#contact_point_set=(contact_point_set)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>Replace the contact point set for an arbiter.</p>
-<p>This can be a very powerful feature, but use it with caution!</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L177">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#count()">
+<p>This can be a very powerful feature, but use it with caution!</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L177">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#count" class="doc doc-heading">    <code>
       #count<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Int32</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#count()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Get the number of contact points for this arbiter.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L198">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#data()">
+<a href="#CP::Arbiter#count" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Get the number of contact points for this arbiter.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L198">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#data" class="doc doc-heading">    <code>
       #data<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Pointer</span><span class="p">(</span><span class="n">Void</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#data()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The user data pointer associated with this pair of colliding objects.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L266">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#data=(data)">
+<a href="#CP::Arbiter#data" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The user data pointer associated with this pair of colliding objects.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L266">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#data=(data)" class="doc doc-heading">    <code>
       #data=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">data</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#data=(data)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Arbiter#data=(data)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L269">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#depth(i)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L269">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#depth(i)" class="doc doc-heading">    <code>
       #depth<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">i</span> <span class="p">:</span> <span class="n">Int</span><span class="p">)</span> <span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#depth(i)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Get the depth of the <em>i</em>-th contact point.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L217">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#first_contact?()">
+<a href="#CP::Arbiter#depth(i)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Get the depth of the <em>i</em>-th contact point.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L217">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#first_contact?" class="doc doc-heading">    <code>
       #first_contact?<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Bool</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#first_contact?()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Arbiter#first_contact?" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>Returns true if this is the first step a pair of objects started colliding.</p>
 <p>This can be useful for sound effects for instance. If it's the first
 frame for a certain collision, check the energy of the collision in a
 <code>post_step()</code> callback and use that to determine the volume of a sound
-effect to play.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L187">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#friction()">
+effect to play.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L187">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#friction" class="doc doc-heading">    <code>
       #friction<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#friction()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Arbiter#friction" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>The friction coefficient that will be applied to the pair of colliding objects.</p>
 <p>Setting the value in a <code>pre_solve()</code> callback will override the value
 calculated by the space. The default calculation multiplies the
-friction of the two shapes together.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L107">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#friction=(friction)">
+friction of the two shapes together.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L107">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#friction=(friction)" class="doc doc-heading">    <code>
       #friction=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">friction</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#friction=(friction)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Arbiter#friction=(friction)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L110">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#ignore()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L110">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#ignore" class="doc doc-heading">    <code>
       #ignore<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Bool</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#ignore()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Arbiter#ignore" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>Mark a collision pair to be ignored until the two objects separate.</p>
-<p>Pre-solve and post-solve callbacks will not be called, but the separate callback will be called.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L148">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#normal()">
+<p>Pre-solve and post-solve callbacks will not be called, but the separate callback will be called.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L148">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#normal" class="doc doc-heading">    <code>
       #normal<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#normal()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Get the normal of the collision.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L203">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#point_a(i)">
+<a href="#CP::Arbiter#normal" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Get the normal of the collision.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L203">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#point_a(i)" class="doc doc-heading">    <code>
       #point_a<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">i</span> <span class="p">:</span> <span class="n">Int</span><span class="p">)</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#point_a(i)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Get the position of the <em>i</em>-th contact point on the surface of the first shape.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L208">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#point_b(i)">
+<a href="#CP::Arbiter#point_a(i)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Get the position of the <em>i</em>-th contact point on the surface of the first shape.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L208">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#point_b(i)" class="doc doc-heading">    <code>
       #point_b<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">i</span> <span class="p">:</span> <span class="n">Int</span><span class="p">)</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#point_b(i)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Get the position of the <em>i</em>-th contact point on the surface of the second shape.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L212">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#removal?()">
+<a href="#CP::Arbiter#point_b(i)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Get the position of the <em>i</em>-th contact point on the surface of the second shape.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L212">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#removal?" class="doc doc-heading">    <code>
       #removal?<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Bool</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#removal?()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Arbiter#removal?" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>Returns true during a <code>separate()</code> callback if the callback was
-invoked due to an object removal.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L193">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#restitution()">
+invoked due to an object removal.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L193">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#restitution" class="doc doc-heading">    <code>
       #restitution<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#restitution()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Arbiter#restitution" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>The restitution (elasticity) that will be applied to the pair of colliding objects.</p>
 <p>Setting the value in a <code>pre_solve()</code> callback will override the value
 calculated by the space. The default calculation multiplies the
-elasticity of the two shapes together.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L95">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#restitution=(restitution)">
+elasticity of the two shapes together.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L95">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#restitution=(restitution)" class="doc doc-heading">    <code>
       #restitution=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">restitution</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#restitution=(restitution)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Arbiter#restitution=(restitution)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L98">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#shapes()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L98">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#shapes" class="doc doc-heading">    <code>
       #shapes<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Tuple</span><span class="p">(</span><a href="shapes.html#CP::Shape">Shape</a><span class="p">,</span> <a href="shapes.html#CP::Shape">Shape</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#shapes()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Arbiter#shapes" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>Return the colliding shapes involved for this arbiter.</p>
 <p>The order of their <code>collision_type</code> values will match
-the order set when the collision handler was registered.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L156">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#surface_velocity()">
+the order set when the collision handler was registered.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L156">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#surface_velocity" class="doc doc-heading">    <code>
       #surface_velocity<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#surface_velocity()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Arbiter#surface_velocity" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>The relative surface velocity of the two shapes in contact.</p>
 <p>Setting the value in a <code>pre_solve()</code> callback will override the value
 calculated by the space. the default calculation subtracts the
@@ -1665,58 +1636,54 @@ that onto the tangent of the collision. This is so that only
 friction is affected by default calculation. Using a custom
 calculation, you can make something that responds like a pinball
 bumper, or where the surface velocity is dependent on the location
-of the contact point.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L124">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#surface_velocity=(vr)">
+of the contact point.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L124">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#surface_velocity=(vr)" class="doc doc-heading">    <code>
       #surface_velocity=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">vr</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#surface_velocity=(vr)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Arbiter#surface_velocity=(vr)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L127">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#total_impulse()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L127">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#total_impulse" class="doc doc-heading">    <code>
       #total_impulse<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#total_impulse()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Arbiter#total_impulse" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>Calculate the total impulse including the friction that was applied by this arbiter.</p>
-<p>This function should only be called from a post-solve, post-step or <code>each_arbiter</code> callback.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L134">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Arbiter#total_ke()">
+<p>This function should only be called from a post-solve, post-step or <code>each_arbiter</code> callback.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L134">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Arbiter#total_ke" class="doc doc-heading">    <code>
       #total_ke<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Arbiter#total_ke()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Arbiter#total_ke" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>Calculate the amount of energy lost in a collision including static, but not dynamic friction.</p>
-<p>This function should only be called from a post-solve, post-step or <code>each_arbiter</code> callback.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L141">View source</a>
-</div>
-</div>
-</div>
-</div>
-<div class="doc doc-object doc-type class">
-<h2 class="doc doc-heading" id="CP::CollisionHandler">
+<p>This function should only be called from a post-solve, post-step or <code>each_arbiter</code> callback.</p>  </div>
 
-class <code>CP::CollisionHandler</code>
-      <br />
-<small>inherits <code>Reference</code></small>
-  <a class="headerlink" href="#CP::CollisionHandler" title="Permanent link">#</a></h2>
-<div class="doc doc-contents first">
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L141">View source</a>
+</div>      </div>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-type class">
+<h2 id="CP::CollisionHandler" class="doc doc-heading">class <code>CP::CollisionHandler</code>
+      <br/><small>inherits <code>Reference</code></small>
+<a href="#CP::CollisionHandler" class="headerlink" title="Permanent link">#</a></h2>
+  <div class="doc doc-contents first">
 <p>Defines callbacks to configure custom collision handling.</p>
 <p>Collision handlers have a pair of types; when a collision occurs between two shapes that have these types, the collision handler functions are triggered.</p>
 <p>Shapes tagged as sensors (<code>Shape#sensor? == true</code>) never generate
@@ -1727,235 +1694,227 @@ is also called every frame even though there is no collision response.</p>
 <p><a href="#CP::CollisionHandler#pre_solve(arbiter,space)"><code>pre_solve</code></a> callbacks are called before the sleeping algorithm
 runs. If an object falls asleep, its <a href="#CP::CollisionHandler#post_solve(arbiter,space)"><code>post_solve</code></a> callback won't be
 called until it's reawoken.</p>
-<div class="doc doc-children">
-<h3 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::CollisionHandler#begin(arbiter,space)">
+      <div class="doc doc-children">
 
-    <code>
+
+
+<h3 id="CP::CollisionHandler-methods">Methods<a href="#CP::CollisionHandler-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::CollisionHandler#begin(arbiter,space)" class="doc doc-heading">    <code>
       #begin<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">arbiter</span> <span class="p">:</span> <a href="#CP::Arbiter">Arbiter</a><span class="p">,</span> <span class="n">space</span> <span class="p">:</span> <a href="space.html#CP::Space">Space</a><span class="p">)</span> <span class="p">:</span> <span class="n">Bool</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::CollisionHandler#begin(arbiter,space)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::CollisionHandler#begin(arbiter,space)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>This function is called when two shapes with types that match this collision handler begin colliding.</p>
 <p>Returning false from a begin callback causes the collision to be ignored until
-the the separate callback is called when the objects stop colliding.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L334">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::CollisionHandler#post_solve(arbiter,space)">
+the the separate callback is called when the objects stop colliding.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L334">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::CollisionHandler#post_solve(arbiter,space)" class="doc doc-heading">    <code>
       #post_solve<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">arbiter</span> <span class="p">:</span> <a href="#CP::Arbiter">Arbiter</a><span class="p">,</span> <span class="n">space</span> <span class="p">:</span> <a href="space.html#CP::Space">Space</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::CollisionHandler#post_solve(arbiter,space)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::CollisionHandler#post_solve(arbiter,space)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>This function is called each step when two shapes with types that match this collision handler are colliding.</p>
 <p>It's called after the collision solver runs, so you can retrieve the collision impulse
-or kinetic energy if you want to use it to calculate sound volumes or damage amounts.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L350">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::CollisionHandler#pre_solve(arbiter,space)">
+or kinetic energy if you want to use it to calculate sound volumes or damage amounts.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L350">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::CollisionHandler#pre_solve(arbiter,space)" class="doc doc-heading">    <code>
       #pre_solve<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">arbiter</span> <span class="p">:</span> <a href="#CP::Arbiter">Arbiter</a><span class="p">,</span> <span class="n">space</span> <span class="p">:</span> <a href="space.html#CP::Space">Space</a><span class="p">)</span> <span class="p">:</span> <span class="n">Bool</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::CollisionHandler#pre_solve(arbiter,space)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::CollisionHandler#pre_solve(arbiter,space)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>This function is called each step when two shapes with types that match this collision handler are colliding.</p>
 <p>It's called before the collision solver runs so that you can affect a collision's outcome
-(by editing <a href="#CP::Arbiter#friction()"><code>Arbiter#friction</code></a>, <a href="#CP::Arbiter#restitution()"><code>Arbiter#restitution</code></a>, <a href="#CP::Arbiter#surface_velocity()"><code>Arbiter#surface_velocity</code></a>).</p>
-<p>Returning false from a pre-step callback causes the collision to be ignored until the next step.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L343">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::CollisionHandler#separate(arbiter,space)">
+(by editing <a href="#CP::Arbiter#friction"><code>Arbiter#friction</code></a>, <a href="#CP::Arbiter#restitution"><code>Arbiter#restitution</code></a>, <a href="#CP::Arbiter#surface_velocity"><code>Arbiter#surface_velocity</code></a>).</p>
+<p>Returning false from a pre-step callback causes the collision to be ignored until the next step.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L343">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::CollisionHandler#separate(arbiter,space)" class="doc doc-heading">    <code>
       #separate<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">arbiter</span> <span class="p">:</span> <a href="#CP::Arbiter">Arbiter</a><span class="p">,</span> <span class="n">space</span> <span class="p">:</span> <a href="space.html#CP::Space">Space</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::CollisionHandler#separate(arbiter,space)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::CollisionHandler#separate(arbiter,space)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>This function is called when two shapes with types that match this collision handler stop colliding.</p>
 <p>To ensure that <a href="#CP::CollisionHandler#begin(arbiter,space)"><code>begin</code></a>/<a href="#CP::CollisionHandler#separate(arbiter,space)"><code>separate</code></a> are always called in balanced
 pairs, it will also be called when removing a shape while it's in
-contact with something or when deallocating the space.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L357">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::CollisionHandler#type_a()">
+contact with something or when deallocating the space.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L357">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::CollisionHandler#type_a" class="doc doc-heading">    <code>
       #type_a<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">UInt64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::CollisionHandler#type_a()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::CollisionHandler#type_a" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>Collision type identifier of the first shape that this handler recognizes.</p>
-<p>In the collision handler callback, the shape with this type will be the first argument.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L293">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::CollisionHandler#type_b()">
+<p>In the collision handler callback, the shape with this type will be the first argument.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L293">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::CollisionHandler#type_b" class="doc doc-heading">    <code>
       #type_b<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">UInt64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::CollisionHandler#type_b()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::CollisionHandler#type_b" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>Collision type identifier of the second shape that this handler recognizes.</p>
-<p>In the collision handler callback, the shape with this type will be the second argument.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L297">View source</a>
-</div>
-</div>
-</div>
-<div class="doc doc-object doc-type alias">
-<h2 class="doc doc-heading" id="CP::CollisionHandler::CollisionType">
+<p>In the collision handler callback, the shape with this type will be the second argument.</p>  </div>
 
-alias <code>CP::CollisionHandler::CollisionType</code>
-  <a class="headerlink" href="#CP::CollisionHandler::CollisionType" title="Permanent link">#</a></h2>
-<div class="doc doc-contents first">
-<div class="doc doc-children">
-<h3 id="alias-definition">Alias definition<a class="headerlink" href="#alias-definition" title="Permanent link">#</a></h3>
-<code class="highlight language-crystal"><span class="n">UInt64</span></code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L297">View source</a>
+</div>      </div>
+  </div>
+
+
+
+<div class="doc doc-object doc-type alias">
+<h2 id="CP::CollisionHandler::CollisionType" class="doc doc-heading">alias <code>CP::CollisionHandler::CollisionType</code>
+<a href="#CP::CollisionHandler::CollisionType" class="headerlink" title="Permanent link">#</a></h2>
+  <div class="doc doc-contents first">
+
+      <div class="doc doc-children">
+          <h3>Alias definition</h3>
+          <code class="highlight language-crystal"><span class="n">UInt64</span></code>
 
 
 
       </div>
-</div>
-</div>
-</div>
+  </div>
+
+</div></div>
+
 <div class="doc doc-object doc-type struct">
-<h2 class="doc doc-heading" id="CP::ContactPointSet">
-
-struct <code>CP::ContactPointSet</code>
-      <br />
-<small>inherits <code>Struct</code></small>
-  <a class="headerlink" href="#CP::ContactPointSet" title="Permanent link">#</a></h2>
-<div class="doc doc-contents first">
+<h2 id="CP::ContactPointSet" class="doc doc-heading">struct <code>CP::ContactPointSet</code>
+      <br/><small>inherits <code>Struct</code></small>
+<a href="#CP::ContactPointSet" class="headerlink" title="Permanent link">#</a></h2>
+  <div class="doc doc-contents first">
 <p>A struct that wraps up the important collision data for an arbiter.</p>
-<div class="doc doc-children">
-<h3 id="class-methods">Class methods<a class="headerlink" href="#class-methods" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::ContactPointSet.new(points,normal)">
+      <div class="doc doc-children">
 
-    <code>
+
+
+<h3 id="CP::ContactPointSet-class-methods">Class methods<a href="#CP::ContactPointSet-class-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::ContactPointSet.new(points,normal)" class="doc doc-heading">    <code>
       .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">points</span> <span class="p">:</span> <span class="n">Slice</span><span class="p">(</span><a href="#CP::ContactPointSet::ContactPoint">ContactPoint</a><span class="p">),</span> <span class="n">normal</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::ContactPointSet.new(points,normal)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::ContactPointSet.new(points,normal)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L52">View source</a>
-</div>
-<h3 id="methods_2">Methods<a class="headerlink" href="#methods_2" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::ContactPointSet#count()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L52">View source</a>
+</div><h3 id="CP::ContactPointSet-methods">Methods<a href="#CP::ContactPointSet-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::ContactPointSet#count" class="doc doc-heading">    <code>
       #count<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Int32</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::ContactPointSet#count()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The number of contact points in the set.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L47">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::ContactPointSet#normal()">
+<a href="#CP::ContactPointSet#count" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The number of contact points in the set.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L47">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::ContactPointSet#normal" class="doc doc-heading">    <code>
       #normal<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::ContactPointSet#normal()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The normal of the collision.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L49">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::ContactPointSet#points()">
+<a href="#CP::ContactPointSet#normal" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The normal of the collision.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L49">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::ContactPointSet#points" class="doc doc-heading">    <code>
       #points<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Slice</span><span class="p">(</span><a href="#CP::ContactPointSet::ContactPoint">ContactPoint</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::ContactPointSet#points()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The contact points (at most 2).</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L59">View source</a>
-</div>
-</div>
-</div>
+<a href="#CP::ContactPointSet#points" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The contact points (at most 2).</p>  </div>
+
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L59">View source</a>
+</div>      </div>
+  </div>
+
+
+
 <div class="doc doc-object doc-type struct">
-<h2 class="doc doc-heading" id="CP::ContactPointSet::ContactPoint">
-
-struct <code>CP::ContactPointSet::ContactPoint</code>
-      <br />
-<small>inherits <code>Struct</code></small>
-  <a class="headerlink" href="#CP::ContactPointSet::ContactPoint" title="Permanent link">#</a></h2>
-<div class="doc doc-contents first">
+<h2 id="CP::ContactPointSet::ContactPoint" class="doc doc-heading">struct <code>CP::ContactPointSet::ContactPoint</code>
+      <br/><small>inherits <code>Struct</code></small>
+<a href="#CP::ContactPointSet::ContactPoint" class="headerlink" title="Permanent link">#</a></h2>
+  <div class="doc doc-contents first">
 <p>Contains information about a contact point.</p>
-<div class="doc doc-children">
-<h3 id="class-methods_1">Class methods<a class="headerlink" href="#class-methods_1" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::ContactPointSet::ContactPoint.new(point_a,point_b,distance)">
+      <div class="doc doc-children">
 
-    <code>
+
+
+<h3 id="CP::ContactPointSet::ContactPoint-class-methods">Class methods<a href="#CP::ContactPointSet::ContactPoint-class-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::ContactPointSet::ContactPoint.new(point_a,point_b,distance)" class="doc doc-heading">    <code>
       .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">point_a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">point_b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">distance</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::ContactPointSet::ContactPoint.new(point_a,point_b,distance)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::ContactPointSet::ContactPoint.new(point_a,point_b,distance)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L41">View source</a>
-</div>
-<h3 id="methods_3">Methods<a class="headerlink" href="#methods_3" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::ContactPointSet::ContactPoint#distance()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L41">View source</a>
+</div><h3 id="CP::ContactPointSet::ContactPoint-methods">Methods<a href="#CP::ContactPointSet::ContactPoint-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::ContactPointSet::ContactPoint#distance" class="doc doc-heading">    <code>
       #distance<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::ContactPointSet::ContactPoint#distance()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::ContactPointSet::ContactPoint#distance" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>Penetration distance of the two shapes. Overlapping means it will be negative.</p>
-<p>This value is calculated as <code>(point2 - point1).dot(normal)</code> and is ignored by <a href="#CP::Arbiter#contact_point_set=(contact_point_set)"><code>Arbiter#contact_point_set=</code></a>.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L39">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::ContactPointSet::ContactPoint#point_a()">
+<p>This value is calculated as <code>(point2 - point1).dot(normal)</code> and is ignored by <a href="#CP::Arbiter#contact_point_set=(contact_point_set)"><code>Arbiter#contact_point_set=</code></a>.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L39">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::ContactPointSet::ContactPoint#point_a" class="doc doc-heading">    <code>
       #point_a<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::ContactPointSet::ContactPoint#point_a()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The position of the contact on the surface of the first shape.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L33">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::ContactPointSet::ContactPoint#point_b()">
+<a href="#CP::ContactPointSet::ContactPoint#point_a" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The position of the contact on the surface of the first shape.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L33">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::ContactPointSet::ContactPoint#point_b" class="doc doc-heading">    <code>
       #point_b<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::ContactPointSet::ContactPoint#point_b()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The position of the contact on the surface of the second shape.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/collision.cr#L35">View source</a>
-</div>
-</div>
-</div>
-</div>
-</div>
+<a href="#CP::ContactPointSet::ContactPoint#point_b" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The position of the contact on the surface of the second shape.</p>  </div>
+
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/collision.cr#L35">View source</a>
+</div>      </div>
+  </div>
+
+</div></div>
                 
               
               
@@ -1966,45 +1925,46 @@ struct <code>CP::ContactPointSet::ContactPoint</code>
             </article>
           </div>
         </div>
+        
       </main>
       
         
 <footer class="md-footer">
   
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
         
-          <a href="constraints.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <a href="body.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Body" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Body
             </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Constraints
-              </div>
-            </div>
-          </a>
+          </div>
+        </a>
+      
+      
         
-        
-          <a href="queries.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Queries
-              </div>
+        <a href="constraints.html" class="md-footer__link md-footer__link--next" aria-label="Next: Constraints" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Constraints
             </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -2014,6 +1974,7 @@ struct <code>CP::ContactPointSet::ContactPoint</code>
         <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
           Material for MkDocs
         </a>
+        
       </div>
       
     </div>
@@ -2021,19 +1982,13 @@ struct <code>CP::ContactPointSet::ContactPoint</code>
 </footer>
       
     </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.b0710199.min.js", "version": null}</script>
     
-      <script src="assets/javascripts/vendor.53cc9318.min.js"></script>
-      <script src="assets/javascripts/bundle.e9c9f54f.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
-      
-      <script>
-        app = initialize({
-          base: ".",
-          features: [],
-          search: Object.assign({
-            worker: "assets/javascripts/worker/search.9c0e82ba.min.js"
-          }, typeof search !== "undefined" && search)
-        })
-      </script>
+    
+      <script src="assets/javascripts/bundle.76f349be.min.js"></script>
       
     
   </body>

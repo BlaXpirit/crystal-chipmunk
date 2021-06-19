@@ -11,8 +11,8 @@
       
         <link rel="canonical" href="https://oprypin.github.io/crystal-chipmunk/constraints.html">
       
-      <link rel="shortcut icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.6">
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.8">
     
     
       
@@ -20,10 +20,10 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.cb6bc1d0.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.ca7ac06f.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.39b8e14a.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.f1a3b89f.min.css">
         
           
           
@@ -37,15 +37,19 @@
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
       
     
     
+    
+      <link rel="stylesheet" href="assets/_mkdocstrings.css">
     
       <link rel="stylesheet" href="css/mkdocstrings.css">
     
     
       
+
+
     
     
   </head>
@@ -57,8 +61,9 @@
     
     
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="teal" data-md-color-accent="light-blue">
-      
   
+    
+    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -75,27 +80,25 @@
       
     </div>
     
-      
-
-<header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://oprypin.github.io/crystal-chipmunk" title="crystal-chipmunk" class="md-header-nav__button md-logo" aria-label="crystal-chipmunk">
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="crystal-chipmunk" class="md-header__button md-logo" aria-label="crystal-chipmunk" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
 
     </a>
-    <label class="md-header-nav__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
     </label>
-    <div class="md-header-nav__title" data-md-component="header-title">
-      <div class="md-header-nav__ellipsis">
-        <div class="md-header-nav__topic">
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
           <span class="md-ellipsis">
             crystal-chipmunk
           </span>
         </div>
-        <div class="md-header-nav__topic">
+        <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
               Constraints
@@ -105,8 +108,10 @@
       </div>
     </div>
     
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
       
 <div class="md-search" data-md-component="search" role="dialog">
@@ -115,11 +120,11 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
       </button>
     </form>
     <div class="md-search__output">
@@ -136,9 +141,9 @@
 </div>
     
     
-      <div class="md-header-nav__source">
+      <div class="md-header__source">
         
-<a href="https://github.com/oprypin/crystal-chipmunk/" title="Go to repository" class="md-source">
+<a href="https://github.com/oprypin/crystal-chipmunk/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
@@ -162,20 +167,18 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
 
 
-
-
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://oprypin.github.io/crystal-chipmunk" title="crystal-chipmunk" class="md-nav__button md-logo" aria-label="crystal-chipmunk">
+    <a href="index.html" title="crystal-chipmunk" class="md-nav__button md-logo" aria-label="crystal-chipmunk" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
 
     </a>
     crystal-chipmunk
@@ -183,7 +186,7 @@
   
     <div class="md-nav__source">
       
-<a href="https://github.com/oprypin/crystal-chipmunk/" title="Go to repository" class="md-source">
+<a href="https://github.com/oprypin/crystal-chipmunk/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
@@ -204,8 +207,8 @@
   
   
     <li class="md-nav__item">
-      <a href="space.html" class="md-nav__link">
-        Space
+      <a href="index.html" class="md-nav__link">
+        crystal-chipmunk
       </a>
     </li>
   
@@ -234,8 +237,8 @@
   
   
     <li class="md-nav__item">
-      <a href="shapes.html" class="md-nav__link">
-        Shapes
+      <a href="collisions.html" class="md-nav__link">
+        Collisions
       </a>
     </li>
   
@@ -255,6 +258,7 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+      
         <label class="md-nav__link md-nav__link--active" for="__toc">
           Constraints
           <span class="md-nav__icon md-icon"></span>
@@ -269,11 +273,12 @@
   
   
   
+  
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#CP::Constraint" class="md-nav__link">
@@ -284,14 +289,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#direct-known-subclasses" class="md-nav__link">
-    Direct known subclasses
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#methods" class="md-nav__link">
+  <a href="#CP::Constraint-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -299,21 +297,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint#bodies()" class="md-nav__link">
+  <a href="#CP::Constraint#bodies" class="md-nav__link">
     #bodies
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint#body_a()" class="md-nav__link">
+  <a href="#CP::Constraint#body_a" class="md-nav__link">
     #body_a
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint#body_b()" class="md-nav__link">
+  <a href="#CP::Constraint#body_b" class="md-nav__link">
     #body_b
   </a>
   
@@ -327,14 +325,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint#collide_bodies?()" class="md-nav__link">
+  <a href="#CP::Constraint#collide_bodies?" class="md-nav__link">
     #collide_bodies?
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint#error_bias()" class="md-nav__link">
+  <a href="#CP::Constraint#error_bias" class="md-nav__link">
     #error_bias
   </a>
   
@@ -348,14 +346,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint#impulse()" class="md-nav__link">
+  <a href="#CP::Constraint#impulse" class="md-nav__link">
     #impulse
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint#max_bias()" class="md-nav__link">
+  <a href="#CP::Constraint#max_bias" class="md-nav__link">
     #max_bias
   </a>
   
@@ -369,7 +367,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint#max_force()" class="md-nav__link">
+  <a href="#CP::Constraint#max_force" class="md-nav__link">
     #max_force
   </a>
   
@@ -397,7 +395,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint#space()" class="md-nav__link">
+  <a href="#CP::Constraint#space" class="md-nav__link">
     #space
   </a>
   
@@ -422,7 +420,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods" class="md-nav__link">
+  <a href="#CP::Constraint::DampedRotarySpring-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -442,7 +440,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_1" class="md-nav__link">
+  <a href="#CP::Constraint::DampedRotarySpring-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -450,7 +448,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::DampedRotarySpring#damping()" class="md-nav__link">
+  <a href="#CP::Constraint::DampedRotarySpring#damping" class="md-nav__link">
     #damping
   </a>
   
@@ -464,7 +462,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::DampedRotarySpring#rest_angle()" class="md-nav__link">
+  <a href="#CP::Constraint::DampedRotarySpring#rest_angle" class="md-nav__link">
     #rest_angle
   </a>
   
@@ -485,7 +483,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::DampedRotarySpring#stiffness()" class="md-nav__link">
+  <a href="#CP::Constraint::DampedRotarySpring#stiffness" class="md-nav__link">
     #stiffness
   </a>
   
@@ -517,7 +515,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods_1" class="md-nav__link">
+  <a href="#CP::Constraint::DampedSpring-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -537,7 +535,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_2" class="md-nav__link">
+  <a href="#CP::Constraint::DampedSpring-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -545,7 +543,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::DampedSpring#anchor_a()" class="md-nav__link">
+  <a href="#CP::Constraint::DampedSpring#anchor_a" class="md-nav__link">
     #anchor_a
   </a>
   
@@ -559,7 +557,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::DampedSpring#anchor_b()" class="md-nav__link">
+  <a href="#CP::Constraint::DampedSpring#anchor_b" class="md-nav__link">
     #anchor_b
   </a>
   
@@ -573,7 +571,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::DampedSpring#damping()" class="md-nav__link">
+  <a href="#CP::Constraint::DampedSpring#damping" class="md-nav__link">
     #damping
   </a>
   
@@ -587,7 +585,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::DampedSpring#rest_length()" class="md-nav__link">
+  <a href="#CP::Constraint::DampedSpring#rest_length" class="md-nav__link">
     #rest_length
   </a>
   
@@ -608,7 +606,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::DampedSpring#stiffness()" class="md-nav__link">
+  <a href="#CP::Constraint::DampedSpring#stiffness" class="md-nav__link">
     #stiffness
   </a>
   
@@ -640,7 +638,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods_2" class="md-nav__link">
+  <a href="#CP::Constraint::GearJoint-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -660,7 +658,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_3" class="md-nav__link">
+  <a href="#CP::Constraint::GearJoint-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -668,7 +666,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::GearJoint#phase()" class="md-nav__link">
+  <a href="#CP::Constraint::GearJoint#phase" class="md-nav__link">
     #phase
   </a>
   
@@ -682,7 +680,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::GearJoint#ratio()" class="md-nav__link">
+  <a href="#CP::Constraint::GearJoint#ratio" class="md-nav__link">
     #ratio
   </a>
   
@@ -714,7 +712,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods_3" class="md-nav__link">
+  <a href="#CP::Constraint::GrooveJoint-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -734,7 +732,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_4" class="md-nav__link">
+  <a href="#CP::Constraint::GrooveJoint-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -742,7 +740,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::GrooveJoint#anchor_b()" class="md-nav__link">
+  <a href="#CP::Constraint::GrooveJoint#anchor_b" class="md-nav__link">
     #anchor_b
   </a>
   
@@ -756,7 +754,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::GrooveJoint#groove_a()" class="md-nav__link">
+  <a href="#CP::Constraint::GrooveJoint#groove_a" class="md-nav__link">
     #groove_a
   </a>
   
@@ -770,7 +768,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::GrooveJoint#groove_b()" class="md-nav__link">
+  <a href="#CP::Constraint::GrooveJoint#groove_b" class="md-nav__link">
     #groove_b
   </a>
   
@@ -802,7 +800,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods_4" class="md-nav__link">
+  <a href="#CP::Constraint::PinJoint-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -822,7 +820,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_5" class="md-nav__link">
+  <a href="#CP::Constraint::PinJoint-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -830,7 +828,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::PinJoint#anchor_a()" class="md-nav__link">
+  <a href="#CP::Constraint::PinJoint#anchor_a" class="md-nav__link">
     #anchor_a
   </a>
   
@@ -844,7 +842,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::PinJoint#anchor_b()" class="md-nav__link">
+  <a href="#CP::Constraint::PinJoint#anchor_b" class="md-nav__link">
     #anchor_b
   </a>
   
@@ -858,7 +856,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::PinJoint#dist()" class="md-nav__link">
+  <a href="#CP::Constraint::PinJoint#dist" class="md-nav__link">
     #dist
   </a>
   
@@ -890,7 +888,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods_5" class="md-nav__link">
+  <a href="#CP::Constraint::PivotJoint-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -910,7 +908,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_6" class="md-nav__link">
+  <a href="#CP::Constraint::PivotJoint-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -918,7 +916,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::PivotJoint#anchor_a()" class="md-nav__link">
+  <a href="#CP::Constraint::PivotJoint#anchor_a" class="md-nav__link">
     #anchor_a
   </a>
   
@@ -932,7 +930,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::PivotJoint#anchor_b()" class="md-nav__link">
+  <a href="#CP::Constraint::PivotJoint#anchor_b" class="md-nav__link">
     #anchor_b
   </a>
   
@@ -964,7 +962,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods_6" class="md-nav__link">
+  <a href="#CP::Constraint::RatchetJoint-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -984,7 +982,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_7" class="md-nav__link">
+  <a href="#CP::Constraint::RatchetJoint-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -992,7 +990,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::RatchetJoint#angle()" class="md-nav__link">
+  <a href="#CP::Constraint::RatchetJoint#angle" class="md-nav__link">
     #angle
   </a>
   
@@ -1006,7 +1004,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::RatchetJoint#phase()" class="md-nav__link">
+  <a href="#CP::Constraint::RatchetJoint#phase" class="md-nav__link">
     #phase
   </a>
   
@@ -1020,7 +1018,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::RatchetJoint#ratchet()" class="md-nav__link">
+  <a href="#CP::Constraint::RatchetJoint#ratchet" class="md-nav__link">
     #ratchet
   </a>
   
@@ -1052,7 +1050,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods_7" class="md-nav__link">
+  <a href="#CP::Constraint::RotaryLimitJoint-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -1072,7 +1070,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_8" class="md-nav__link">
+  <a href="#CP::Constraint::RotaryLimitJoint-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -1080,7 +1078,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::RotaryLimitJoint#max()" class="md-nav__link">
+  <a href="#CP::Constraint::RotaryLimitJoint#max" class="md-nav__link">
     #max
   </a>
   
@@ -1094,7 +1092,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::RotaryLimitJoint#min()" class="md-nav__link">
+  <a href="#CP::Constraint::RotaryLimitJoint#min" class="md-nav__link">
     #min
   </a>
   
@@ -1126,7 +1124,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods_8" class="md-nav__link">
+  <a href="#CP::Constraint::SimpleMotor-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -1146,7 +1144,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_9" class="md-nav__link">
+  <a href="#CP::Constraint::SimpleMotor-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -1154,7 +1152,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::SimpleMotor#rate()" class="md-nav__link">
+  <a href="#CP::Constraint::SimpleMotor#rate" class="md-nav__link">
     #rate
   </a>
   
@@ -1186,7 +1184,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods_9" class="md-nav__link">
+  <a href="#CP::Constraint::SlideJoint-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -1206,7 +1204,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_10" class="md-nav__link">
+  <a href="#CP::Constraint::SlideJoint-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -1214,7 +1212,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::SlideJoint#anchor_a()" class="md-nav__link">
+  <a href="#CP::Constraint::SlideJoint#anchor_a" class="md-nav__link">
     #anchor_a
   </a>
   
@@ -1228,7 +1226,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::SlideJoint#anchor_b()" class="md-nav__link">
+  <a href="#CP::Constraint::SlideJoint#anchor_b" class="md-nav__link">
     #anchor_b
   </a>
   
@@ -1242,7 +1240,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::SlideJoint#max()" class="md-nav__link">
+  <a href="#CP::Constraint::SlideJoint#max" class="md-nav__link">
     #max
   </a>
   
@@ -1256,7 +1254,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::SlideJoint#min()" class="md-nav__link">
+  <a href="#CP::Constraint::SlideJoint#min" class="md-nav__link">
     #min
   </a>
   
@@ -1295,8 +1293,8 @@
   
   
     <li class="md-nav__item">
-      <a href="collisions.html" class="md-nav__link">
-        Collisions
+      <a href="debug-draw.html" class="md-nav__link">
+        Debug draw
       </a>
     </li>
   
@@ -1325,8 +1323,8 @@
   
   
     <li class="md-nav__item">
-      <a href="vector-math.html" class="md-nav__link">
-        Vector math
+      <a href="shapes.html" class="md-nav__link">
+        Shapes
       </a>
     </li>
   
@@ -1340,8 +1338,23 @@
   
   
     <li class="md-nav__item">
-      <a href="debug-draw.html" class="md-nav__link">
-        Debug draw
+      <a href="space.html" class="md-nav__link">
+        Space
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="vector-math.html" class="md-nav__link">
+        Vector math
       </a>
     </li>
   
@@ -1355,7 +1368,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1363,11 +1376,12 @@
   
   
   
+  
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#CP::Constraint" class="md-nav__link">
@@ -1378,14 +1392,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#direct-known-subclasses" class="md-nav__link">
-    Direct known subclasses
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#methods" class="md-nav__link">
+  <a href="#CP::Constraint-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -1393,21 +1400,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint#bodies()" class="md-nav__link">
+  <a href="#CP::Constraint#bodies" class="md-nav__link">
     #bodies
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint#body_a()" class="md-nav__link">
+  <a href="#CP::Constraint#body_a" class="md-nav__link">
     #body_a
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint#body_b()" class="md-nav__link">
+  <a href="#CP::Constraint#body_b" class="md-nav__link">
     #body_b
   </a>
   
@@ -1421,14 +1428,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint#collide_bodies?()" class="md-nav__link">
+  <a href="#CP::Constraint#collide_bodies?" class="md-nav__link">
     #collide_bodies?
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint#error_bias()" class="md-nav__link">
+  <a href="#CP::Constraint#error_bias" class="md-nav__link">
     #error_bias
   </a>
   
@@ -1442,14 +1449,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint#impulse()" class="md-nav__link">
+  <a href="#CP::Constraint#impulse" class="md-nav__link">
     #impulse
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint#max_bias()" class="md-nav__link">
+  <a href="#CP::Constraint#max_bias" class="md-nav__link">
     #max_bias
   </a>
   
@@ -1463,7 +1470,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint#max_force()" class="md-nav__link">
+  <a href="#CP::Constraint#max_force" class="md-nav__link">
     #max_force
   </a>
   
@@ -1491,7 +1498,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint#space()" class="md-nav__link">
+  <a href="#CP::Constraint#space" class="md-nav__link">
     #space
   </a>
   
@@ -1516,7 +1523,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods" class="md-nav__link">
+  <a href="#CP::Constraint::DampedRotarySpring-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -1536,7 +1543,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_1" class="md-nav__link">
+  <a href="#CP::Constraint::DampedRotarySpring-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -1544,7 +1551,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::DampedRotarySpring#damping()" class="md-nav__link">
+  <a href="#CP::Constraint::DampedRotarySpring#damping" class="md-nav__link">
     #damping
   </a>
   
@@ -1558,7 +1565,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::DampedRotarySpring#rest_angle()" class="md-nav__link">
+  <a href="#CP::Constraint::DampedRotarySpring#rest_angle" class="md-nav__link">
     #rest_angle
   </a>
   
@@ -1579,7 +1586,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::DampedRotarySpring#stiffness()" class="md-nav__link">
+  <a href="#CP::Constraint::DampedRotarySpring#stiffness" class="md-nav__link">
     #stiffness
   </a>
   
@@ -1611,7 +1618,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods_1" class="md-nav__link">
+  <a href="#CP::Constraint::DampedSpring-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -1631,7 +1638,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_2" class="md-nav__link">
+  <a href="#CP::Constraint::DampedSpring-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -1639,7 +1646,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::DampedSpring#anchor_a()" class="md-nav__link">
+  <a href="#CP::Constraint::DampedSpring#anchor_a" class="md-nav__link">
     #anchor_a
   </a>
   
@@ -1653,7 +1660,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::DampedSpring#anchor_b()" class="md-nav__link">
+  <a href="#CP::Constraint::DampedSpring#anchor_b" class="md-nav__link">
     #anchor_b
   </a>
   
@@ -1667,7 +1674,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::DampedSpring#damping()" class="md-nav__link">
+  <a href="#CP::Constraint::DampedSpring#damping" class="md-nav__link">
     #damping
   </a>
   
@@ -1681,7 +1688,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::DampedSpring#rest_length()" class="md-nav__link">
+  <a href="#CP::Constraint::DampedSpring#rest_length" class="md-nav__link">
     #rest_length
   </a>
   
@@ -1702,7 +1709,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::DampedSpring#stiffness()" class="md-nav__link">
+  <a href="#CP::Constraint::DampedSpring#stiffness" class="md-nav__link">
     #stiffness
   </a>
   
@@ -1734,7 +1741,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods_2" class="md-nav__link">
+  <a href="#CP::Constraint::GearJoint-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -1754,7 +1761,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_3" class="md-nav__link">
+  <a href="#CP::Constraint::GearJoint-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -1762,7 +1769,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::GearJoint#phase()" class="md-nav__link">
+  <a href="#CP::Constraint::GearJoint#phase" class="md-nav__link">
     #phase
   </a>
   
@@ -1776,7 +1783,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::GearJoint#ratio()" class="md-nav__link">
+  <a href="#CP::Constraint::GearJoint#ratio" class="md-nav__link">
     #ratio
   </a>
   
@@ -1808,7 +1815,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods_3" class="md-nav__link">
+  <a href="#CP::Constraint::GrooveJoint-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -1828,7 +1835,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_4" class="md-nav__link">
+  <a href="#CP::Constraint::GrooveJoint-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -1836,7 +1843,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::GrooveJoint#anchor_b()" class="md-nav__link">
+  <a href="#CP::Constraint::GrooveJoint#anchor_b" class="md-nav__link">
     #anchor_b
   </a>
   
@@ -1850,7 +1857,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::GrooveJoint#groove_a()" class="md-nav__link">
+  <a href="#CP::Constraint::GrooveJoint#groove_a" class="md-nav__link">
     #groove_a
   </a>
   
@@ -1864,7 +1871,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::GrooveJoint#groove_b()" class="md-nav__link">
+  <a href="#CP::Constraint::GrooveJoint#groove_b" class="md-nav__link">
     #groove_b
   </a>
   
@@ -1896,7 +1903,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods_4" class="md-nav__link">
+  <a href="#CP::Constraint::PinJoint-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -1916,7 +1923,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_5" class="md-nav__link">
+  <a href="#CP::Constraint::PinJoint-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -1924,7 +1931,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::PinJoint#anchor_a()" class="md-nav__link">
+  <a href="#CP::Constraint::PinJoint#anchor_a" class="md-nav__link">
     #anchor_a
   </a>
   
@@ -1938,7 +1945,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::PinJoint#anchor_b()" class="md-nav__link">
+  <a href="#CP::Constraint::PinJoint#anchor_b" class="md-nav__link">
     #anchor_b
   </a>
   
@@ -1952,7 +1959,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::PinJoint#dist()" class="md-nav__link">
+  <a href="#CP::Constraint::PinJoint#dist" class="md-nav__link">
     #dist
   </a>
   
@@ -1984,7 +1991,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods_5" class="md-nav__link">
+  <a href="#CP::Constraint::PivotJoint-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -2004,7 +2011,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_6" class="md-nav__link">
+  <a href="#CP::Constraint::PivotJoint-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -2012,7 +2019,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::PivotJoint#anchor_a()" class="md-nav__link">
+  <a href="#CP::Constraint::PivotJoint#anchor_a" class="md-nav__link">
     #anchor_a
   </a>
   
@@ -2026,7 +2033,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::PivotJoint#anchor_b()" class="md-nav__link">
+  <a href="#CP::Constraint::PivotJoint#anchor_b" class="md-nav__link">
     #anchor_b
   </a>
   
@@ -2058,7 +2065,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods_6" class="md-nav__link">
+  <a href="#CP::Constraint::RatchetJoint-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -2078,7 +2085,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_7" class="md-nav__link">
+  <a href="#CP::Constraint::RatchetJoint-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -2086,7 +2093,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::RatchetJoint#angle()" class="md-nav__link">
+  <a href="#CP::Constraint::RatchetJoint#angle" class="md-nav__link">
     #angle
   </a>
   
@@ -2100,7 +2107,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::RatchetJoint#phase()" class="md-nav__link">
+  <a href="#CP::Constraint::RatchetJoint#phase" class="md-nav__link">
     #phase
   </a>
   
@@ -2114,7 +2121,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::RatchetJoint#ratchet()" class="md-nav__link">
+  <a href="#CP::Constraint::RatchetJoint#ratchet" class="md-nav__link">
     #ratchet
   </a>
   
@@ -2146,7 +2153,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods_7" class="md-nav__link">
+  <a href="#CP::Constraint::RotaryLimitJoint-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -2166,7 +2173,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_8" class="md-nav__link">
+  <a href="#CP::Constraint::RotaryLimitJoint-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -2174,7 +2181,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::RotaryLimitJoint#max()" class="md-nav__link">
+  <a href="#CP::Constraint::RotaryLimitJoint#max" class="md-nav__link">
     #max
   </a>
   
@@ -2188,7 +2195,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::RotaryLimitJoint#min()" class="md-nav__link">
+  <a href="#CP::Constraint::RotaryLimitJoint#min" class="md-nav__link">
     #min
   </a>
   
@@ -2220,7 +2227,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods_8" class="md-nav__link">
+  <a href="#CP::Constraint::SimpleMotor-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -2240,7 +2247,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_9" class="md-nav__link">
+  <a href="#CP::Constraint::SimpleMotor-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -2248,7 +2255,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::SimpleMotor#rate()" class="md-nav__link">
+  <a href="#CP::Constraint::SimpleMotor#rate" class="md-nav__link">
     #rate
   </a>
   
@@ -2280,7 +2287,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-methods_9" class="md-nav__link">
+  <a href="#CP::Constraint::SlideJoint-class-methods" class="md-nav__link">
     Class methods
   </a>
   
@@ -2300,7 +2307,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methods_10" class="md-nav__link">
+  <a href="#CP::Constraint::SlideJoint-methods" class="md-nav__link">
     Methods
   </a>
   
@@ -2308,7 +2315,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::SlideJoint#anchor_a()" class="md-nav__link">
+  <a href="#CP::Constraint::SlideJoint#anchor_a" class="md-nav__link">
     #anchor_a
   </a>
   
@@ -2322,7 +2329,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::SlideJoint#anchor_b()" class="md-nav__link">
+  <a href="#CP::Constraint::SlideJoint#anchor_b" class="md-nav__link">
     #anchor_b
   </a>
   
@@ -2336,7 +2343,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::SlideJoint#max()" class="md-nav__link">
+  <a href="#CP::Constraint::SlideJoint#max" class="md-nav__link">
     #max
   </a>
   
@@ -2350,7 +2357,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#CP::Constraint::SlideJoint#min()" class="md-nav__link">
+  <a href="#CP::Constraint::SlideJoint#min" class="md-nav__link">
     #min
   </a>
   
@@ -2381,7 +2388,7 @@
               </div>
             
           
-          <div class="md-content">
+          <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
@@ -2393,20 +2400,18 @@
                   <h1>Constraints</h1>
                 
                 <div class="doc doc-object doc-type class">
-<h2 class="doc doc-heading" id="CP::Constraint">
-
-abstract class <code>CP::Constraint</code>
-      <br />
-<small>inherits <code>Reference</code></small>
-  <a class="headerlink" href="#CP::Constraint" title="Permanent link">#</a></h2>
-<div class="doc doc-contents first">
+<h2 id="CP::Constraint" class="doc doc-heading">abstract class <code>CP::Constraint</code>
+      <br/><small>inherits <code>Reference</code></small>
+<a href="#CP::Constraint" class="headerlink" title="Permanent link">#</a></h2>
+  <div class="doc doc-contents first">
 <p>A constraint is something that describes how two bodies interact with
 each other (how they constrain each other). Constraints can be simple
 joints that allow bodies to pivot around each other like the bones in your
 body, or they can be more abstract like the gear joint or motors.</p>
-<div class="doc doc-children">
-<h3 id="direct-known-subclasses">Direct known subclasses<a class="headerlink" href="#direct-known-subclasses" title="Permanent link">#</a></h3>
-<code><a href="#CP::Constraint::DampedRotarySpring">CP::Constraint::DampedRotarySpring</a></code>
+      <div class="doc doc-children">
+
+            <h3>Direct known subclasses</h3>
+              <code><a href="#CP::Constraint::DampedRotarySpring">CP::Constraint::DampedRotarySpring</a></code>
               <code><a href="#CP::Constraint::DampedSpring">CP::Constraint::DampedSpring</a></code>
               <code><a href="#CP::Constraint::GearJoint">CP::Constraint::GearJoint</a></code>
               <code><a href="#CP::Constraint::GrooveJoint">CP::Constraint::GrooveJoint</a></code>
@@ -2418,320 +2423,307 @@ body, or they can be more abstract like the gear joint or motors.</p>
               <code><a href="#CP::Constraint::SlideJoint">CP::Constraint::SlideJoint</a></code>
 
 
-            <h3 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint#bodies()">
+<h3 id="CP::Constraint-methods">Methods<a href="#CP::Constraint-methods" class="headerlink" title="Permanent link">#</a></h3>
 
-    <code>
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint#bodies" class="doc doc-heading">    <code>
       #bodies<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Tuple</span><span class="p">(</span><a href="body.html#CP::Body">Body</a><span class="p">,</span> <a href="body.html#CP::Body">Body</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint#bodies()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Get the bodies the constraint is attached to.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L73">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint#body_a()">
+<a href="#CP::Constraint#bodies" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Get the bodies the constraint is attached to.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L73">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint#body_a" class="doc doc-heading">    <code>
       #body_a<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="body.html#CP::Body">Body</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint#body_a()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Get the first body the constraint is attached to.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L64">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint#body_b()">
+<a href="#CP::Constraint#body_a" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Get the first body the constraint is attached to.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L64">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint#body_b" class="doc doc-heading">    <code>
       #body_b<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="body.html#CP::Body">Body</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint#body_b()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Get the second body the constraint is attached to.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L68">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint#collide_bodies=(collide_bodies)">
+<a href="#CP::Constraint#body_b" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Get the second body the constraint is attached to.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L68">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint#collide_bodies=(collide_bodies)" class="doc doc-heading">    <code>
       #collide_bodies=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">collide_bodies</span> <span class="p">:</span> <span class="n">Bool</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint#collide_bodies=(collide_bodies)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint#collide_bodies=(collide_bodies)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L114">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint#collide_bodies?()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L114">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint#collide_bodies?" class="doc doc-heading">    <code>
       #collide_bodies?<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Bool</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint#collide_bodies?()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint#collide_bodies?" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>Are the two bodies connected by the constraint allowed to collide or not?</p>
-<p>(defaults to false)</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L111">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint#error_bias()">
+<p>(defaults to false)</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L111">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint#error_bias" class="doc doc-heading">    <code>
       #error_bias<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint#error_bias()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint#error_bias" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>Rate at which joint error is corrected.</p>
 <p>Defaults to (1.0 - 0.1) ** 60.0 meaning that it will
-correct 10% of the error every 1/60th of a second.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L91">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint#error_bias=(error_bias)">
+correct 10% of the error every 1/60th of a second.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L91">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint#error_bias=(error_bias)" class="doc doc-heading">    <code>
       #error_bias=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">error_bias</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint#error_bias=(error_bias)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint#error_bias=(error_bias)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L94">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint#impulse()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L94">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint#impulse" class="doc doc-heading">    <code>
       #impulse<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint#impulse()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint#impulse" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>Get the most recent impulse applied by this constraint.</p>
 <p>To convert this to a force, divide by the timestep passed to
 <a href="space.html#CP::Space#step(dt)"><code>Space#step</code></a>. You can use this to implement breakable joints to check
-if the force they attempted to apply exceeded a certain threshold.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L123">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint#max_bias()">
+if the force they attempted to apply exceeded a certain threshold.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L123">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint#max_bias" class="doc doc-heading">    <code>
       #max_bias<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint#max_bias()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint#max_bias" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>The maximum rate at which joint error is corrected.</p>
-<p>(defaults to INFINITY)</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L101">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint#max_bias=(max_bias)">
+<p>(defaults to INFINITY)</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L101">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint#max_bias=(max_bias)" class="doc doc-heading">    <code>
       #max_bias=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">max_bias</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint#max_bias=(max_bias)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint#max_bias=(max_bias)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L104">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint#max_force()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L104">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint#max_force" class="doc doc-heading">    <code>
       #max_force<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint#max_force()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint#max_force" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>The maximum force that this constraint is allowed to use.</p>
-<p>(defaults to INFINITY)</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L80">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint#max_force=(max_force)">
+<p>(defaults to INFINITY)</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L80">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint#max_force=(max_force)" class="doc doc-heading">    <code>
       #max_force=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">max_force</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint#max_force=(max_force)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint#max_force=(max_force)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L83">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint#post_solve(space)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L83">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint#post_solve(space)" class="doc doc-heading">    <code>
       #post_solve<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">space</span> <span class="p">:</span> <a href="space.html#CP::Space">Space</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint#post_solve(space)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint#post_solve(space)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>The post-solve method that is called before the solver runs
-(can be overridden in a subclass).</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L133">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint#pre_solve(space)">
+(can be overridden in a subclass).</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L133">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint#pre_solve(space)" class="doc doc-heading">    <code>
       #pre_solve<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">space</span> <span class="p">:</span> <a href="space.html#CP::Space">Space</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint#pre_solve(space)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint#pre_solve(space)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>The pre-solve method that is called before the solver runs
-(can be overridden in a subclass).</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L129">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint#space()">
+(can be overridden in a subclass).</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L129">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint#space" class="doc doc-heading">    <code>
       #space<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="space.html#CP::Space">Space?</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint#space()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>Get the <a href="space.html#CP::Space"><code>Space</code></a> this constraint is added to.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L59">View source</a>
-</div>
-</div>
-</div>
+<a href="#CP::Constraint#space" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>Get the <a href="space.html#CP::Space"><code>Space</code></a> this constraint is added to.</p>  </div>
+
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L59">View source</a>
+</div>      </div>
+  </div>
+
+
+
 <div class="doc doc-object doc-type class">
-<h2 class="doc doc-heading" id="CP::Constraint::DampedRotarySpring">
-
-class <code>CP::Constraint::DampedRotarySpring</code>
-      <br />
-<small>inherits <code><a href="#CP::Constraint">CP::Constraint</a></code></small>
-  <a class="headerlink" href="#CP::Constraint::DampedRotarySpring" title="Permanent link">#</a></h2>
-<div class="doc doc-contents first">
+<h2 id="CP::Constraint::DampedRotarySpring" class="doc doc-heading">class <code>CP::Constraint::DampedRotarySpring</code>
+      <br/><small>inherits <code><a href="#CP::Constraint">CP::Constraint</a></code></small>
+<a href="#CP::Constraint::DampedRotarySpring" class="headerlink" title="Permanent link">#</a></h2>
+  <div class="doc doc-contents first">
 <p>Like a damped spring, but works in an angular fashion</p>
-<div class="doc doc-children">
-<h3 id="class-methods">Class methods<a class="headerlink" href="#class-methods" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Constraint::DampedRotarySpring.new(a,b,rest_angle,stiffness,damping)">
+      <div class="doc doc-children">
 
-    <code>
+
+
+<h3 id="CP::Constraint::DampedRotarySpring-class-methods">Class methods<a href="#CP::Constraint::DampedRotarySpring-class-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Constraint::DampedRotarySpring.new(a,b,rest_angle,stiffness,damping)" class="doc doc-heading">    <code>
       .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">,</span> <span class="n">rest_angle</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">stiffness</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">damping</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::DampedRotarySpring.new(a,b,rest_angle,stiffness,damping)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::DampedRotarySpring.new(a,b,rest_angle,stiffness,damping)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L509">View source</a>
-</div>
-<h3 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::DampedRotarySpring#damping()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L509">View source</a>
+</div><h3 id="CP::Constraint::DampedRotarySpring-methods">Methods<a href="#CP::Constraint::DampedRotarySpring-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::DampedRotarySpring#damping" class="doc doc-heading">    <code>
       #damping<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::DampedRotarySpring#damping()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>How soft to make the damping of the spring.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L540">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::DampedRotarySpring#damping=(damping)">
+<a href="#CP::Constraint::DampedRotarySpring#damping" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>How soft to make the damping of the spring.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L540">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::DampedRotarySpring#damping=(damping)" class="doc doc-heading">    <code>
       #damping=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">damping</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::DampedRotarySpring#damping=(damping)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::DampedRotarySpring#damping=(damping)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L543">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::DampedRotarySpring#rest_angle()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L543">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::DampedRotarySpring#rest_angle" class="doc doc-heading">    <code>
       #rest_angle<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::DampedRotarySpring#rest_angle()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The relative angle in radians that the bodies want to have</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L524">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::DampedRotarySpring#rest_angle=(rest_angle)">
+<a href="#CP::Constraint::DampedRotarySpring#rest_angle" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The relative angle in radians that the bodies want to have</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L524">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::DampedRotarySpring#rest_angle=(rest_angle)" class="doc doc-heading">    <code>
       #rest_angle=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">rest_angle</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::DampedRotarySpring#rest_angle=(rest_angle)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::DampedRotarySpring#rest_angle=(rest_angle)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L527">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::DampedRotarySpring#spring_torque(relative_angle)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L527">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::DampedRotarySpring#spring_torque(relative_angle)" class="doc doc-heading">    <code>
       #spring_torque<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">relative_angle</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">)</span> <span class="p">:</span> <span class="n">Number</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::DampedRotarySpring#spring_torque(relative_angle)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>(can be overridden in a subclass)</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L548">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::DampedRotarySpring#stiffness()">
+<a href="#CP::Constraint::DampedRotarySpring#spring_torque(relative_angle)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>(can be overridden in a subclass)</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L548">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::DampedRotarySpring#stiffness" class="doc doc-heading">    <code>
       #stiffness<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::DampedRotarySpring#stiffness()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The stiffness of the spring in force/distance.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L532">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::DampedRotarySpring#stiffness=(stiffness)">
+<a href="#CP::Constraint::DampedRotarySpring#stiffness" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The stiffness of the spring in force/distance.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L532">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::DampedRotarySpring#stiffness=(stiffness)" class="doc doc-heading">    <code>
       #stiffness=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">stiffness</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::DampedRotarySpring#stiffness=(stiffness)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::DampedRotarySpring#stiffness=(stiffness)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L535">View source</a>
+
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L535">View source</a>
+</div>      </div>
+  </div>
+
 </div>
-</div>
-</div>
-</div>
+
 <div class="doc doc-object doc-type class">
-<h2 class="doc doc-heading" id="CP::Constraint::DampedSpring">
+<h2 id="CP::Constraint::DampedSpring" class="doc doc-heading">class <code>CP::Constraint::DampedSpring</code>
+      <br/><small>inherits <code><a href="#CP::Constraint">CP::Constraint</a></code></small>
+<a href="#CP::Constraint::DampedSpring" class="headerlink" title="Permanent link">#</a></h2>
+  <div class="doc doc-contents first">
 
-class <code>CP::Constraint::DampedSpring</code>
-      <br />
-<small>inherits <code><a href="#CP::Constraint">CP::Constraint</a></code></small>
-  <a class="headerlink" href="#CP::Constraint::DampedSpring" title="Permanent link">#</a></h2>
-<div class="doc doc-contents first">
-<div class="doc doc-children">
-<h3 id="class-methods_1">Class methods<a class="headerlink" href="#class-methods_1" title="Permanent link">#</a></h3>
+      <div class="doc doc-children">
+
+
+
+<h3 id="CP::Constraint::DampedSpring-class-methods">Class methods<a href="#CP::Constraint::DampedSpring-class-methods" class="headerlink" title="Permanent link">#</a></h3>
+
 <div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Constraint::DampedSpring.new(a,b,anchor_a,anchor_b,rest_length,stiffness,damping)">
-
-    <code>
+<h4 id="CP::Constraint::DampedSpring.new(a,b,anchor_a,anchor_b,rest_length,stiffness,damping)" class="doc doc-heading">    <code>
       .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">,</span> <span class="n">anchor_a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">anchor_b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">rest_length</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">stiffness</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">damping</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::DampedSpring.new(a,b,anchor_a,anchor_b,rest_length,stiffness,damping)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::DampedSpring.new(a,b,anchor_a,anchor_b,rest_length,stiffness,damping)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>Defined much like a slide joint.</p>
 <ul>
 <li><em>anchor_a</em>: Anchor point a, relative to body a</li>
@@ -2739,845 +2731,810 @@ class <code>CP::Constraint::DampedSpring</code>
 <li><em>rest_length</em>: The distance the spring wants to be at</li>
 <li><em>stiffness</em>: The spring constant (Young's modulus)</li>
 <li><em>damping</em>: How soft to make the damping of the spring</li>
-</ul>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L442">View source</a>
-</div>
-<h3 id="methods_2">Methods<a class="headerlink" href="#methods_2" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::DampedSpring#anchor_a()">
+</ul>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L442">View source</a>
+</div><h3 id="CP::Constraint::DampedSpring-methods">Methods<a href="#CP::Constraint::DampedSpring-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::DampedSpring#anchor_a" class="doc doc-heading">    <code>
       #anchor_a<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::DampedSpring#anchor_a()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The location of the first anchor relative to the first body.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L457">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::DampedSpring#anchor_a=(anchor_a)">
+<a href="#CP::Constraint::DampedSpring#anchor_a" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The location of the first anchor relative to the first body.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L457">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::DampedSpring#anchor_a=(anchor_a)" class="doc doc-heading">    <code>
       #anchor_a=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">anchor_a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::DampedSpring#anchor_a=(anchor_a)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::DampedSpring#anchor_a=(anchor_a)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L460">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::DampedSpring#anchor_b()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L460">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::DampedSpring#anchor_b" class="doc doc-heading">    <code>
       #anchor_b<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::DampedSpring#anchor_b()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The location of the second anchor relative to the second body.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L465">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::DampedSpring#anchor_b=(anchor_b)">
+<a href="#CP::Constraint::DampedSpring#anchor_b" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The location of the second anchor relative to the second body.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L465">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::DampedSpring#anchor_b=(anchor_b)" class="doc doc-heading">    <code>
       #anchor_b=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">anchor_b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::DampedSpring#anchor_b=(anchor_b)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::DampedSpring#anchor_b=(anchor_b)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L468">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::DampedSpring#damping()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L468">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::DampedSpring#damping" class="doc doc-heading">    <code>
       #damping<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::DampedSpring#damping()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>How soft to make the damping of the spring.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L489">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::DampedSpring#damping=(damping)">
+<a href="#CP::Constraint::DampedSpring#damping" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>How soft to make the damping of the spring.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L489">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::DampedSpring#damping=(damping)" class="doc doc-heading">    <code>
       #damping=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">damping</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::DampedSpring#damping=(damping)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::DampedSpring#damping=(damping)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L492">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::DampedSpring#rest_length()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L492">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::DampedSpring#rest_length" class="doc doc-heading">    <code>
       #rest_length<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::DampedSpring#rest_length()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The distance the spring wants to be at.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L473">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::DampedSpring#rest_length=(rest_length)">
+<a href="#CP::Constraint::DampedSpring#rest_length" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The distance the spring wants to be at.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L473">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::DampedSpring#rest_length=(rest_length)" class="doc doc-heading">    <code>
       #rest_length=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">rest_length</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::DampedSpring#rest_length=(rest_length)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::DampedSpring#rest_length=(rest_length)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L476">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::DampedSpring#spring_force(dist)">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L476">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::DampedSpring#spring_force(dist)" class="doc doc-heading">    <code>
       #spring_force<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">dist</span> <span class="p">:</span> <span class="n">Float64</span><span class="p">)</span> <span class="p">:</span> <span class="n">Number</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::DampedSpring#spring_force(dist)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>(can be overridden in a subclass)</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L497">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::DampedSpring#stiffness()">
+<a href="#CP::Constraint::DampedSpring#spring_force(dist)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>(can be overridden in a subclass)</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L497">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::DampedSpring#stiffness" class="doc doc-heading">    <code>
       #stiffness<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::DampedSpring#stiffness()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The stiffness of the spring in force/distance.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L481">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::DampedSpring#stiffness=(stiffness)">
+<a href="#CP::Constraint::DampedSpring#stiffness" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The stiffness of the spring in force/distance.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L481">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::DampedSpring#stiffness=(stiffness)" class="doc doc-heading">    <code>
       #stiffness=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">stiffness</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::DampedSpring#stiffness=(stiffness)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::DampedSpring#stiffness=(stiffness)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L484">View source</a>
+
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L484">View source</a>
+</div>      </div>
+  </div>
+
 </div>
-</div>
-</div>
-</div>
+
 <div class="doc doc-object doc-type class">
-<h2 class="doc doc-heading" id="CP::Constraint::GearJoint">
-
-class <code>CP::Constraint::GearJoint</code>
-      <br />
-<small>inherits <code><a href="#CP::Constraint">CP::Constraint</a></code></small>
-  <a class="headerlink" href="#CP::Constraint::GearJoint" title="Permanent link">#</a></h2>
-<div class="doc doc-contents first">
+<h2 id="CP::Constraint::GearJoint" class="doc doc-heading">class <code>CP::Constraint::GearJoint</code>
+      <br/><small>inherits <code><a href="#CP::Constraint">CP::Constraint</a></code></small>
+<a href="#CP::Constraint::GearJoint" class="headerlink" title="Permanent link">#</a></h2>
+  <div class="doc doc-contents first">
 <p>Keeps the angular velocity ratio of a pair of bodies constant.</p>
-<div class="doc doc-children">
-<h3 id="class-methods_2">Class methods<a class="headerlink" href="#class-methods_2" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Constraint::GearJoint.new(a,b,phase,ratio)">
+      <div class="doc doc-children">
 
-    <code>
+
+
+<h3 id="CP::Constraint::GearJoint-class-methods">Class methods<a href="#CP::Constraint::GearJoint-class-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Constraint::GearJoint.new(a,b,phase,ratio)" class="doc doc-heading">    <code>
       .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">,</span> <span class="n">phase</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">ratio</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::GearJoint.new(a,b,phase,ratio)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::GearJoint.new(a,b,phase,ratio)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L138">View source</a>
-</div>
-<h3 id="methods_3">Methods<a class="headerlink" href="#methods_3" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::GearJoint#phase()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L138">View source</a>
+</div><h3 id="CP::Constraint::GearJoint-methods">Methods<a href="#CP::Constraint::GearJoint-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::GearJoint#phase" class="doc doc-heading">    <code>
       #phase<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::GearJoint#phase()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The phase offset of the gears.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L152">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::GearJoint#phase=(phase)">
+<a href="#CP::Constraint::GearJoint#phase" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The phase offset of the gears.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L152">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::GearJoint#phase=(phase)" class="doc doc-heading">    <code>
       #phase=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">phase</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::GearJoint#phase=(phase)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::GearJoint#phase=(phase)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L155">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::GearJoint#ratio()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L155">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::GearJoint#ratio" class="doc doc-heading">    <code>
       #ratio<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::GearJoint#ratio()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The angular distance of each ratchet.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L160">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::GearJoint#ratio=(ratio)">
+<a href="#CP::Constraint::GearJoint#ratio" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The angular distance of each ratchet.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L160">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::GearJoint#ratio=(ratio)" class="doc doc-heading">    <code>
       #ratio=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">ratio</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::GearJoint#ratio=(ratio)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::GearJoint#ratio=(ratio)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L163">View source</a>
-</div>
-</div>
-</div>
-</div>
-<div class="doc doc-object doc-type class">
-<h2 class="doc doc-heading" id="CP::Constraint::GrooveJoint">
 
-class <code>CP::Constraint::GrooveJoint</code>
-      <br />
-<small>inherits <code><a href="#CP::Constraint">CP::Constraint</a></code></small>
-  <a class="headerlink" href="#CP::Constraint::GrooveJoint" title="Permanent link">#</a></h2>
-<div class="doc doc-contents first">
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L163">View source</a>
+</div>      </div>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-type class">
+<h2 id="CP::Constraint::GrooveJoint" class="doc doc-heading">class <code>CP::Constraint::GrooveJoint</code>
+      <br/><small>inherits <code><a href="#CP::Constraint">CP::Constraint</a></code></small>
+<a href="#CP::Constraint::GrooveJoint" class="headerlink" title="Permanent link">#</a></h2>
+  <div class="doc doc-contents first">
 <p>Similar to a pivot joint, but one of the anchors is
 on a linear slide instead of being fixed.</p>
-<div class="doc doc-children">
-<h3 id="class-methods_3">Class methods<a class="headerlink" href="#class-methods_3" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Constraint::GrooveJoint.new(a,b,groove_a,groove_b,anchor_b)">
+      <div class="doc doc-children">
 
-    <code>
+
+
+<h3 id="CP::Constraint::GrooveJoint-class-methods">Class methods<a href="#CP::Constraint::GrooveJoint-class-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Constraint::GrooveJoint.new(a,b,groove_a,groove_b,anchor_b)" class="doc doc-heading">    <code>
       .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">,</span> <span class="n">groove_a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">groove_b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">anchor_b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::GrooveJoint.new(a,b,groove_a,groove_b,anchor_b)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::GrooveJoint.new(a,b,groove_a,groove_b,anchor_b)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>The groove goes from <em>groove_a</em> to <em>groove_b</em> on body <em>a</em>, and the pivot
 is attached to <em>anchor_b</em> on body <em>b</em>.</p>
-<p>All coordinates are body local.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L175">View source</a>
-</div>
-<h3 id="methods_4">Methods<a class="headerlink" href="#methods_4" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::GrooveJoint#anchor_b()">
+<p>All coordinates are body local.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L175">View source</a>
+</div><h3 id="CP::Constraint::GrooveJoint-methods">Methods<a href="#CP::Constraint::GrooveJoint-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::GrooveJoint#anchor_b" class="doc doc-heading">    <code>
       #anchor_b<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::GrooveJoint#anchor_b()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The location of the second anchor relative to the second body.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L205">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::GrooveJoint#anchor_b=(anchor_b)">
+<a href="#CP::Constraint::GrooveJoint#anchor_b" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The location of the second anchor relative to the second body.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L205">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::GrooveJoint#anchor_b=(anchor_b)" class="doc doc-heading">    <code>
       #anchor_b=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">anchor_b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::GrooveJoint#anchor_b=(anchor_b)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::GrooveJoint#anchor_b=(anchor_b)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L208">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::GrooveJoint#groove_a()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L208">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::GrooveJoint#groove_a" class="doc doc-heading">    <code>
       #groove_a<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::GrooveJoint#groove_a()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The first endpoint of the groove relative to the first body.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L189">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::GrooveJoint#groove_a=(groove_a)">
+<a href="#CP::Constraint::GrooveJoint#groove_a" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The first endpoint of the groove relative to the first body.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L189">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::GrooveJoint#groove_a=(groove_a)" class="doc doc-heading">    <code>
       #groove_a=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">groove_a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::GrooveJoint#groove_a=(groove_a)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::GrooveJoint#groove_a=(groove_a)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L192">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::GrooveJoint#groove_b()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L192">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::GrooveJoint#groove_b" class="doc doc-heading">    <code>
       #groove_b<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::GrooveJoint#groove_b()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The second endpoint of the groove relative to the second body.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L197">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::GrooveJoint#groove_b=(groove_b)">
+<a href="#CP::Constraint::GrooveJoint#groove_b" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The second endpoint of the groove relative to the second body.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L197">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::GrooveJoint#groove_b=(groove_b)" class="doc doc-heading">    <code>
       #groove_b=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">groove_b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::GrooveJoint#groove_b=(groove_b)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::GrooveJoint#groove_b=(groove_b)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L200">View source</a>
+
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L200">View source</a>
+</div>      </div>
+  </div>
+
 </div>
-</div>
-</div>
-</div>
+
 <div class="doc doc-object doc-type class">
-<h2 class="doc doc-heading" id="CP::Constraint::PinJoint">
-
-class <code>CP::Constraint::PinJoint</code>
-      <br />
-<small>inherits <code><a href="#CP::Constraint">CP::Constraint</a></code></small>
-  <a class="headerlink" href="#CP::Constraint::PinJoint" title="Permanent link">#</a></h2>
-<div class="doc doc-contents first">
+<h2 id="CP::Constraint::PinJoint" class="doc doc-heading">class <code>CP::Constraint::PinJoint</code>
+      <br/><small>inherits <code><a href="#CP::Constraint">CP::Constraint</a></code></small>
+<a href="#CP::Constraint::PinJoint" class="headerlink" title="Permanent link">#</a></h2>
+  <div class="doc doc-contents first">
 <p>Keeps the anchor points at a set distance from one another.</p>
-<div class="doc doc-children">
-<h3 id="class-methods_4">Class methods<a class="headerlink" href="#class-methods_4" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Constraint::PinJoint.new(a,b,anchor_a,anchor_b)">
+      <div class="doc doc-children">
 
-    <code>
+
+
+<h3 id="CP::Constraint::PinJoint-class-methods">Class methods<a href="#CP::Constraint::PinJoint-class-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Constraint::PinJoint.new(a,b,anchor_a,anchor_b)" class="doc doc-heading">    <code>
       .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">,</span> <span class="n">anchor_a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">anchor_b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::PinJoint.new(a,b,anchor_a,anchor_b)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::PinJoint.new(a,b,anchor_a,anchor_b)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p><em>a</em> and <em>b</em> are the two bodies to connect, and <em>anchor_a</em> and <em>anchor_b</em>
 arethe anchor points on those bodies.</p>
 <p>The distance between the two anchor points is measured when the joint
 is created. If you want to set a specific distance, use the setter
-function to override it.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L221">View source</a>
-</div>
-<h3 id="methods_5">Methods<a class="headerlink" href="#methods_5" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::PinJoint#anchor_a()">
+function to override it.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L221">View source</a>
+</div><h3 id="CP::Constraint::PinJoint-methods">Methods<a href="#CP::Constraint::PinJoint-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::PinJoint#anchor_a" class="doc doc-heading">    <code>
       #anchor_a<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::PinJoint#anchor_a()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The location of the first anchor relative to the first body.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L235">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::PinJoint#anchor_a=(anchor_a)">
+<a href="#CP::Constraint::PinJoint#anchor_a" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The location of the first anchor relative to the first body.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L235">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::PinJoint#anchor_a=(anchor_a)" class="doc doc-heading">    <code>
       #anchor_a=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">anchor_a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::PinJoint#anchor_a=(anchor_a)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::PinJoint#anchor_a=(anchor_a)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L238">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::PinJoint#anchor_b()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L238">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::PinJoint#anchor_b" class="doc doc-heading">    <code>
       #anchor_b<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::PinJoint#anchor_b()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The location of the second anchor relative to the second body.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L243">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::PinJoint#anchor_b=(anchor_b)">
+<a href="#CP::Constraint::PinJoint#anchor_b" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The location of the second anchor relative to the second body.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L243">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::PinJoint#anchor_b=(anchor_b)" class="doc doc-heading">    <code>
       #anchor_b=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">anchor_b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::PinJoint#anchor_b=(anchor_b)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::PinJoint#anchor_b=(anchor_b)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L246">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::PinJoint#dist()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L246">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::PinJoint#dist" class="doc doc-heading">    <code>
       #dist<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::PinJoint#dist()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The distance the joint will maintain between the two anchors.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L251">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::PinJoint#dist=(dist)">
+<a href="#CP::Constraint::PinJoint#dist" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The distance the joint will maintain between the two anchors.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L251">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::PinJoint#dist=(dist)" class="doc doc-heading">    <code>
       #dist=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">dist</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::PinJoint#dist=(dist)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::PinJoint#dist=(dist)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L254">View source</a>
+
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L254">View source</a>
+</div>      </div>
+  </div>
+
 </div>
-</div>
-</div>
-</div>
+
 <div class="doc doc-object doc-type class">
-<h2 class="doc doc-heading" id="CP::Constraint::PivotJoint">
-
-class <code>CP::Constraint::PivotJoint</code>
-      <br />
-<small>inherits <code><a href="#CP::Constraint">CP::Constraint</a></code></small>
-  <a class="headerlink" href="#CP::Constraint::PivotJoint" title="Permanent link">#</a></h2>
-<div class="doc doc-contents first">
+<h2 id="CP::Constraint::PivotJoint" class="doc doc-heading">class <code>CP::Constraint::PivotJoint</code>
+      <br/><small>inherits <code><a href="#CP::Constraint">CP::Constraint</a></code></small>
+<a href="#CP::Constraint::PivotJoint" class="headerlink" title="Permanent link">#</a></h2>
+  <div class="doc doc-contents first">
 <p>Allows two objects to pivot about a single point.</p>
-<div class="doc doc-children">
-<h3 id="class-methods_5">Class methods<a class="headerlink" href="#class-methods_5" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Constraint::PivotJoint.new(a,b,anchor_a,anchor_b)">
+      <div class="doc doc-children">
 
-    <code>
+
+
+<h3 id="CP::Constraint::PivotJoint-class-methods">Class methods<a href="#CP::Constraint::PivotJoint-class-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Constraint::PivotJoint.new(a,b,anchor_a,anchor_b)" class="doc doc-heading">    <code>
       .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">,</span> <span class="n">anchor_a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">anchor_b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::PivotJoint.new(a,b,anchor_a,anchor_b)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::PivotJoint.new(a,b,anchor_a,anchor_b)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p><em>a</em> and <em>b</em> are the two bodies to connect, and <em>anchor_a</em> and <em>anchor_b</em>
-are the points in local coordinates where the pivot is located.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L263">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Constraint::PivotJoint.new(a,b,pivot)">
+are the points in local coordinates where the pivot is located.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L263">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Constraint::PivotJoint.new(a,b,pivot)" class="doc doc-heading">    <code>
       .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">,</span> <span class="n">pivot</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span> <span class="p">:</span> <span class="k">self</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::PivotJoint.new(a,b,pivot)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::PivotJoint.new(a,b,pivot)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p><em>a</em> and <em>b</em> are the two bodies to connect, and <em>pivot</em> is the point in
-world coordinates of the pivot.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L272">View source</a>
-</div>
-<h3 id="methods_6">Methods<a class="headerlink" href="#methods_6" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::PivotJoint#anchor_a()">
+world coordinates of the pivot.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L272">View source</a>
+</div><h3 id="CP::Constraint::PivotJoint-methods">Methods<a href="#CP::Constraint::PivotJoint-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::PivotJoint#anchor_a" class="doc doc-heading">    <code>
       #anchor_a<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::PivotJoint#anchor_a()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The location of the first anchor relative to the first body.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L284">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::PivotJoint#anchor_a=(anchor_a)">
+<a href="#CP::Constraint::PivotJoint#anchor_a" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The location of the first anchor relative to the first body.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L284">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::PivotJoint#anchor_a=(anchor_a)" class="doc doc-heading">    <code>
       #anchor_a=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">anchor_a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::PivotJoint#anchor_a=(anchor_a)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::PivotJoint#anchor_a=(anchor_a)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L287">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::PivotJoint#anchor_b()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L287">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::PivotJoint#anchor_b" class="doc doc-heading">    <code>
       #anchor_b<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::PivotJoint#anchor_b()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The location of the second anchor relative to the second body.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L292">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::PivotJoint#anchor_b=(anchor_b)">
+<a href="#CP::Constraint::PivotJoint#anchor_b" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The location of the second anchor relative to the second body.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L292">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::PivotJoint#anchor_b=(anchor_b)" class="doc doc-heading">    <code>
       #anchor_b=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">anchor_b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::PivotJoint#anchor_b=(anchor_b)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::PivotJoint#anchor_b=(anchor_b)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L295">View source</a>
+
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L295">View source</a>
+</div>      </div>
+  </div>
+
 </div>
-</div>
-</div>
-</div>
+
 <div class="doc doc-object doc-type class">
-<h2 class="doc doc-heading" id="CP::Constraint::RatchetJoint">
-
-class <code>CP::Constraint::RatchetJoint</code>
-      <br />
-<small>inherits <code><a href="#CP::Constraint">CP::Constraint</a></code></small>
-  <a class="headerlink" href="#CP::Constraint::RatchetJoint" title="Permanent link">#</a></h2>
-<div class="doc doc-contents first">
+<h2 id="CP::Constraint::RatchetJoint" class="doc doc-heading">class <code>CP::Constraint::RatchetJoint</code>
+      <br/><small>inherits <code><a href="#CP::Constraint">CP::Constraint</a></code></small>
+<a href="#CP::Constraint::RatchetJoint" class="headerlink" title="Permanent link">#</a></h2>
+  <div class="doc doc-contents first">
 <p>Works like a socket wrench.</p>
-<div class="doc doc-children">
-<h3 id="class-methods_6">Class methods<a class="headerlink" href="#class-methods_6" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Constraint::RatchetJoint.new(a,b,phase,ratchet)">
+      <div class="doc doc-children">
 
-    <code>
+
+
+<h3 id="CP::Constraint::RatchetJoint-class-methods">Class methods<a href="#CP::Constraint::RatchetJoint-class-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Constraint::RatchetJoint.new(a,b,phase,ratchet)" class="doc doc-heading">    <code>
       .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">,</span> <span class="n">phase</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">ratchet</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::RatchetJoint.new(a,b,phase,ratchet)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::RatchetJoint.new(a,b,phase,ratchet)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p><em>ratchet</em> is the distance between "clicks", <em>phase</em> is the initial offset
-to use when deciding where the ratchet angles are.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L357">View source</a>
-</div>
-<h3 id="methods_7">Methods<a class="headerlink" href="#methods_7" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::RatchetJoint#angle()">
+to use when deciding where the ratchet angles are.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L357">View source</a>
+</div><h3 id="CP::Constraint::RatchetJoint-methods">Methods<a href="#CP::Constraint::RatchetJoint-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::RatchetJoint#angle" class="doc doc-heading">    <code>
       #angle<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::RatchetJoint#angle()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The angle of the current ratchet tooth.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L371">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::RatchetJoint#angle=(angle)">
+<a href="#CP::Constraint::RatchetJoint#angle" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The angle of the current ratchet tooth.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L371">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::RatchetJoint#angle=(angle)" class="doc doc-heading">    <code>
       #angle=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">angle</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::RatchetJoint#angle=(angle)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::RatchetJoint#angle=(angle)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L374">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::RatchetJoint#phase()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L374">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::RatchetJoint#phase" class="doc doc-heading">    <code>
       #phase<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::RatchetJoint#phase()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The phase offset of the ratchet.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L379">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::RatchetJoint#phase=(phase)">
+<a href="#CP::Constraint::RatchetJoint#phase" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The phase offset of the ratchet.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L379">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::RatchetJoint#phase=(phase)" class="doc doc-heading">    <code>
       #phase=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">phase</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::RatchetJoint#phase=(phase)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::RatchetJoint#phase=(phase)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L382">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::RatchetJoint#ratchet()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L382">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::RatchetJoint#ratchet" class="doc doc-heading">    <code>
       #ratchet<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::RatchetJoint#ratchet()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The angular distance of each ratchet.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L387">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::RatchetJoint#ratchet=(ratchet)">
+<a href="#CP::Constraint::RatchetJoint#ratchet" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The angular distance of each ratchet.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L387">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::RatchetJoint#ratchet=(ratchet)" class="doc doc-heading">    <code>
       #ratchet=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">ratchet</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::RatchetJoint#ratchet=(ratchet)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::RatchetJoint#ratchet=(ratchet)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L390">View source</a>
+
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L390">View source</a>
+</div>      </div>
+  </div>
+
 </div>
-</div>
-</div>
-</div>
+
 <div class="doc doc-object doc-type class">
-<h2 class="doc doc-heading" id="CP::Constraint::RotaryLimitJoint">
-
-class <code>CP::Constraint::RotaryLimitJoint</code>
-      <br />
-<small>inherits <code><a href="#CP::Constraint">CP::Constraint</a></code></small>
-  <a class="headerlink" href="#CP::Constraint::RotaryLimitJoint" title="Permanent link">#</a></h2>
-<div class="doc doc-contents first">
+<h2 id="CP::Constraint::RotaryLimitJoint" class="doc doc-heading">class <code>CP::Constraint::RotaryLimitJoint</code>
+      <br/><small>inherits <code><a href="#CP::Constraint">CP::Constraint</a></code></small>
+<a href="#CP::Constraint::RotaryLimitJoint" class="headerlink" title="Permanent link">#</a></h2>
+  <div class="doc doc-contents first">
 <p>Constrains the relative rotations of two bodies.</p>
-<div class="doc doc-children">
-<h3 id="class-methods_7">Class methods<a class="headerlink" href="#class-methods_7" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Constraint::RotaryLimitJoint.new(a,b,min,max)">
+      <div class="doc doc-children">
 
-    <code>
+
+
+<h3 id="CP::Constraint::RotaryLimitJoint-class-methods">Class methods<a href="#CP::Constraint::RotaryLimitJoint-class-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Constraint::RotaryLimitJoint.new(a,b,min,max)" class="doc doc-heading">    <code>
       .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">,</span> <span class="n">min</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">max</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::RotaryLimitJoint.new(a,b,min,max)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::RotaryLimitJoint.new(a,b,min,max)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p><em>min</em> and <em>max</em> are the angular limits in radians. It is implemented so
-that it's possible to for the range to be greater than a full revolution.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L399">View source</a>
-</div>
-<h3 id="methods_8">Methods<a class="headerlink" href="#methods_8" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::RotaryLimitJoint#max()">
+that it's possible to for the range to be greater than a full revolution.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L399">View source</a>
+</div><h3 id="CP::Constraint::RotaryLimitJoint-methods">Methods<a href="#CP::Constraint::RotaryLimitJoint-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::RotaryLimitJoint#max" class="doc doc-heading">    <code>
       #max<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::RotaryLimitJoint#max()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The maximum distance the joint will maintain between the two anchors.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L421">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::RotaryLimitJoint#max=(max)">
+<a href="#CP::Constraint::RotaryLimitJoint#max" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The maximum distance the joint will maintain between the two anchors.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L421">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::RotaryLimitJoint#max=(max)" class="doc doc-heading">    <code>
       #max=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">max</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::RotaryLimitJoint#max=(max)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::RotaryLimitJoint#max=(max)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L424">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::RotaryLimitJoint#min()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L424">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::RotaryLimitJoint#min" class="doc doc-heading">    <code>
       #min<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::RotaryLimitJoint#min()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The minimum distance the joint will maintain between the two anchors.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L413">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::RotaryLimitJoint#min=(min)">
+<a href="#CP::Constraint::RotaryLimitJoint#min" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The minimum distance the joint will maintain between the two anchors.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L413">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::RotaryLimitJoint#min=(min)" class="doc doc-heading">    <code>
       #min=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">min</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::RotaryLimitJoint#min=(min)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::RotaryLimitJoint#min=(min)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L416">View source</a>
+
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L416">View source</a>
+</div>      </div>
+  </div>
+
 </div>
-</div>
-</div>
-</div>
+
 <div class="doc doc-object doc-type class">
-<h2 class="doc doc-heading" id="CP::Constraint::SimpleMotor">
-
-class <code>CP::Constraint::SimpleMotor</code>
-      <br />
-<small>inherits <code><a href="#CP::Constraint">CP::Constraint</a></code></small>
-  <a class="headerlink" href="#CP::Constraint::SimpleMotor" title="Permanent link">#</a></h2>
-<div class="doc doc-contents first">
+<h2 id="CP::Constraint::SimpleMotor" class="doc doc-heading">class <code>CP::Constraint::SimpleMotor</code>
+      <br/><small>inherits <code><a href="#CP::Constraint">CP::Constraint</a></code></small>
+<a href="#CP::Constraint::SimpleMotor" class="headerlink" title="Permanent link">#</a></h2>
+  <div class="doc doc-contents first">
 <p>Keeps the relative angular velocity of a pair of bodies constant.</p>
-<div class="doc doc-children">
-<h3 id="class-methods_8">Class methods<a class="headerlink" href="#class-methods_8" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Constraint::SimpleMotor.new(a,b,rate)">
+      <div class="doc doc-children">
 
-    <code>
+
+
+<h3 id="CP::Constraint::SimpleMotor-class-methods">Class methods<a href="#CP::Constraint::SimpleMotor-class-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Constraint::SimpleMotor.new(a,b,rate)" class="doc doc-heading">    <code>
       .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">,</span> <span class="n">rate</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::SimpleMotor.new(a,b,rate)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::SimpleMotor.new(a,b,rate)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L555">View source</a>
-</div>
-<h3 id="methods_9">Methods<a class="headerlink" href="#methods_9" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::SimpleMotor#rate()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L555">View source</a>
+</div><h3 id="CP::Constraint::SimpleMotor-methods">Methods<a href="#CP::Constraint::SimpleMotor-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::SimpleMotor#rate" class="doc doc-heading">    <code>
       #rate<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::SimpleMotor#rate()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::SimpleMotor#rate" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p>The desired relative angular velocity of the motor.</p>
 <p>You will usually want to set a force (torque) maximum for motors as otherwise
-they will be able to apply a nearly infinite torque to keep the bodies moving.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L572">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::SimpleMotor#rate=(rate)">
+they will be able to apply a nearly infinite torque to keep the bodies moving.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L572">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::SimpleMotor#rate=(rate)" class="doc doc-heading">    <code>
       #rate=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">rate</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::SimpleMotor#rate=(rate)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::SimpleMotor#rate=(rate)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L575">View source</a>
-</div>
-</div>
-</div>
-</div>
-<div class="doc doc-object doc-type class">
-<h2 class="doc doc-heading" id="CP::Constraint::SlideJoint">
 
-class <code>CP::Constraint::SlideJoint</code>
-      <br />
-<small>inherits <code><a href="#CP::Constraint">CP::Constraint</a></code></small>
-  <a class="headerlink" href="#CP::Constraint::SlideJoint" title="Permanent link">#</a></h2>
-<div class="doc doc-contents first">
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L575">View source</a>
+</div>      </div>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-type class">
+<h2 id="CP::Constraint::SlideJoint" class="doc doc-heading">class <code>CP::Constraint::SlideJoint</code>
+      <br/><small>inherits <code><a href="#CP::Constraint">CP::Constraint</a></code></small>
+<a href="#CP::Constraint::SlideJoint" class="headerlink" title="Permanent link">#</a></h2>
+  <div class="doc doc-contents first">
 <p>Like pin joints, but have a minimum and maximum distance.
 A chain could be modeled using this joint. It keeps the anchor points
 from getting too far apart, but will allow them to get closer together.</p>
-<div class="doc doc-children">
-<h3 id="class-methods_9">Class methods<a class="headerlink" href="#class-methods_9" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-class_method">
-<h4 class="doc doc-heading" id="CP::Constraint::SlideJoint.new(a,b,anchor_a,anchor_b,min,max)">
+      <div class="doc doc-children">
 
-    <code>
+
+
+<h3 id="CP::Constraint::SlideJoint-class-methods">Class methods<a href="#CP::Constraint::SlideJoint-class-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-class_method">
+<h4 id="CP::Constraint::SlideJoint.new(a,b,anchor_a,anchor_b,min,max)" class="doc doc-heading">    <code>
       .new<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">a</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <a href="body.html#CP::Body">Body</a><span class="p">,</span> <span class="n">anchor_a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">anchor_b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">,</span> <span class="n">min</span> <span class="p">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">max</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::SlideJoint.new(a,b,anchor_a,anchor_b,min,max)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::SlideJoint.new(a,b,anchor_a,anchor_b,min,max)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
 <p><em>a</em> and <em>b</em> are the two bodies to connect, <em>anchor_a</em> and <em>anchor_b</em> are
 the anchor points on those bodies, and <em>min</em> and <em>max</em> define the allowed
-distances of the anchor points.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L307">View source</a>
-</div>
-<h3 id="methods_10">Methods<a class="headerlink" href="#methods_10" title="Permanent link">#</a></h3>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::SlideJoint#anchor_a()">
+distances of the anchor points.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L307">View source</a>
+</div><h3 id="CP::Constraint::SlideJoint-methods">Methods<a href="#CP::Constraint::SlideJoint-methods" class="headerlink" title="Permanent link">#</a></h3>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::SlideJoint#anchor_a" class="doc doc-heading">    <code>
       #anchor_a<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::SlideJoint#anchor_a()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The location of the first anchor relative to the first body.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L321">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::SlideJoint#anchor_a=(anchor_a)">
+<a href="#CP::Constraint::SlideJoint#anchor_a" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The location of the first anchor relative to the first body.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L321">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::SlideJoint#anchor_a=(anchor_a)" class="doc doc-heading">    <code>
       #anchor_a=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">anchor_a</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::SlideJoint#anchor_a=(anchor_a)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::SlideJoint#anchor_a=(anchor_a)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L324">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::SlideJoint#anchor_b()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L324">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::SlideJoint#anchor_b" class="doc doc-heading">    <code>
       #anchor_b<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::SlideJoint#anchor_b()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The location of the second anchor relative to the second body.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L329">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::SlideJoint#anchor_b=(anchor_b)">
+<a href="#CP::Constraint::SlideJoint#anchor_b" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The location of the second anchor relative to the second body.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L329">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::SlideJoint#anchor_b=(anchor_b)" class="doc doc-heading">    <code>
       #anchor_b=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">anchor_b</span> <span class="p">:</span> <a href="vector-math.html#CP::Vect">Vect</a><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::SlideJoint#anchor_b=(anchor_b)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::SlideJoint#anchor_b=(anchor_b)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L332">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::SlideJoint#max()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L332">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::SlideJoint#max" class="doc doc-heading">    <code>
       #max<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::SlideJoint#max()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The maximum distance the joint will maintain between the two anchors.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L345">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::SlideJoint#max=(max)">
+<a href="#CP::Constraint::SlideJoint#max" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The maximum distance the joint will maintain between the two anchors.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L345">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::SlideJoint#max=(max)" class="doc doc-heading">    <code>
       #max=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">max</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::SlideJoint#max=(max)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::SlideJoint#max=(max)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L348">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::SlideJoint#min()">
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L348">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::SlideJoint#min" class="doc doc-heading">    <code>
       #min<span style="font-weight: normal"> <code class="highlight language-crystal"><span class="p">:</span> <span class="n">Float64</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::SlideJoint#min()" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
-<p>The minimum distance the joint will maintain between the two anchors.</p>
-</div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L337">View source</a>
-</div>
-<div class="doc doc-object doc-method doc-instance_method">
-<h4 class="doc doc-heading" id="CP::Constraint::SlideJoint#min=(min)">
+<a href="#CP::Constraint::SlideJoint#min" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
+<p>The minimum distance the joint will maintain between the two anchors.</p>  </div>
 
-    <code>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L337">View source</a>
+</div>
+
+<div class="doc doc-object doc-method doc-instance_method">
+<h4 id="CP::Constraint::SlideJoint#min=(min)" class="doc doc-heading">    <code>
       #min=<span style="font-weight: normal"><code class="highlight language-crystal"><span class="p">(</span><span class="n">min</span> <span class="p">:</span> <span class="n">Number</span><span class="p">)</span></code></span>
     </code>
-  <a class="headerlink" href="#CP::Constraint::SlideJoint#min=(min)" title="Permanent link">#</a></h4>
-<div class="doc doc-contents ">
+<a href="#CP::Constraint::SlideJoint#min=(min)" class="headerlink" title="Permanent link">#</a></h4>
+  <div class="doc doc-contents ">
   </div>
-<a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/master/src/chipmunk/constraint.cr#L340">View source</a>
-</div>
-</div>
-</div>
-</div>
-</div>
+
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-chipmunk/blob/6863604e8f512b97de03395f126135273e54821d/src/chipmunk/constraint.cr#L340">View source</a>
+</div>      </div>
+  </div>
+
+</div></div>
                 
               
               
@@ -3588,45 +3545,46 @@ distances of the anchor points.</p>
             </article>
           </div>
         </div>
+        
       </main>
       
         
 <footer class="md-footer">
   
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
         
-          <a href="shapes.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <a href="collisions.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Collisions" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Collisions
             </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Shapes
-              </div>
-            </div>
-          </a>
+          </div>
+        </a>
+      
+      
         
-        
-          <a href="collisions.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Collisions
-              </div>
+        <a href="debug-draw.html" class="md-footer__link md-footer__link--next" aria-label="Next: Debug draw" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Debug draw
             </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -3636,6 +3594,7 @@ distances of the anchor points.</p>
         <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
           Material for MkDocs
         </a>
+        
       </div>
       
     </div>
@@ -3643,19 +3602,13 @@ distances of the anchor points.</p>
 </footer>
       
     </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.b0710199.min.js", "version": null}</script>
     
-      <script src="assets/javascripts/vendor.53cc9318.min.js"></script>
-      <script src="assets/javascripts/bundle.e9c9f54f.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
-      
-      <script>
-        app = initialize({
-          base: ".",
-          features: [],
-          search: Object.assign({
-            worker: "assets/javascripts/worker/search.9c0e82ba.min.js"
-          }, typeof search !== "undefined" && search)
-        })
-      </script>
+    
+      <script src="assets/javascripts/bundle.76f349be.min.js"></script>
       
     
   </body>
